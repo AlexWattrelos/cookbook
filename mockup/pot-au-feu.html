@@ -1,0 +1,461 @@
+<title>Pot-au-Feu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --ground: #FBFAF6;
+    --surface: #F1EEE6;
+    --ink: #1E1C18;
+    --muted: #6B665C;
+    --rule: #DCD7CC;
+    --accent: #2F5D3A;
+    --warm: #B5602A;
+    --done: #3B7A4A;
+    --shadow: 0 1px 2px rgba(30, 28, 24, .06), 0 8px 24px rgba(30, 28, 24, .10);
+    --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans: "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #161513;
+      --surface: #1F1D1A;
+      --ink: #ECE7DD;
+      --muted: #A39C90;
+      --rule: #33302A;
+      --accent: #8CC29A;
+      --warm: #E08A4F;
+      --done: #7FC38F;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .45);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #161513;
+    --surface: #1F1D1A;
+    --ink: #ECE7DD;
+    --muted: #A39C90;
+    --rule: #33302A;
+    --accent: #8CC29A;
+    --warm: #E08A4F;
+    --done: #7FC38F;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .45);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 400 19px/1.5 var(--sans);
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 28px 20px 96px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  button { font: inherit; cursor: pointer; touch-action: manipulation; }
+  .amt { font-variant-numeric: tabular-nums; }
+
+  /* Type */
+  h1 { font: 700 42px/1.08 var(--serif); letter-spacing: -0.01em; margin: 0 0 16px; }
+  .eyebrow {
+    font: 700 15px/1.3 var(--serif);
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  h2.eyebrow { margin: 56px 0 8px; padding-top: 28px; border-top: 1px solid var(--rule); }
+  h3 { font: 500 24px/1.25 var(--serif); margin: 28px 0 6px; }
+
+  /* Header */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .chip { font-size: 15px; line-height: 1; padding: 7px 12px; border: 1px solid var(--rule); border-radius: 999px; }
+  .chip.course { color: var(--accent); border-color: var(--accent); font-weight: 700; }
+  .chip.tag { background: var(--surface); border-color: transparent; }
+  .chip.status { color: var(--muted); }
+  .meta { display: flex; flex-wrap: wrap; gap: 4px 24px; margin: 0; color: var(--muted); }
+  .meta b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .block { margin-top: 24px; }
+  .block p, .block ul { margin: 0; }
+  .block ul { padding-left: 22px; }
+  .eyebrow.warm { color: var(--warm); }
+
+  /* Servings stepper: the one lifted element */
+  .stepper-wrap { position: sticky; top: 0; z-index: 2; background: var(--ground); padding: 10px 0 14px; margin-top: 28px; }
+  .stepper {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 10px 10px 10px 20px;
+    box-shadow: var(--shadow);
+  }
+  .stepper-label { font-weight: 700; }
+  .controls { display: flex; align-items: center; gap: 2px; }
+  .controls button {
+    width: 48px; height: 48px;
+    border: 0; border-radius: 12px;
+    background: var(--warm); color: var(--ground);
+    font-size: 28px; line-height: 1;
+  }
+  .controls button:disabled { opacity: .35; cursor: default; }
+  .controls output { min-width: 60px; text-align: center; font: 700 30px/1 var(--serif); font-variant-numeric: tabular-nums; }
+
+  /* Checklists: rules between rows, not boxes */
+  .list { list-style: none; margin: 0; padding: 0; }
+  .list li { border-bottom: 1px solid var(--rule); }
+  .row { display: flex; align-items: flex-start; gap: 14px; min-height: 44px; padding: 10px 0; cursor: pointer; }
+  .row input {
+    appearance: none; -webkit-appearance: none;
+    flex: none; width: 30px; height: 30px; margin: -1px 0 0;
+    border: 2px solid var(--muted); border-radius: 9px; background: transparent;
+    display: grid; place-content: center; cursor: pointer;
+    transition: background-color .15s, border-color .15s;
+  }
+  .row input::after {
+    content: ""; width: 8px; height: 15px;
+    border: solid var(--ground); border-width: 0 3px 3px 0;
+    transform: rotate(45deg) translateY(-2px);
+    opacity: 0;
+  }
+  .row input:checked { background: var(--done); border-color: var(--done); }
+  .row input:checked::after { opacity: 1; }
+  .row input:checked + span { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .prep { color: var(--muted); }
+
+  /* Steps */
+  .step {
+    display: grid; grid-template-columns: 44px 1fr; gap: 10px;
+    padding: 18px 0; border-bottom: 1px solid var(--rule);
+    font-size: 20px; line-height: 1.5;
+  }
+  .step .num { font: 700 32px/1 var(--serif); color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .step p { margin: 0; }
+  .ing { font-weight: 700; }
+  .timer {
+    display: inline-flex; align-items: center;
+    min-height: 44px; margin-top: 12px; padding: 0 18px;
+    border: 2px solid var(--warm); border-radius: 12px;
+    background: transparent; color: var(--warm);
+    font-weight: 700; font-size: 17px; font-variant-numeric: tabular-nums;
+    transition: background-color .15s, color .15s;
+  }
+  .timer.running { background: var(--warm); color: var(--ground); }
+  .timer.done { border-color: var(--done); color: var(--done); cursor: default; }
+
+  @media (prefers-reduced-motion: reduce) { *, ::after { transition: none !important; } }
+</style>
+
+<main>
+  <header id="header"></header>
+
+  <div class="stepper-wrap">
+    <div class="stepper">
+      <span class="stepper-label" id="servings-label"></span>
+      <div class="controls">
+        <button type="button" id="minus">&minus;</button>
+        <output id="servings" for="minus plus"></output>
+        <button type="button" id="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="shopping"></section>
+  <section id="mise"></section>
+  <section id="steps"></section>
+</main>
+
+<script>
+const RECIPE = {
+  "id": "pot-au-feu",
+  "title": "Pot-au-Feu",
+  "course": "main",
+  "status": "draft",
+  "tags": ["french", "winter", "weekend"],
+  "servings": 4,
+  "yield": null,
+  "time": { "active": 60, "total": 210 },
+  "ahead": "Start 3.5 h before serving. Marrow bones soak 2 h.",
+  "notes": ["Skim thoroughly at the start or the broth stays cloudy."],
+  "source": null,
+  "ingredients": [
+    { "id": "chuck", "amount": 600, "unit": "g", "name": "beef chuck (paleron)", "prep": null, "category": "meat-fish" },
+    { "id": "shank", "amount": 600, "unit": "g", "name": "bone-in beef shank (gîte)", "prep": null, "category": "meat-fish" },
+    { "id": "water", "amount": 3, "unit": "l", "name": "cold water", "prep": null, "category": "staple" },
+    { "id": "onion", "amount": 2, "unit": null, "name": "onions", "prep": "peeled and halved", "category": "produce" },
+    { "id": "clove", "amount": 4, "unit": null, "name": "whole cloves", "prep": null, "category": "pantry" },
+    { "id": "thyme", "amount": 4, "unit": null, "name": "thyme sprigs", "prep": null, "category": "produce" },
+    { "id": "bay", "amount": 2, "unit": null, "name": "bay leaves", "prep": null, "category": "produce" },
+    { "id": "parsley-stems", "amount": 10, "unit": "g", "name": "flat-leaf parsley", "prep": "stems only, tied together", "category": "produce" },
+    { "id": "peppercorns", "amount": 1, "unit": "tsp", "name": "black peppercorns", "prep": null, "category": "staple" },
+    { "id": "salt", "amount": 1, "unit": "tbsp", "name": "salt", "prep": null, "category": "staple" },
+    { "id": "parsley-leaves", "amount": 30, "unit": "g", "name": "flat-leaf parsley", "prep": "leaves picked", "category": "produce" },
+    { "id": "cornichon", "amount": 6, "unit": null, "name": "cornichons", "prep": null, "category": "canned" },
+    { "id": "capers", "amount": 2, "unit": "tbsp", "name": "capers", "prep": null, "category": "canned" },
+    { "id": "fish-sauce", "amount": 1, "unit": "tsp", "name": "fish sauce", "prep": null, "category": "pantry" },
+    { "id": "vinegar", "amount": 1, "unit": "tbsp", "name": "red wine vinegar", "prep": null, "category": "pantry" },
+    { "id": "olive-oil", "amount": 80, "unit": "ml", "name": "olive oil", "prep": null, "category": "pantry" },
+    { "id": "pepper", "amount": null, "unit": null, "name": "black pepper", "prep": null, "category": "staple" },
+    { "id": "cabbage", "amount": 200, "unit": "g", "name": "savoy cabbage", "prep": "cut into wedges, core trimmed but left attached", "category": "produce" },
+    { "id": "leek", "amount": 2, "unit": null, "name": "leeks", "prep": "trimmed, halved lengthwise, washed, tied into a bundle", "category": "produce" },
+    { "id": "carrot", "amount": 200, "unit": "g", "name": "carrots", "prep": "peeled, cut into 8 cm lengths", "category": "produce" },
+    { "id": "turnip", "amount": 150, "unit": "g", "name": "turnips", "prep": "peeled and quartered", "category": "produce" },
+    { "id": "celeriac", "amount": 150, "unit": "g", "name": "celeriac", "prep": "peeled, cut into large wedges", "category": "produce" },
+    { "id": "potato", "amount": 400, "unit": "g", "name": "waxy potatoes", "prep": "peeled and halved", "category": "produce" },
+    { "id": "marrow", "amount": 4, "unit": null, "name": "marrow bones, 5 cm pieces", "prep": "soaked 2 h in cold salted water, drained and rinsed", "category": "meat-fish" },
+    { "id": "sea-salt", "amount": null, "unit": null, "name": "coarse sea salt", "prep": null, "category": "staple" },
+    { "id": "bread", "amount": 4, "unit": null, "name": "thick slices rustic bread", "prep": null, "category": "bakery" },
+    { "id": "garlic", "amount": 2, "unit": null, "name": "garlic cloves", "prep": "halved", "category": "produce" },
+    { "id": "mustard", "amount": null, "unit": null, "name": "Dijon mustard", "prep": null, "category": "pantry" }
+  ],
+  "steps": [
+    { "section": "Broth", "text": "{chuck}, {shank} in large pot. Cover with {water}. Bring to boil. Skim until broth stays clear.", "timer": 5 },
+    { "section": null, "text": "Stud {onion} with {clove}. Add to pot with {thyme}, {bay}, {parsley-stems}, {peppercorns}, {salt}.", "timer": null },
+    { "section": null, "text": "Reduce to gentlest simmer, occasional bubble only. Partially cover.", "timer": 150 },
+    { "section": "Sauce verte", "text": "Small blender: {parsley-leaves}, {cornichon}, {capers}, {fish-sauce}, {vinegar}. Pulse until roughly chopped.", "timer": null },
+    { "section": null, "text": "Add {olive-oil}, {pepper}. Blend briefly, until combined but still slightly chunky.", "timer": null },
+    { "section": "Vegetables", "text": "Blanch {cabbage} in boiling salted water. Drain, set aside with {leek}.", "timer": 3 },
+    { "section": null, "text": "After 2.5 h: add {carrot}, {turnip}, {celeriac}, {potato} to broth. Simmer.", "timer": 20 },
+    { "section": null, "text": "Add {leek}, {cabbage}. Simmer until all vegetables tender.", "timer": 20 },
+    { "section": "Marrow and bread", "text": "Meanwhile: {marrow} cut-side up on hot grill. Grill until bubbling, soft, golden on top.", "timer": 15 },
+    { "section": null, "text": "Off the grill, sprinkle with {sea-salt}.", "timer": null },
+    { "section": null, "text": "Grill {bread} until charred on both sides. Rub immediately with {garlic}.", "timer": null },
+    { "section": "Serving", "text": "Slice meat thickly against the grain. Warm platter: meat, vegetables, marrow bones, garlic bread.", "timer": null },
+    { "section": null, "text": "Strain broth into bowls. On the table: sauce verte, {mustard}, {sea-salt}.", "timer": null }
+  ],
+  "optional": null
+};
+
+// Everything about display lives here. Recipe files only carry keys.
+const CONFIG = {
+  categories: [                                   // supermarket order
+    { key: "produce", label: "Vegetables, fruit & fresh herbs" },
+    { key: "bakery", label: "Bread" },
+    { key: "eggs", label: "Eggs" },
+    { key: "fridge", label: "Dairy & fridge" },
+    { key: "meat-fish", label: "Meat & fish" },
+    { key: "frozen", label: "Frozen" },
+    { key: "grains", label: "Pasta, rice & grains" },
+    { key: "canned", label: "Canned & jars" },
+    { key: "pantry", label: "Pantry" },
+    { key: "staple", label: null }                // never in the shopping list
+  ],
+  sections: { shopping: "Shopping list", mise: "Mise en place", steps: "Steps", notes: "Notes" },
+  courses: { starter: "Starter", main: "Main", side: "Side", sauce: "Sauce", dessert: "Dessert", basic: "Basic" },
+  statuses: { empty: "Empty", draft: "Draft", ready: "Ready" },
+  tags: { french: "French", winter: "Winter", weekend: "Weekend" },
+  labels: { servings: "Servings", fewer: "Fewer servings", more: "More servings", active: "Active", total: "Total", ahead: "Start ahead", start: "Start", done: "Done" },
+  servings: { min: 1, max: 16 },
+  rounding: {
+    units: { g: "weight", ml: "weight", kg: "large", l: "large", tsp: "spoon", tbsp: "spoon", pinch: "pinch", count: "count" },
+    rules: {
+      weight: { bands: [[10, 0.1], [100, 1], [1000, 5], [Infinity, 10]] },   // [below this, round to]
+      large: { decimals: 2 },                                                  // trailing zeros dropped
+      spoon: { fractions: [[0.25, "¼"], [1 / 3, "⅓"], [0.5, "½"], [2 / 3, "⅔"], [0.75, "¾"]] },
+      pinch: { integer: true, min: 1 },
+      count: { fractions: [[0.5, "½"]] }
+    },
+    little: "a little"                             // below display precision
+  },
+  timer: { minutes: "{n} min", hours: "{h} h", hoursMinutes: "{h} h {m}" }
+};
+
+// --- Amounts ---------------------------------------------------------------
+
+let servings = RECIPE.servings;
+const byId = Object.fromEntries(RECIPE.ingredients.map(ing => [ing.id, ing]));
+
+const scale = amount => amount * servings / RECIPE.servings;
+const clean = (n, decimals) => String(+n.toFixed(decimals));   // drops float noise and trailing zeros
+
+function fraction(amount, table) {
+  const whole = Math.floor(amount), rest = amount - whole;
+  const options = [[0, ""], ...table, [1, null]];
+  const [, glyph] = options.reduce((a, b) => Math.abs(b[0] - rest) < Math.abs(a[0] - rest) ? b : a);
+  return glyph === null ? String(whole + 1) : (whole || "") + glyph;
+}
+
+function format(amount, unit) {
+  const R = CONFIG.rounding, rule = R.rules[R.units[unit ?? "count"]];
+  let text;
+  if (rule.bands) {
+    const step = rule.bands.find(([limit]) => amount < limit)[1];
+    text = clean(Math.round(amount / step) * step, 1);
+  } else if (rule.decimals !== undefined) {
+    text = clean(amount, rule.decimals);
+  } else if (rule.integer) {
+    text = String(Math.max(rule.min, Math.round(amount)));
+  } else {
+    text = fraction(amount, rule.fractions);
+  }
+  if (text === "0" || text === "") return R.little;
+  return unit ? `${text} ${unit}` : text;
+}
+
+function formatMinutes(minutes) {
+  const T = CONFIG.timer;
+  if (minutes < 60) return T.minutes.replace("{n}", minutes);
+  const h = Math.floor(minutes / 60), m = minutes % 60;
+  return (m ? T.hoursMinutes : T.hours).replace("{h}", h).replace("{m}", String(m).padStart(2, "0"));
+}
+
+// --- HTML pieces -----------------------------------------------------------
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tokens = text => [...text.matchAll(/\{([\w-]+)\}/g)].map(m => m[1]);
+
+const amountHtml = (amount, unit) => `<span class="amt" data-base="${amount}" data-unit="${unit ?? ""}"></span> `;
+const ingHtml = ing => (ing.amount === null ? "" : amountHtml(ing.amount, ing.unit)) + esc(ing.name);
+const prepHtml = ing => ing.prep ? ` <span class="prep">(${esc(ing.prep)})</span>` : "";
+const section = (title, body) => `<h2 class="eyebrow">${esc(title)}</h2>${body}`;
+
+function checkRow(key, html) {
+  const id = `${RECIPE.id}:${key}`;
+  return `<li><label class="row"><input type="checkbox" data-key="${id}"${stored(id) ? " checked" : ""}><span>${html}</span></label></li>`;
+}
+
+function timerButton(minutes) {
+  const label = `${CONFIG.labels.start} ${formatMinutes(minutes)}`;
+  return `<button type="button" class="timer" data-minutes="${minutes}" data-label="${esc(label)}">${esc(label)}</button>`;
+}
+
+// --- Renderers, one per section --------------------------------------------
+
+function renderHeader() {
+  const r = RECIPE, L = CONFIG.labels;
+  const chips = [
+    `<span class="chip course">${esc(CONFIG.courses[r.course])}</span>`,
+    ...r.tags.map(tag => `<span class="chip tag">${esc(CONFIG.tags[tag])}</span>`),
+    `<span class="chip status">${esc(CONFIG.statuses[r.status])}</span>`
+  ].join("");
+  const time = `<p class="meta"><span>${esc(L.active)} <b>${formatMinutes(r.time.active)}</b></span><span>${esc(L.total)} <b>${formatMinutes(r.time.total)}</b></span></p>`;
+  const ahead = r.ahead ? `<div class="block"><p class="eyebrow warm">${esc(L.ahead)}</p><p>${esc(r.ahead)}</p></div>` : "";
+  const notes = r.notes.length ? `<div class="block"><p class="eyebrow">${esc(CONFIG.sections.notes)}</p><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : "";
+  return `<h1>${esc(r.title)}</h1><div class="chips">${chips}</div>${time}${ahead}${notes}`;
+}
+
+function renderShopping() {
+  return CONFIG.categories.filter(cat => cat.label).map(cat => {
+    const lines = [];
+    for (const ing of RECIPE.ingredients.filter(i => i.category === cat.key)) {
+      const same = lines.find(line => line.name === ing.name);
+      if (same) { same.ids.push(ing.id); same.amount += ing.amount; }
+      else lines.push({ ids: [ing.id], name: ing.name, amount: ing.amount, unit: ing.unit });
+    }
+    if (!lines.length) return "";
+    const rows = lines.map(line => checkRow("shop:" + line.ids.join("+"), ingHtml(line))).join("");
+    return `<h3>${esc(cat.label)}</h3><ul class="list">${rows}</ul>`;
+  }).join("");
+}
+
+function renderMise() {
+  const order = [...new Set(RECIPE.steps.flatMap(step => tokens(step.text)))];   // order of first use
+  const rows = order.map(id => checkRow("mise:" + id, ingHtml(byId[id]) + prepHtml(byId[id]))).join("");
+  return `<ul class="list">${rows}</ul>`;
+}
+
+function renderSteps() {
+  const seen = new Set();
+  return RECIPE.steps.map((step, i) => {
+    const text = esc(step.text).replace(/\{([\w-]+)\}/g, (_, id) => {
+      const first = !seen.has(id);
+      seen.add(id);
+      return `<span class="ing">${ingHtml(byId[id])}</span>` + (first ? prepHtml(byId[id]) : "");
+    });
+    const heading = step.section ? `<h3>${esc(step.section)}</h3>` : "";
+    const timer = step.timer ? timerButton(step.timer) : "";
+    return `${heading}<div class="step"><span class="num">${i + 1}</span><div><p>${text}</p>${timer}</div></div>`;
+  }).join("");
+}
+
+function updateAmounts() {
+  for (const el of document.querySelectorAll(".amt")) {
+    el.textContent = format(scale(+el.dataset.base), el.dataset.unit || null);
+  }
+}
+
+// --- Persistence (checkbox state) -------------------------------------------
+
+function stored(key) {
+  try { return localStorage.getItem(key) === "1"; } catch { return false; }
+}
+function store(key, on) {
+  try { on ? localStorage.setItem(key, "1") : localStorage.removeItem(key); } catch {}
+}
+
+// --- Timers ----------------------------------------------------------------
+
+let audio;
+
+function beep() {
+  for (let i = 0; i < 3; i++) {
+    const osc = audio.createOscillator(), gain = audio.createGain();
+    osc.connect(gain).connect(audio.destination);
+    osc.frequency.value = 880;
+    const t = audio.currentTime + i * 0.35;
+    gain.gain.setValueAtTime(0.4, t);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+    osc.start(t);
+    osc.stop(t + 0.25);
+  }
+}
+
+function toggleTimer(button) {
+  if (button.interval) return resetTimer(button);            // second tap cancels
+  audio = audio || new AudioContext();                        // created on a tap so the beep is allowed later
+  const end = Date.now() + button.dataset.minutes * 60000;
+  const tick = () => {
+    const left = Math.max(0, Math.round((end - Date.now()) / 1000));
+    button.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`;
+    if (left) return;
+    clearInterval(button.interval);
+    button.interval = null;
+    button.classList.replace("running", "done");
+    button.textContent = CONFIG.labels.done;
+    button.disabled = true;
+    beep();
+  };
+  button.classList.add("running");
+  button.interval = setInterval(tick, 250);
+  tick();
+}
+
+function resetTimer(button) {
+  clearInterval(button.interval);
+  button.interval = null;
+  button.classList.remove("running");
+  button.textContent = button.dataset.label;
+}
+
+// --- Mount -----------------------------------------------------------------
+
+const $ = id => document.getElementById(id);
+
+$("header").innerHTML = renderHeader();
+$("shopping").innerHTML = section(CONFIG.sections.shopping, renderShopping());
+$("mise").innerHTML = section(CONFIG.sections.mise, renderMise());
+$("steps").innerHTML = section(CONFIG.sections.steps, renderSteps());
+
+$("servings-label").textContent = CONFIG.labels.servings;
+$("minus").setAttribute("aria-label", CONFIG.labels.fewer);
+$("plus").setAttribute("aria-label", CONFIG.labels.more);
+
+function setServings(n) {
+  const { min, max } = CONFIG.servings;
+  servings = Math.min(max, Math.max(min, n));
+  $("servings").textContent = servings;
+  $("minus").disabled = servings === min;
+  $("plus").disabled = servings === max;
+  updateAmounts();
+}
+$("minus").onclick = () => setServings(servings - 1);
+$("plus").onclick = () => setServings(servings + 1);
+setServings(servings);
+
+document.addEventListener("change", e => {
+  if (e.target.dataset.key) store(e.target.dataset.key, e.target.checked);
+});
+document.addEventListener("click", e => {
+  const button = e.target.closest(".timer");
+  if (button) toggleTimer(button);
+});
+</script>
