@@ -1,0 +1,103 @@
+{
+  "courses": [
+    { "key": "starter", "label": "Starters" },
+    { "key": "main", "label": "Mains" },
+    { "key": "side", "label": "Sides" },
+    { "key": "sauce", "label": "Sauces" },
+    { "key": "basic", "label": "Basics" },
+    { "key": "dessert", "label": "Desserts" }
+  ],
+  "statuses": [
+    { "key": "empty", "label": "Empty" },
+    { "key": "draft", "label": "Draft" },
+    { "key": "ready", "label": "Ready" }
+  ],
+  "categories": [
+    { "key": "produce", "label": "Vegetables, fruit & fresh herbs" },
+    { "key": "bakery", "label": "Bread" },
+    { "key": "eggs", "label": "Eggs" },
+    { "key": "fridge", "label": "Dairy & fridge" },
+    { "key": "meat-fish", "label": "Meat & fish" },
+    { "key": "frozen", "label": "Frozen" },
+    { "key": "drinks", "label": "Wine & spirits" },
+    { "key": "grains", "label": "Pasta, rice & grains" },
+    { "key": "canned", "label": "Canned & jars" },
+    { "key": "pantry", "label": "Pantry" },
+    { "key": "staple", "label": "Staples", "shopping": false }
+  ],
+  "tags": [
+    {
+      "key": "ingredient", "label": "Main ingredient",
+      "rule": "Required on mains and sides: the one or two ingredients the dish is built around. Optional elsewhere.",
+      "tags": [
+        { "key": "red-meat", "label": "Beef & lamb" },
+        { "key": "chicken", "label": "Chicken" },
+        { "key": "pork", "label": "Pork" },
+        { "key": "seafood", "label": "Fish & seafood" },
+        { "key": "cheese", "label": "Cheese" },
+        { "key": "potato", "label": "Potatoes" },
+        { "key": "pasta", "label": "Pasta" },
+        { "key": "grains", "label": "Rice & grains" },
+        { "key": "vegetables", "label": "Vegetables" }
+      ]
+    },
+    {
+      "key": "occasion", "label": "Occasion",
+      "rule": "Starters, mains and desserts only. easy = weeknight dish, little hands-on work. weekend = the cooking fills most of a day. guests = what you would serve friends.",
+      "tags": [
+        { "key": "easy", "label": "Easy" },
+        { "key": "weekend", "label": "Weekend" },
+        { "key": "guests", "label": "Guests" }
+      ]
+    },
+    {
+      "key": "cuisine", "label": "Cuisine",
+      "rule": "Only when the dish clearly belongs to a tradition. Indian, Thai and Vietnamese dishes go under asian.",
+      "tags": [
+        { "key": "french", "label": "French" },
+        { "key": "italian", "label": "Italian" },
+        { "key": "swiss", "label": "Swiss" },
+        { "key": "asian", "label": "Asian" },
+        { "key": "middle-eastern", "label": "Middle Eastern" }
+      ]
+    },
+    {
+      "key": "season", "label": "Season",
+      "rule": "Only when the dish depends on seasonal produce or weather. Autumn dishes go under winter.",
+      "tags": [
+        { "key": "spring", "label": "Spring" },
+        { "key": "summer", "label": "Summer" },
+        { "key": "winter", "label": "Winter" }
+      ]
+    }
+  ],
+  "sections": {
+    "shopping": "Shopping list",
+    "mise": "Mise en place",
+    "steps": "Steps",
+    "notes": "Notes",
+    "ahead": "Start ahead",
+    "servings": "Servings",
+    "active": "Active",
+    "total": "Total"
+  },
+  "servings": { "min": 1, "max": 16 },
+  "units": {
+    "g":     { "round": [[10, 0.5], [100, 1], [1000, 5], [null, 10]], "large": { "unit": "kg", "from": 1000, "decimals": 2 } },
+    "ml":    { "round": [[10, 0.5], [100, 1], [1000, 5], [null, 10]], "large": { "unit": "l", "from": 1000, "decimals": 2 } },
+    "tsp":   { "fractions": true },
+    "tbsp":  { "fractions": true },
+    "pinch": { "integer": true, "min": 1 },
+    "count": { "fractions": true }
+  },
+  "fractions": [[0.25, "¼"], [0.333, "⅓"], [0.5, "½"], [0.667, "⅔"], [0.75, "¾"]],
+  "little": "a little",
+  "plurals": {
+    "leaf": "leaves",
+    "potato": "potatoes",
+    "tomato": "tomatoes",
+    "radish": "radishes",
+    "saucisson vaudois": "saucisson vaudois"
+  },
+  "timer": { "minutes": "{n} min", "hours": "{h} h", "hoursMinutes": "{h} h {m}" }
+}
