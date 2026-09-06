@@ -67,7 +67,7 @@ Every key is always present, inside ingredient and step objects too: null when t
 - `title`: the dish name as Alex gives it (INDEX.md for the import folder), sentence case, with accents, never translated in either direction: "Agneau de 7h", "Moules à la crème", "Raspberry tart". `id`: the title in kebab-case ASCII, accents stripped (moules-a-la-creme, agneau-de-7h); also the filename.
 - `course`: `starter` | `main` | `side` | `sauce` | `basic` | `dessert`.
 - `status`: `empty` | `draft` | `ready`. Everything you write is `draft`; only Alex sets `ready`. `empty` = title, course, status, source, notes and tags only; ingredients [] and steps []; servings, yield, ahead and both times null.
-- `tags`: only keys from the config.json tag groups; each group's `rule` says when it applies. The main-ingredient tag is required on mains and sides. A tag that does not exist: leave it out and propose it in chat, never invent it in the file.
+- `tags`: only keys from the config.json tag groups; each group's `rule` says when it applies, and several tags from one group may apply ("weekend" and "guests"). The main-ingredient tag is required on mains and sides. A tag that does not exist: leave it out and propose it in chat, never invent it in the file.
 - `servings`: 4 (rescale the source) when every amount scales freely; otherwise the source's number (a range takes its upper value; a starter/main dual count is written for the main, course `main`).
 - `yield`: sauces ("~350 ml, for 1 kg fish") and anything made as a batch in a fixed vessel or as one piece: "one 24 cm tart, 8 slices", "one 23×33 cm tray", "6 ramekins", "~30 pieces", "one 2 kg leg". Shown next to the servings stepper, never scaled.
 - `time`: minutes. `active` = hands busy; `total` = first step to plate on the day, excluding what `ahead` covers. null when unknown.
@@ -88,7 +88,7 @@ Every key is always present, inside ingredient and step objects too: null when t
 
 ## Shopping categories
 
-Keys from config.json, in supermarket order; the app owns labels and order. produce (vegetables, fruit, fresh herbs) · bakery · eggs · fridge (dairy, cheese) · meat-fish (also charcuterie and cooked ham) · frozen · drinks (wine, spirits) · grains (pasta, rice, quinoa) · canned (tins, jars and cartons: capers, cornichons, mustard, jam, tomato paste, stock, hoisin, soy) · pantry (bottles and dry goods: oil, vinegar, spices, dried herbs, flour, sugar, chocolate, biscuits, cocoa, coffee, nuts) · staple.
+Keys from config.json, in supermarket order; the app owns labels and order. produce (vegetables, fruit, fresh herbs) · bakery · eggs · fridge (dairy, cheese) · meat-fish (also charcuterie and cooked ham) · frozen · drinks (wine, spirits) · grains (pasta, rice, quinoa) · canned (tins, jars, cartons and Asian sauces: capers, cornichons, mustard, jam, tomato paste, stock, soy, hoisin, fish sauce) · pantry (bottles and dry goods: oil, vinegar, spices, dried herbs, flour, sugar, chocolate, biscuits, cocoa, coffee, nuts) · staple.
 
 `staple` = any salt (fine, coarse, flaky), any pepper (ground, peppercorns) and water: measured in the mise en place, hidden from the shopping list. Salt and pepper are ingredients only when a stated amount matters to the result (1 tbsp in a broth, 3 g in a dough); "season to taste", "salted water" and a finishing sprinkle stay plain text with no entry. Water is an ingredient when a stated amount goes into the pot or bowl (broth, dough, batter, TM7 steaming water); a pot of boiling water stays plain text.
 
