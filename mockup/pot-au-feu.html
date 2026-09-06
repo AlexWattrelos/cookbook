@@ -1,4 +1,4 @@
-<title>Pot-au-Feu</title>
+<title>Pot-au-feu</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;display=swap">
 <style>
   :root {
@@ -90,6 +90,7 @@
     box-shadow: var(--shadow);
   }
   .stepper-label { font-weight: 700; }
+  .yield { display: block; font-size: 15px; color: var(--muted); }
   .controls { display: flex; align-items: center; gap: 2px; }
   .controls button {
     width: 48px; height: 48px;
@@ -150,7 +151,10 @@
 
   <div class="stepper-wrap">
     <div class="stepper">
-      <span class="stepper-label" id="servings-label"></span>
+      <div>
+        <span class="stepper-label" id="servings-label"></span>
+        <small class="yield" id="yield"></small>
+      </div>
       <div class="controls">
         <button type="button" id="minus">&minus;</button>
         <output id="servings" for="minus plus"></output>
@@ -167,97 +171,420 @@
 <script>
 const RECIPE = {
   "id": "pot-au-feu",
-  "title": "Pot-au-Feu",
+  "title": "Pot-au-feu",
   "course": "main",
   "status": "draft",
-  "tags": ["red-meat", "french", "winter", "weekend", "guests"],
+  "tags": [
+    "red-meat",
+    "french",
+    "winter",
+    "weekend"
+  ],
   "servings": 4,
   "yield": null,
-  "time": { "active": 60, "total": 210 },
-  "ahead": "Start 3.5 h before serving. Marrow bones soak 2 h.",
-  "notes": ["Skim thoroughly at the start or the broth stays cloudy."],
+  "time": {
+    "active": 60,
+    "total": 210
+  },
+  "ahead": "Soak the marrow bones 2 h ahead in cold salted water.",
+  "notes": [],
   "source": null,
   "ingredients": [
-    { "id": "chuck", "amount": 600, "unit": "g", "name": "beef chuck (paleron)", "prep": null, "category": "meat-fish" },
-    { "id": "shank", "amount": 600, "unit": "g", "name": "bone-in beef shank (gîte)", "prep": null, "category": "meat-fish" },
-    { "id": "water", "amount": 3, "unit": "l", "name": "cold water", "prep": null, "category": "staple" },
-    { "id": "onion", "amount": 2, "unit": null, "name": "onions", "prep": "peeled and halved", "category": "produce" },
-    { "id": "clove", "amount": 4, "unit": null, "name": "whole cloves", "prep": null, "category": "pantry" },
-    { "id": "thyme", "amount": 4, "unit": null, "name": "thyme sprigs", "prep": null, "category": "produce" },
-    { "id": "bay", "amount": 2, "unit": null, "name": "bay leaves", "prep": null, "category": "produce" },
-    { "id": "parsley-stems", "amount": 10, "unit": "g", "name": "flat-leaf parsley", "prep": "stems only, tied together", "category": "produce" },
-    { "id": "peppercorns", "amount": 1, "unit": "tsp", "name": "black peppercorns", "prep": null, "category": "staple" },
-    { "id": "salt", "amount": 1, "unit": "tbsp", "name": "salt", "prep": null, "category": "staple" },
-    { "id": "parsley-leaves", "amount": 30, "unit": "g", "name": "flat-leaf parsley", "prep": "leaves picked", "category": "produce" },
-    { "id": "cornichon", "amount": 6, "unit": null, "name": "cornichons", "prep": null, "category": "canned" },
-    { "id": "capers", "amount": 2, "unit": "tbsp", "name": "capers", "prep": null, "category": "canned" },
-    { "id": "fish-sauce", "amount": 1, "unit": "tsp", "name": "fish sauce", "prep": null, "category": "pantry" },
-    { "id": "vinegar", "amount": 1, "unit": "tbsp", "name": "red wine vinegar", "prep": null, "category": "pantry" },
-    { "id": "olive-oil", "amount": 80, "unit": "ml", "name": "olive oil", "prep": null, "category": "pantry" },
-    { "id": "pepper", "amount": null, "unit": null, "name": "black pepper", "prep": null, "category": "staple" },
-    { "id": "cabbage", "amount": 200, "unit": "g", "name": "savoy cabbage", "prep": "cut into wedges, core trimmed but left attached", "category": "produce" },
-    { "id": "leek", "amount": 2, "unit": null, "name": "leeks", "prep": "trimmed, halved lengthwise, washed, tied into a bundle", "category": "produce" },
-    { "id": "carrot", "amount": 200, "unit": "g", "name": "carrots", "prep": "peeled, cut into 8 cm lengths", "category": "produce" },
-    { "id": "turnip", "amount": 150, "unit": "g", "name": "turnips", "prep": "peeled and quartered", "category": "produce" },
-    { "id": "celeriac", "amount": 150, "unit": "g", "name": "celeriac", "prep": "peeled, cut into large wedges", "category": "produce" },
-    { "id": "potato", "amount": 400, "unit": "g", "name": "waxy potatoes", "prep": "peeled and halved", "category": "produce" },
-    { "id": "marrow", "amount": 4, "unit": null, "name": "marrow bones, 5 cm pieces", "prep": "soaked 2 h in cold salted water, drained and rinsed", "category": "meat-fish" },
-    { "id": "sea-salt", "amount": null, "unit": null, "name": "coarse sea salt", "prep": null, "category": "staple" },
-    { "id": "bread", "amount": 4, "unit": null, "name": "thick slices rustic bread", "prep": null, "category": "bakery" },
-    { "id": "garlic", "amount": 2, "unit": null, "name": "garlic cloves", "prep": "halved", "category": "produce" },
-    { "id": "mustard", "amount": null, "unit": null, "name": "Dijon mustard", "prep": null, "category": "pantry" }
+    {
+      "id": "chuck",
+      "amount": 600,
+      "unit": "g",
+      "name": "beef chuck, paleron",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "shank",
+      "amount": 600,
+      "unit": "g",
+      "name": "bone-in beef shank, gîte",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "water",
+      "amount": 3000,
+      "unit": "ml",
+      "name": "cold water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "onion",
+      "amount": 2,
+      "unit": null,
+      "name": "onion",
+      "prep": "peeled and halved",
+      "category": "produce"
+    },
+    {
+      "id": "clove",
+      "amount": 4,
+      "unit": null,
+      "name": "whole clove",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "thyme",
+      "amount": 4,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "peppercorns",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "black peppercorns",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "parsley-stems",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "stems only, tied together",
+      "category": "produce"
+    },
+    {
+      "id": "cornichon",
+      "amount": 6,
+      "unit": null,
+      "name": "cornichon",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "capers",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "capers",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "fish-sauce",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "fish sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "vinegar",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "red wine vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "parsley-leaves",
+      "amount": 30,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "olive-oil",
+      "amount": 80,
+      "unit": "ml",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cabbage",
+      "amount": 200,
+      "unit": "g",
+      "name": "savoy cabbage",
+      "prep": "halved, core trimmed but left attached",
+      "category": "produce"
+    },
+    {
+      "id": "leek",
+      "amount": 2,
+      "unit": null,
+      "name": "leek",
+      "prep": "trimmed, halved lengthwise, washed, tied together",
+      "category": "produce"
+    },
+    {
+      "id": "turnip",
+      "amount": 150,
+      "unit": "g",
+      "name": "turnips",
+      "prep": "peeled and quartered",
+      "category": "produce"
+    },
+    {
+      "id": "potato",
+      "amount": 400,
+      "unit": "g",
+      "name": "waxy potatoes",
+      "prep": "peeled and halved",
+      "category": "produce"
+    },
+    {
+      "id": "carrot",
+      "amount": 200,
+      "unit": "g",
+      "name": "carrots",
+      "prep": "peeled, cut into 8 cm lengths",
+      "category": "produce"
+    },
+    {
+      "id": "celeriac",
+      "amount": 150,
+      "unit": "g",
+      "name": "celeriac",
+      "prep": "peeled, cut into large wedges",
+      "category": "produce"
+    },
+    {
+      "id": "marrow",
+      "amount": 4,
+      "unit": null,
+      "name": "marrow bone",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "bread",
+      "amount": 4,
+      "unit": null,
+      "name": "thick slice of rustic bread",
+      "prep": null,
+      "category": "bakery"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "halved",
+      "category": "produce"
+    },
+    {
+      "id": "mustard",
+      "amount": null,
+      "unit": null,
+      "name": "Dijon mustard",
+      "prep": null,
+      "category": "canned"
+    }
   ],
   "steps": [
-    { "section": "Broth", "text": "Put {chuck} and {shank} in a large pot, cover with {water} and bring to a boil. Skim until the broth stays clear.", "timer": 5 },
-    { "section": null, "text": "Stud {onion} with {clove}. Add to the pot with {thyme}, {bay}, {peppercorns}, {salt} and {parsley-stems}.", "timer": null },
-    { "section": null, "text": "Reduce to the gentlest simmer, an occasional bubble only. Partially cover.", "timer": 150 },
-    { "section": "Sauce verte", "text": "Pulse {cornichon}, {capers}, {fish-sauce}, {vinegar} and {parsley-leaves} in a small blender until roughly chopped.", "timer": null },
-    { "section": null, "text": "Add {olive-oil} and {pepper}. Blend briefly, until combined but still slightly chunky.", "timer": null },
-    { "section": "Vegetables", "text": "Blanch {cabbage} in boiling salted water. Drain and set aside with {leek}.", "timer": 3 },
-    { "section": null, "text": "After 2.5 h, add {carrot}, {turnip}, {celeriac} and {potato} to the broth. Simmer.", "timer": 20 },
-    { "section": null, "text": "Add {leek} and {cabbage}. Simmer until all the vegetables are tender.", "timer": 20 },
-    { "section": "Marrow and bread", "text": "Meanwhile, grill {marrow} cut side up on a hot grill until bubbling, soft and golden on top.", "timer": 15 },
-    { "section": null, "text": "Off the grill, sprinkle with {sea-salt}.", "timer": null },
-    { "section": null, "text": "Grill {bread} until charred on both sides. Rub immediately with {garlic}.", "timer": null },
-    { "section": "Serving", "text": "Slice the meat thickly against the grain. Arrange on a warm platter: meat, vegetables, marrow bones, garlic bread.", "timer": null },
-    { "section": null, "text": "Strain the broth into bowls. Put on the table: sauce verte, {mustard}, {sea-salt}.", "timer": null }
-  ],
-  "optional": null
+    {
+      "section": "Broth",
+      "text": "Put {chuck} and {shank} in a large pot, cover with {water} and bring to a boil. Skim until the broth stays clear.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "text": "Stud {onion} with {clove}. Add to the pot with {thyme}, {bay}, {peppercorns}, {salt} and {parsley-stems}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "text": "Reduce to the gentlest simmer, an occasional bubble only. Partially cover.",
+      "timer": 150
+    },
+    {
+      "section": "Sauce verte",
+      "text": "Meanwhile, fill a small blender with {cornichon}, {capers}, {fish-sauce}, {vinegar} and {parsley-leaves}. Pulse until roughly chopped.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "text": "Add {olive-oil} and pepper. Blend briefly, until combined but still slightly chunky.",
+      "timer": null
+    },
+    {
+      "section": "Vegetables",
+      "text": "Bring a pot of salted water to a boil and blanch {cabbage}.",
+      "timer": 3
+    },
+    {
+      "section": null,
+      "text": "Drain and set aside with {leek}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "text": "After 2.5 h, add {turnip}, {potato}, {carrot} and {celeriac}. Simmer.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "text": "Add the leeks and cabbage. Simmer until all the vegetables are tender.",
+      "timer": 20
+    },
+    {
+      "section": "Marrow and bread",
+      "text": "Meanwhile, grill {marrow} cut side up on a hot grill until bubbling, soft and golden on top.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "text": "Off the grill, sprinkle with coarse sea salt.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "text": "Grill {bread} until charred on both sides. Rub immediately with {garlic}.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "text": "Slice the meat thickly against the grain. Arrange on a warm platter: meat, vegetables, marrow bones, garlic bread.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "text": "Strain the broth into bowls. Put on the table: sauce verte, {mustard}, coarse sea salt.",
+      "timer": null
+    }
+  ]
 };
 
 // Everything about display lives here. Recipe files only carry keys.
 const CONFIG = {
-  categories: [                                   // supermarket order
-    { key: "produce", label: "Vegetables, fruit & fresh herbs" },
-    { key: "bakery", label: "Bread" },
-    { key: "eggs", label: "Eggs" },
-    { key: "fridge", label: "Dairy & fridge" },
-    { key: "meat-fish", label: "Meat & fish" },
-    { key: "frozen", label: "Frozen" },
-    { key: "grains", label: "Pasta, rice & grains" },
-    { key: "canned", label: "Canned & jars" },
-    { key: "pantry", label: "Pantry" },
-    { key: "staple", label: null }                // never in the shopping list
+  "courses": [
+    { "key": "starter", "label": "Starters" },
+    { "key": "main", "label": "Mains" },
+    { "key": "side", "label": "Sides" },
+    { "key": "sauce", "label": "Sauces" },
+    { "key": "basic", "label": "Basics" },
+    { "key": "dessert", "label": "Desserts" }
   ],
-  sections: { shopping: "Shopping list", mise: "Mise en place", steps: "Steps", notes: "Notes" },
-  courses: { starter: "Starter", main: "Main", side: "Side", sauce: "Sauce", dessert: "Dessert", basic: "Basic" },
-  statuses: { empty: "Empty", draft: "Draft", ready: "Ready" },
-  tags: { "red-meat": "Beef & lamb", french: "French", winter: "Winter", weekend: "Weekend", guests: "Guests" },
-  labels: { servings: "Servings", fewer: "Fewer servings", more: "More servings", active: "Active", total: "Total", ahead: "Start ahead", start: "Start", done: "Done" },
-  servings: { min: 1, max: 16 },
-  rounding: {
-    units: { g: "weight", ml: "weight", kg: "large", l: "large", tsp: "spoon", tbsp: "spoon", pinch: "pinch", count: "count" },
-    rules: {
-      weight: { bands: [[10, 0.1], [100, 1], [1000, 5], [Infinity, 10]] },   // [below this, round to]
-      large: { decimals: 2 },                                                  // trailing zeros dropped
-      spoon: { fractions: [[0.25, "¼"], [1 / 3, "⅓"], [0.5, "½"], [2 / 3, "⅔"], [0.75, "¾"]] },
-      pinch: { integer: true, min: 1 },
-      count: { fractions: [[0.5, "½"]] }
+  "statuses": [
+    { "key": "empty", "label": "Empty" },
+    { "key": "draft", "label": "Draft" },
+    { "key": "ready", "label": "Ready" }
+  ],
+  "categories": [
+    { "key": "produce", "label": "Vegetables, fruit & fresh herbs" },
+    { "key": "bakery", "label": "Bread" },
+    { "key": "eggs", "label": "Eggs" },
+    { "key": "fridge", "label": "Dairy & fridge" },
+    { "key": "meat-fish", "label": "Meat & fish" },
+    { "key": "frozen", "label": "Frozen" },
+    { "key": "drinks", "label": "Wine & spirits" },
+    { "key": "grains", "label": "Pasta, rice & grains" },
+    { "key": "canned", "label": "Canned & jars" },
+    { "key": "pantry", "label": "Pantry" },
+    { "key": "staple", "label": "Staples", "shopping": false }
+  ],
+  "tags": [
+    {
+      "key": "ingredient", "label": "Main ingredient",
+      "rule": "Required on mains and sides: the one or two ingredients the dish is built around. Optional elsewhere.",
+      "tags": [
+        { "key": "red-meat", "label": "Beef & lamb" },
+        { "key": "chicken", "label": "Chicken" },
+        { "key": "pork", "label": "Pork" },
+        { "key": "seafood", "label": "Fish & seafood" },
+        { "key": "cheese", "label": "Cheese" },
+        { "key": "potato", "label": "Potatoes" },
+        { "key": "pasta", "label": "Pasta" },
+        { "key": "grains", "label": "Rice & grains" },
+        { "key": "vegetables", "label": "Vegetables" }
+      ]
     },
-    little: "a little"                             // below display precision
+    {
+      "key": "occasion", "label": "Occasion",
+      "rule": "Starters, mains and desserts only. easy = weeknight dish, little hands-on work. weekend = the cooking fills most of a day. guests = what you would serve friends.",
+      "tags": [
+        { "key": "easy", "label": "Easy" },
+        { "key": "weekend", "label": "Weekend" },
+        { "key": "guests", "label": "Guests" }
+      ]
+    },
+    {
+      "key": "cuisine", "label": "Cuisine",
+      "rule": "Only when the dish clearly belongs to a tradition. Indian, Thai and Vietnamese dishes go under asian.",
+      "tags": [
+        { "key": "french", "label": "French" },
+        { "key": "italian", "label": "Italian" },
+        { "key": "swiss", "label": "Swiss" },
+        { "key": "asian", "label": "Asian" },
+        { "key": "middle-eastern", "label": "Middle Eastern" }
+      ]
+    },
+    {
+      "key": "season", "label": "Season",
+      "rule": "Only when the dish depends on seasonal produce or weather. Autumn dishes go under winter.",
+      "tags": [
+        { "key": "spring", "label": "Spring" },
+        { "key": "summer", "label": "Summer" },
+        { "key": "winter", "label": "Winter" }
+      ]
+    }
+  ],
+  "sections": {
+    "shopping": "Shopping list",
+    "mise": "Mise en place",
+    "steps": "Steps",
+    "notes": "Notes",
+    "ahead": "Start ahead",
+    "servings": "Servings",
+    "active": "Active",
+    "total": "Total"
   },
-  timer: { minutes: "{n} min", hours: "{h} h", hoursMinutes: "{h} h {m}" }
+  "servings": { "min": 1, "max": 16 },
+  "units": {
+    "g":     { "round": [[10, 0.5], [100, 1], [1000, 5], [null, 10]], "large": { "unit": "kg", "from": 1000, "decimals": 2 } },
+    "ml":    { "round": [[10, 0.5], [100, 1], [1000, 5], [null, 10]], "large": { "unit": "l", "from": 1000, "decimals": 2 } },
+    "tsp":   { "fractions": true },
+    "tbsp":  { "fractions": true },
+    "pinch": { "integer": true, "min": 1 },
+    "count": { "fractions": true }
+  },
+  "fractions": [[0.25, "¼"], [0.333, "⅓"], [0.5, "½"], [0.667, "⅔"], [0.75, "¾"]],
+  "little": "a little",
+  "plurals": {
+    "leaf": "leaves",
+    "potato": "potatoes",
+    "tomato": "tomatoes",
+    "radish": "radishes",
+    "saucisson vaudois": "saucisson vaudois"
+  },
+  "timer": { "minutes": "{n} min", "hours": "{h} h", "hoursMinutes": "{h} h {m}" }
 };
+
+// Strings of the page itself, not of any recipe.
+const LABELS = { fewer: "Fewer servings", more: "More servings", start: "Start", done: "Done" };
+
+// Config lists become key -> label maps.
+const labels = list => Object.fromEntries(list.map(({ key, label }) => [key, label]));
+const COURSES = labels(CONFIG.courses), STATUSES = labels(CONFIG.statuses);
+const TAGS = labels(CONFIG.tags.flatMap(group => group.tags));
 
 // --- Amounts ---------------------------------------------------------------
 
@@ -267,28 +594,35 @@ const byId = Object.fromEntries(RECIPE.ingredients.map(ing => [ing.id, ing]));
 const scale = amount => amount * servings / RECIPE.servings;
 const clean = (n, decimals) => String(+n.toFixed(decimals));   // drops float noise and trailing zeros
 
-function fraction(amount, table) {
+function fraction(amount) {
   const whole = Math.floor(amount), rest = amount - whole;
-  const options = [[0, ""], ...table, [1, null]];
+  const options = [[0, ""], ...CONFIG.fractions, [1, null]];
   const [, glyph] = options.reduce((a, b) => Math.abs(b[0] - rest) < Math.abs(a[0] - rest) ? b : a);
   return glyph === null ? String(whole + 1) : (whole || "") + glyph;
 }
 
 function format(amount, unit) {
-  const R = CONFIG.rounding, rule = R.rules[R.units[unit ?? "count"]];
+  const U = CONFIG.units[unit ?? "count"];
+  if (U.large && amount >= U.large.from) return `${clean(amount / U.large.from, U.large.decimals)} ${U.large.unit}`;
   let text;
-  if (rule.bands) {
-    const step = rule.bands.find(([limit]) => amount < limit)[1];
+  if (U.round) {
+    const step = U.round.find(([below]) => below === null || amount < below)[1];
     text = clean(Math.round(amount / step) * step, 1);
-  } else if (rule.decimals !== undefined) {
-    text = clean(amount, rule.decimals);
-  } else if (rule.integer) {
-    text = String(Math.max(rule.min, Math.round(amount)));
+  } else if (U.integer) {
+    text = String(Math.max(U.min, Math.round(amount)));
   } else {
-    text = fraction(amount, rule.fractions);
+    text = fraction(amount);
   }
-  if (text === "0" || text === "") return R.little;
+  if (text === "0" || text === "") return CONFIG.little;
   return unit ? `${text} ${unit}` : text;
+}
+
+// Count items store the singular: pluralise the word before " of ", else the last word.
+function plural(name) {
+  const P = CONFIG.plurals;
+  if (P[name]) return P[name];
+  const cut = name.includes(" of ") ? name.indexOf(" of ") : name.length;
+  return name.slice(0, cut).replace(/\S+$/, word => P[word] ?? word + "s") + name.slice(cut);
 }
 
 function formatMinutes(minutes) {
@@ -303,8 +637,9 @@ function formatMinutes(minutes) {
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const tokens = text => [...text.matchAll(/\{([\w-]+)\}/g)].map(m => m[1]);
 
-const amountHtml = (amount, unit) => `<span class="amt" data-base="${amount}" data-unit="${unit ?? ""}"></span> `;
-const ingHtml = ing => (ing.amount === null ? "" : amountHtml(ing.amount, ing.unit)) + esc(ing.name);
+// Amount and name render together, so the name can follow the scaled amount.
+const ingHtml = ing => ing.amount === null ? esc(ing.name)
+  : `<span class="amt" data-base="${ing.amount}" data-unit="${ing.unit ?? ""}" data-name="${esc(ing.name)}"></span>`;
 const prepHtml = ing => ing.prep ? ` <span class="prep">(${esc(ing.prep)})</span>` : "";
 const section = (title, body) => `<h2 class="eyebrow">${esc(title)}</h2>${body}`;
 
@@ -314,27 +649,27 @@ function checkRow(key, html) {
 }
 
 function timerButton(minutes) {
-  const label = `${CONFIG.labels.start} ${formatMinutes(minutes)}`;
+  const label = `${LABELS.start} ${formatMinutes(minutes)}`;
   return `<button type="button" class="timer" data-minutes="${minutes}" data-label="${esc(label)}">${esc(label)}</button>`;
 }
 
 // --- Renderers, one per section --------------------------------------------
 
 function renderHeader() {
-  const r = RECIPE, L = CONFIG.labels;
+  const r = RECIPE, S = CONFIG.sections;
   const chips = [
-    `<span class="chip course">${esc(CONFIG.courses[r.course])}</span>`,
-    ...r.tags.map(tag => `<span class="chip tag">${esc(CONFIG.tags[tag])}</span>`),
-    `<span class="chip status">${esc(CONFIG.statuses[r.status])}</span>`
+    `<span class="chip course">${esc(COURSES[r.course])}</span>`,
+    ...r.tags.map(tag => `<span class="chip tag">${esc(TAGS[tag])}</span>`),
+    `<span class="chip status">${esc(STATUSES[r.status])}</span>`
   ].join("");
-  const time = `<p class="meta"><span>${esc(L.active)} <b>${formatMinutes(r.time.active)}</b></span><span>${esc(L.total)} <b>${formatMinutes(r.time.total)}</b></span></p>`;
-  const ahead = r.ahead ? `<div class="block"><p class="eyebrow warm">${esc(L.ahead)}</p><p>${esc(r.ahead)}</p></div>` : "";
-  const notes = r.notes.length ? `<div class="block"><p class="eyebrow">${esc(CONFIG.sections.notes)}</p><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : "";
+  const time = `<p class="meta"><span>${esc(S.active)} <b>${formatMinutes(r.time.active)}</b></span><span>${esc(S.total)} <b>${formatMinutes(r.time.total)}</b></span></p>`;
+  const ahead = r.ahead ? `<div class="block"><p class="eyebrow warm">${esc(S.ahead)}</p><p>${esc(r.ahead)}</p></div>` : "";
+  const notes = r.notes.length ? `<div class="block"><p class="eyebrow">${esc(S.notes)}</p><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : "";
   return `<h1>${esc(r.title)}</h1><div class="chips">${chips}</div>${time}${ahead}${notes}`;
 }
 
 function renderShopping() {
-  return CONFIG.categories.filter(cat => cat.label).map(cat => {
+  return CONFIG.categories.filter(cat => cat.shopping !== false).map(cat => {
     const lines = [];
     for (const ing of RECIPE.ingredients.filter(i => i.category === cat.key)) {
       const same = lines.find(line => line.name === ing.name);
@@ -369,7 +704,9 @@ function renderSteps() {
 
 function updateAmounts() {
   for (const el of document.querySelectorAll(".amt")) {
-    el.textContent = format(scale(+el.dataset.base), el.dataset.unit || null);
+    const unit = el.dataset.unit || null, name = el.dataset.name;
+    const text = format(scale(+el.dataset.base), unit);
+    el.textContent = `${text} ${!unit && text !== "1" ? plural(name) : name}`;
   }
 }
 
@@ -410,7 +747,7 @@ function toggleTimer(button) {
     clearInterval(button.interval);
     button.interval = null;
     button.classList.replace("running", "done");
-    button.textContent = CONFIG.labels.done;
+    button.textContent = LABELS.done;
     button.disabled = true;
     beep();
   };
@@ -435,9 +772,10 @@ $("shopping").innerHTML = section(CONFIG.sections.shopping, renderShopping());
 $("mise").innerHTML = section(CONFIG.sections.mise, renderMise());
 $("steps").innerHTML = section(CONFIG.sections.steps, renderSteps());
 
-$("servings-label").textContent = CONFIG.labels.servings;
-$("minus").setAttribute("aria-label", CONFIG.labels.fewer);
-$("plus").setAttribute("aria-label", CONFIG.labels.more);
+$("servings-label").textContent = CONFIG.sections.servings;
+$("yield").textContent = RECIPE.yield ?? "";
+$("minus").setAttribute("aria-label", LABELS.fewer);
+$("plus").setAttribute("aria-label", LABELS.more);
 
 function setServings(n) {
   const { min, max } = CONFIG.servings;
