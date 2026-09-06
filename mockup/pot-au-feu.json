@@ -3,7 +3,7 @@
   "title": "Pot-au-Feu",
   "course": "main",
   "status": "draft",
-  "tags": ["french", "winter", "weekend"],
+  "tags": ["red-meat", "french", "winter", "weekend", "guests"],
   "servings": 4,
   "yield": null,
   "time": { "active": 60, "total": 210 },
@@ -41,19 +41,19 @@
     { "id": "mustard", "amount": null, "unit": null, "name": "Dijon mustard", "prep": null, "category": "pantry" }
   ],
   "steps": [
-    { "section": "Broth", "text": "{chuck}, {shank} in large pot. Cover with {water}. Bring to boil. Skim until broth stays clear.", "timer": 5 },
-    { "section": null, "text": "Stud {onion} with {clove}. Add to pot with {thyme}, {bay}, {parsley-stems}, {peppercorns}, {salt}.", "timer": null },
-    { "section": null, "text": "Reduce to gentlest simmer, occasional bubble only. Partially cover.", "timer": 150 },
-    { "section": "Sauce verte", "text": "Small blender: {parsley-leaves}, {cornichon}, {capers}, {fish-sauce}, {vinegar}. Pulse until roughly chopped.", "timer": null },
-    { "section": null, "text": "Add {olive-oil}, {pepper}. Blend briefly, until combined but still slightly chunky.", "timer": null },
-    { "section": "Vegetables", "text": "Blanch {cabbage} in boiling salted water. Drain, set aside with {leek}.", "timer": 3 },
-    { "section": null, "text": "After 2.5 h: add {carrot}, {turnip}, {celeriac}, {potato} to broth. Simmer.", "timer": 20 },
-    { "section": null, "text": "Add {leek}, {cabbage}. Simmer until all vegetables tender.", "timer": 20 },
-    { "section": "Marrow and bread", "text": "Meanwhile: {marrow} cut-side up on hot grill. Grill until bubbling, soft, golden on top.", "timer": 15 },
+    { "section": "Broth", "text": "Put {chuck} and {shank} in a large pot, cover with {water} and bring to a boil. Skim until the broth stays clear.", "timer": 5 },
+    { "section": null, "text": "Stud {onion} with {clove}. Add to the pot with {thyme}, {bay}, {peppercorns}, {salt} and {parsley-stems}.", "timer": null },
+    { "section": null, "text": "Reduce to the gentlest simmer, an occasional bubble only. Partially cover.", "timer": 150 },
+    { "section": "Sauce verte", "text": "Pulse {cornichon}, {capers}, {fish-sauce}, {vinegar} and {parsley-leaves} in a small blender until roughly chopped.", "timer": null },
+    { "section": null, "text": "Add {olive-oil} and {pepper}. Blend briefly, until combined but still slightly chunky.", "timer": null },
+    { "section": "Vegetables", "text": "Blanch {cabbage} in boiling salted water. Drain and set aside with {leek}.", "timer": 3 },
+    { "section": null, "text": "After 2.5 h, add {carrot}, {turnip}, {celeriac} and {potato} to the broth. Simmer.", "timer": 20 },
+    { "section": null, "text": "Add {leek} and {cabbage}. Simmer until all the vegetables are tender.", "timer": 20 },
+    { "section": "Marrow and bread", "text": "Meanwhile, grill {marrow} cut side up on a hot grill until bubbling, soft and golden on top.", "timer": 15 },
     { "section": null, "text": "Off the grill, sprinkle with {sea-salt}.", "timer": null },
     { "section": null, "text": "Grill {bread} until charred on both sides. Rub immediately with {garlic}.", "timer": null },
-    { "section": "Serving", "text": "Slice meat thickly against the grain. Warm platter: meat, vegetables, marrow bones, garlic bread.", "timer": null },
-    { "section": null, "text": "Strain broth into bowls. On the table: sauce verte, {mustard}, {sea-salt}.", "timer": null }
+    { "section": "Serving", "text": "Slice the meat thickly against the grain. Arrange on a warm platter: meat, vegetables, marrow bones, garlic bread.", "timer": null },
+    { "section": null, "text": "Strain the broth into bowls. Put on the table: sauce verte, {mustard}, {sea-salt}.", "timer": null }
   ],
   "optional": null
 }
