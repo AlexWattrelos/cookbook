@@ -1,152 +1,158 @@
 <title>Pot-au-feu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;display=swap">
 <style>
   :root {
     color-scheme: light;
-    --ground: #F2F2F7;
-    --card: #FFFFFF;
-    --ink: #000000;
-    --secondary: #6E6E73;
-    --separator: #C6C6C8;
-    --accent: #007AFF;
-    --done: #34C759;
-    --warn: #FF9500;
-    --fill: rgba(120, 120, 128, .12);
-    --thumb: #FFFFFF;
+    --ground: #FFFFFF;
+    --surface: #F6F7F9;
+    --ink: #0F172A;
+    --muted: #64748B;
+    --rule: #E2E8F0;
+    --accent: #059669;
+    --done: #059669;
+    --timer: #0F172A;
     --on-accent: #FFFFFF;
-    --shadow: 0 3px 8px rgba(0, 0, 0, .12), 0 3px 1px rgba(0, 0, 0, .04);
-    --bar: color-mix(in srgb, var(--card) 85%, transparent);
-    --band: color-mix(in srgb, var(--ground) 85%, transparent);
-    --accent-fill: color-mix(in srgb, var(--accent) 12%, transparent);
-    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --header-h: 52px;
+    --font: "Manrope", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --bar-h: 56px;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       color-scheme: dark;
-      --ground: #000000;
-      --card: #1C1C1E;
-      --ink: #FFFFFF;
-      --secondary: #8E8E93;
-      --separator: #38383A;
-      --accent: #0A84FF;
-      --done: #30D158;
-      --warn: #FF9F0A;
-      --fill: rgba(120, 120, 128, .24);
-      --thumb: #636366;
-      --shadow: 0 3px 8px rgba(0, 0, 0, .45);
+      --ground: #0B0F14;
+      --surface: #151A21;
+      --ink: #E5E7EB;
+      --muted: #94A3B8;
+      --rule: #1F2937;
+      --accent: #34D399;
+      --done: #34D399;
+      --timer: #E5E7EB;
+      --on-accent: #0B0F14;
     }
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
-    --ground: #000000;
-    --card: #1C1C1E;
-    --ink: #FFFFFF;
-    --secondary: #8E8E93;
-    --separator: #38383A;
-    --accent: #0A84FF;
-    --done: #30D158;
-    --warn: #FF9F0A;
-    --fill: rgba(120, 120, 128, .24);
-    --thumb: #636366;
-    --shadow: 0 3px 8px rgba(0, 0, 0, .45);
+    --ground: #0B0F14;
+    --surface: #151A21;
+    --ink: #E5E7EB;
+    --muted: #94A3B8;
+    --rule: #1F2937;
+    --accent: #34D399;
+    --done: #34D399;
+    --timer: #E5E7EB;
+    --on-accent: #0B0F14;
   }
 
   * { box-sizing: border-box; }
-  [hidden] { display: none !important; }
   body {
     margin: 0;
     background: var(--ground);
     color: var(--ink);
-    font: 400 17px/1.35 var(--font);
+    font: 400 17px/1.45 var(--font);
     -webkit-text-size-adjust: 100%;
   }
-  main { max-width: 640px; margin: 0 auto; }
-  h1, h2, h3, p, ul, ol { margin: 0; }
+  [hidden] { display: none !important; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  button { font: inherit; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
-  .amt { font-variant-numeric: tabular-nums; }
-  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
+  .amt, .num, .timer, output, .time b { font-variant-numeric: tabular-nums; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+  main.wrap { padding-bottom: 80px; }
 
-  /* Sticky title bar: title left, servings right */
+  /* Sticky bar: title left, servings right */
   .bar {
     position: sticky; top: 0; z-index: 3;
-    display: flex; align-items: center; gap: 12px;
-    height: var(--header-h); padding: 0 8px 0 16px;
-    background: var(--bar);
-    -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--separator);
+    height: var(--bar-h);
+    background: var(--ground);
+    border-bottom: 1px solid var(--rule);
   }
-  .bar-title { flex: 1; min-width: 0; }
-  h1 { font: 600 21px/25px var(--font); letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .yield { display: block; font-size: 13px; line-height: 16px; color: var(--secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .stepper { display: flex; align-items: center; flex: none; }
-  .stepper button {
-    width: 44px; height: 44px; padding: 4px;                 /* 44px hit area, 36px visible circle */
-    border: 0; border-radius: 50%;
-    background: var(--fill); background-clip: content-box;
-    color: var(--accent); font-size: 22px; font-weight: 500; line-height: 1;
-    display: grid; place-content: center;
+  .bar .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .title { flex: 1; min-width: 0; }
+  h1 {
+    margin: 0;
+    font: 800 21px/1.25 var(--font);
+    letter-spacing: -0.02em;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .stepper button:disabled { opacity: .35; cursor: default; }
-  .stepper output { min-width: 32px; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
-
-  /* Meta block: scrolls away under the bar */
-  .meta { padding: 12px 16px 0; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { padding: 4px 10px; border-radius: 999px; background: var(--fill); font-size: 13px; font-weight: 500; line-height: 16px; }
-  .chip.course { color: var(--accent); background: var(--accent-fill); }
-  .chip.status { color: var(--secondary); }
-  .meta .card { margin-top: 12px; }
-  .meta-row { padding: 10px 12px; }
-  .times { display: flex; gap: 20px; color: var(--secondary); }
-  .times b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
-  .meta-row ul { padding-left: 20px; }
-
-  /* Segmented tab control, sticky under the bar */
-  .band {
-    position: sticky; top: var(--header-h); z-index: 2;
-    padding: 8px 16px;
-    background: var(--band);
-    -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+  .yield {
+    display: block;
+    font-size: 12px; line-height: 1.3; color: var(--muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .seg {
+  .controls { flex: none; display: flex; align-items: center; gap: 2px; }
+  .controls button {
     position: relative;
-    display: grid; grid-auto-flow: column; grid-auto-columns: 1fr;
-    height: 32px; padding: 2px; border-radius: 9px;
-    background: var(--fill);
+    width: 36px; height: 36px; padding: 0;
+    border: 1px solid var(--rule); border-radius: 10px;
+    background: var(--surface); color: var(--ink);
+    font-size: 22px; line-height: 1;
   }
-  .seg .thumb {
-    position: absolute; top: 2px; bottom: 2px; left: 2px;
-    width: calc((100% - 4px) / var(--seg-count, 3));
-    border-radius: 7px; background: var(--thumb); box-shadow: var(--shadow);
-    transform: translateX(calc(var(--seg-index, 0) * 100%));
-    transition: transform .2s ease;
-  }
-  .seg button { position: relative; border: 0; border-radius: 7px; background: transparent; color: var(--ink); font-size: 13px; font-weight: 600; line-height: 1; }
-  .seg button:focus-visible { outline-offset: -2px; }
+  .controls button::after { content: ""; position: absolute; inset: -4px; }   /* 44px hit area */
+  .controls button:disabled { opacity: .35; cursor: default; }
+  .controls output { min-width: 36px; text-align: center; font-size: 19px; font-weight: 800; }
 
-  /* Grouped inset cards */
-  .panel { padding: 4px 16px calc(48px + env(safe-area-inset-bottom, 0px)); }
-  .label, .caption { font-size: 13px; font-weight: 600; line-height: 16px; text-transform: uppercase; letter-spacing: .03em; color: var(--secondary); }
-  .label { margin: 16px 0 6px; padding: 0 12px; }
-  .caption { margin-bottom: 2px; }
-  .card { background: var(--card); border-radius: 12px; list-style: none; padding: 0; }
-  .panel > .card { margin-top: 16px; }
-  .label + .card { margin-top: 0; }
-  .card > * + * { position: relative; }
-  .card > * + *::before { content: ""; position: absolute; top: 0; right: 0; left: var(--inset, 12px); height: 1px; background: var(--separator); }
-
-  /* Checklist rows */
-  .list { --inset: 48px; }
-  .row {
-    display: flex; align-items: flex-start; gap: 12px;
-    padding: 8px 12px; line-height: 24px;
-    cursor: pointer; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;
+  /* Meta: scrolls away */
+  .meta { display: grid; gap: 12px; padding: 16px 0 20px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font-size: 13px; font-weight: 600; line-height: 1;
+    padding: 6px 10px;
+    border: 1px solid var(--rule); border-radius: 999px;
   }
+  .chip.course { color: var(--accent); border-color: var(--accent); }
+  .chip.status { color: var(--muted); }
+  .time { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; font-size: 15px; color: var(--muted); }
+  .time b { color: var(--ink); font-weight: 600; }
+  .label {
+    margin: 0 0 2px;
+    font-size: 13px; font-weight: 600; line-height: 1.3;
+    text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted);
+  }
+  .label.accent { color: var(--accent); }
+  .block p, .block ul { margin: 0; }
+  .block ul { padding-left: 20px; }
+
+  /* Tabs: sticky under the bar, equal thirds, accent underline */
+  .tabs {
+    position: sticky; top: var(--bar-h); z-index: 2;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    background: var(--ground);
+    border-bottom: 1px solid var(--rule);
+  }
+  .tabs button {
+    position: relative;
+    height: 44px; padding: 0;
+    border: 0; background: none;
+    font-size: 15px; font-weight: 600; letter-spacing: .01em;
+    color: var(--muted);
+    transition: color .15s;
+  }
+  .tabs button::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+    background: transparent;
+    transition: background-color .15s;
+  }
+  .tabs button[aria-selected="true"] { color: var(--ink); }
+  .tabs button[aria-selected="true"]::after { background: var(--accent); }
+  .tabs button:focus-visible { outline-offset: -3px; }
+
+  /* Panels: flat lists with hairlines */
+  .panel { padding-top: 4px; }
+  h3 {
+    margin: 16px 0 0; padding: 10px 0 4px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px; font-weight: 600; line-height: 1.3;
+    text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted);
+  }
+  .panel > h3:first-child { margin-top: 0; border-top: 0; }
+
+  .list { list-style: none; margin: 0; padding: 0; }
+  .list li + li { border-top: 1px solid var(--rule); }
+  .row { display: flex; align-items: flex-start; gap: 12px; min-height: 40px; padding: 7px 0; cursor: pointer; }
   .row input {
     appearance: none; -webkit-appearance: none;
-    flex: none; width: 24px; height: 24px; margin: 0;
-    border: 1.5px solid var(--secondary); border-radius: 50%; background: transparent;
+    flex: none; width: 22px; height: 22px; margin: 1px 0 0;
+    border: 1.5px solid var(--muted); border-radius: 6px; background: transparent;
     display: grid; place-content: center; cursor: pointer;
     transition: background-color .15s, border-color .15s;
   }
@@ -156,52 +162,57 @@
     transform: rotate(45deg) translate(-1px, -1px);
     opacity: 0;
   }
-  .row input:checked { background: var(--done); border-color: var(--done); }
+  .row input:checked { background: var(--accent); border-color: var(--accent); }
   .row input:checked::after { opacity: 1; }
-  .row input:checked + span { color: var(--secondary); text-decoration: line-through; }
-  .prep { color: var(--secondary); }
+  .row input:checked + span { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .prep { color: var(--muted); }
 
   /* Steps */
-  .steps { --inset: 50px; }
-  .step { display: grid; grid-template-columns: 28px 1fr; gap: 10px; padding: 11px 12px; font-size: 18px; line-height: 1.4; }
-  .step .num { font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .step {
+    display: grid; grid-template-columns: 28px 1fr; gap: 8px;
+    padding: 11px 0;
+    font-size: 18px; line-height: 1.45;
+  }
+  .step + .step { border-top: 1px solid var(--rule); }
+  .step .num { font-size: 18px; font-weight: 600; color: var(--muted); }
+  .step p { margin: 0; }
   .ing { font-weight: 600; }
   .timer {
-    display: flex; align-items: center; justify-content: center;
-    width: 100%; height: 40px; margin-top: 10px;
-    border: 0; border-radius: 999px;
-    background: var(--accent); color: var(--on-accent);
-    font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums;
-    transition: background-color .15s;
+    position: relative;
+    display: inline-flex; align-items: center;
+    min-height: 36px; margin-top: 8px; padding: 0 14px;
+    border: 1.5px solid var(--timer); border-radius: 999px;
+    background: transparent; color: var(--timer);
+    font-size: 15px; font-weight: 600;
+    transition: background-color .15s, border-color .15s, color .15s;
   }
-  .timer.running { background: var(--warn); }
-  .timer.done { background: var(--done); cursor: default; }
+  .timer::after { content: ""; position: absolute; inset: -4px; }   /* 44px hit area */
+  .timer.running { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .timer.done { border-color: var(--done); color: var(--done); cursor: default; }
 
   @media (prefers-reduced-motion: reduce) { *, ::before, ::after { transition: none !important; } }
 </style>
 
-<main>
-  <header class="bar" id="bar">
-    <div class="bar-title">
-      <h1 id="recipe-title"></h1>
-      <small class="yield" id="yield"></small>
+<header class="bar" id="bar">
+  <div class="wrap">
+    <div class="title">
+      <h1 id="title"></h1>
+      <small class="yield" id="yield" hidden></small>
     </div>
-    <div class="stepper" id="stepper" role="group">
+    <div class="controls" id="controls" role="group">
       <button type="button" id="minus">&minus;</button>
       <output id="servings" for="minus plus"></output>
       <button type="button" id="plus">+</button>
     </div>
-  </header>
-
-  <section class="meta" id="meta"></section>
-
-  <div class="band">
-    <div class="seg" id="tabs" role="tablist"></div>
   </div>
+</header>
 
+<main class="wrap">
+  <div class="meta" id="meta"></div>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
   <section class="panel" id="shopping" role="tabpanel" aria-labelledby="tab-shopping"></section>
-  <section class="panel" id="mise" role="tabpanel" aria-labelledby="tab-mise"></section>
-  <section class="panel" id="steps" role="tabpanel" aria-labelledby="tab-steps"></section>
+  <section class="panel" id="mise" role="tabpanel" aria-labelledby="tab-mise" hidden></section>
+  <section class="panel" id="steps" role="tabpanel" aria-labelledby="tab-steps" hidden></section>
 </main>
 
 <script>
@@ -678,7 +689,6 @@ const tokens = text => [...text.matchAll(/\{([\w-]+)\}/g)].map(m => m[1]);
 const ingHtml = ing => ing.amount === null ? esc(ing.name)
   : `<span class="amt" data-base="${ing.amount}" data-unit="${ing.unit ?? ""}" data-name="${esc(ing.name)}"></span>`;
 const prepHtml = ing => ing.prep ? ` <span class="prep">(${esc(ing.prep)})</span>` : "";
-const section = (title, body) => `<h2 class="sr-only">${esc(title)}</h2>${body}`;   // the tab names the panel visually
 
 function checkRow(key, html) {
   const id = `${RECIPE.id}:${key}`;
@@ -699,10 +709,10 @@ function renderMeta() {
     ...r.tags.map(tag => `<span class="chip tag">${esc(TAGS[tag])}</span>`),
     `<span class="chip status">${esc(STATUSES[r.status])}</span>`
   ].join("");
-  const time = `<p class="meta-row times"><span>${esc(S.active)} <b>${formatMinutes(r.time.active)}</b></span><span>${esc(S.total)} <b>${formatMinutes(r.time.total)}</b></span></p>`;
-  const ahead = r.ahead ? `<div class="meta-row"><p class="caption">${esc(S.ahead)}</p><p>${esc(r.ahead)}</p></div>` : "";
-  const notes = r.notes.length ? `<div class="meta-row"><p class="caption">${esc(S.notes)}</p><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : "";
-  return `<div class="chips">${chips}</div><div class="card">${time}${ahead}${notes}</div>`;
+  const time = `<p class="time"><span>${esc(S.active)} <b>${formatMinutes(r.time.active)}</b></span><span>${esc(S.total)} <b>${formatMinutes(r.time.total)}</b></span></p>`;
+  const ahead = r.ahead ? `<div class="block"><p class="label accent">${esc(S.ahead)}</p><p>${esc(r.ahead)}</p></div>` : "";
+  const notes = r.notes.length ? `<div class="block"><p class="label">${esc(S.notes)}</p><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : "";
+  return `<div class="chips">${chips}</div>${time}${ahead}${notes}`;
 }
 
 function renderShopping() {
@@ -715,31 +725,28 @@ function renderShopping() {
     }
     if (!lines.length) return "";
     const rows = lines.map(line => checkRow("shop:" + line.ids.join("+"), ingHtml(line))).join("");
-    return `<h3 class="label">${esc(cat.label)}</h3><ul class="card list">${rows}</ul>`;
+    return `<h3>${esc(cat.label)}</h3><ul class="list">${rows}</ul>`;
   }).join("");
 }
 
 function renderMise() {
   const order = [...new Set(RECIPE.steps.flatMap(step => tokens(step.text)))];   // order of first use
   const rows = order.map(id => checkRow("mise:" + id, ingHtml(byId[id]) + prepHtml(byId[id]))).join("");
-  return `<ul class="card list">${rows}</ul>`;
+  return `<ul class="list">${rows}</ul>`;
 }
 
 function renderSteps() {
   const seen = new Set();
-  const groups = [];                                            // one card per section heading
-  RECIPE.steps.forEach((step, i) => {
+  return RECIPE.steps.map((step, i) => {
     const text = esc(step.text).replace(/\{([\w-]+)\}/g, (_, id) => {
       const first = !seen.has(id);
       seen.add(id);
       return `<span class="ing">${ingHtml(byId[id])}</span>` + (first ? prepHtml(byId[id]) : "");
     });
+    const heading = step.section ? `<h3>${esc(step.section)}</h3>` : "";
     const timer = step.timer ? timerButton(step.timer) : "";
-    if (step.section || !groups.length) groups.push({ heading: step.section, rows: [] });
-    groups.at(-1).rows.push(`<li class="step"><span class="num">${i + 1}</span><div><p>${text}</p>${timer}</div></li>`);
-  });
-  return groups.map(({ heading, rows }) =>
-    `${heading ? `<h3 class="label">${esc(heading)}</h3>` : ""}<ol class="card steps">${rows.join("")}</ol>`).join("");
+    return `${heading}<div class="step"><span class="num">${i + 1}</span><div><p>${text}</p>${timer}</div></div>`;
+  }).join("");
 }
 
 function updateAmounts() {
@@ -803,19 +810,39 @@ function resetTimer(button) {
   button.textContent = button.dataset.label;
 }
 
+// --- Tabs ------------------------------------------------------------------
+
+const TABS = ["shopping", "mise", "steps"];
+const tabKey = `${RECIPE.id}:tab`;
+
+function showTab(key) {
+  for (const k of TABS) {
+    $(k).hidden = k !== key;
+    $("tab-" + k).setAttribute("aria-selected", k === key);
+  }
+  try { localStorage.setItem(tabKey, key); } catch {}
+}
+
+function rememberedTab() {
+  try { return localStorage.getItem(tabKey); } catch { return null; }
+}
+
 // --- Mount -----------------------------------------------------------------
 
 const $ = id => document.getElementById(id);
 
-$("recipe-title").textContent = RECIPE.title;
+$("title").textContent = RECIPE.title;
 $("yield").textContent = RECIPE.yield ?? "";
-$("yield").hidden = RECIPE.yield == null;
+$("yield").hidden = RECIPE.yield === null;
 $("meta").innerHTML = renderMeta();
-$("shopping").innerHTML = section(CONFIG.sections.shopping, renderShopping());
-$("mise").innerHTML = section(CONFIG.sections.mise, renderMise());
-$("steps").innerHTML = section(CONFIG.sections.steps, renderSteps());
+$("tabs").innerHTML = TABS.map(key =>
+  `<button type="button" role="tab" id="tab-${key}" aria-controls="${key}" aria-selected="false">${esc(CONFIG.sections.tabs[key])}</button>`
+).join("");
+$("shopping").innerHTML = renderShopping();
+$("mise").innerHTML = renderMise();
+$("steps").innerHTML = renderSteps();
 
-$("stepper").setAttribute("aria-label", CONFIG.sections.servings);
+$("controls").setAttribute("aria-label", CONFIG.sections.servings);
 $("minus").setAttribute("aria-label", LABELS.fewer);
 $("plus").setAttribute("aria-label", LABELS.more);
 
@@ -831,6 +858,16 @@ $("minus").onclick = () => setServings(servings - 1);
 $("plus").onclick = () => setServings(servings + 1);
 setServings(servings);
 
+const remembered = rememberedTab();
+showTab(TABS.includes(remembered) ? remembered : TABS[0]);
+
+$("tabs").addEventListener("click", e => {
+  const tab = e.target.closest("[role=tab]");
+  if (!tab) return;
+  showTab(tab.getAttribute("aria-controls"));
+  const stuck = scrollY + $("meta").getBoundingClientRect().bottom - $("bar").offsetHeight;   // scroll where the tab bar sticks
+  if (scrollY > stuck) scrollTo(0, stuck);
+});
 document.addEventListener("change", e => {
   if (e.target.dataset.key) store(e.target.dataset.key, e.target.checked);
 });
@@ -838,38 +875,4 @@ document.addEventListener("click", e => {
   const button = e.target.closest(".timer");
   if (button) toggleTimer(button);
 });
-
-// --- Tabs ------------------------------------------------------------------
-
-const TABS = Object.keys(CONFIG.sections.tabs);               // shopping, mise, steps: also the panel ids
-const TAB_KEY = `${RECIPE.id}:tab`;
-
-$("tabs").innerHTML = `<span class="thumb" aria-hidden="true"></span>` + TABS.map(key =>
-  `<button type="button" role="tab" id="tab-${key}" aria-controls="${key}" data-tab="${key}">${esc(CONFIG.sections.tabs[key])}</button>`).join("");
-$("tabs").style.setProperty("--seg-count", TABS.length);
-
-function showTab(key) {
-  for (const k of TABS) {
-    $(k).hidden = k !== key;
-    $(`tab-${k}`).setAttribute("aria-selected", k === key);
-    $(`tab-${k}`).tabIndex = k === key ? 0 : -1;
-  }
-  $("tabs").style.setProperty("--seg-index", TABS.indexOf(key));
-  try { localStorage.setItem(TAB_KEY, key); } catch {}
-}
-$("tabs").onclick = e => {
-  const tab = e.target.closest("[data-tab]");
-  if (tab) showTab(tab.dataset.tab);
-};
-$("tabs").onkeydown = e => {
-  const move = { ArrowLeft: -1, ArrowRight: 1 }[e.key];
-  if (!move || !e.target.dataset.tab) return;
-  const key = TABS[(TABS.indexOf(e.target.dataset.tab) + move + TABS.length) % TABS.length];
-  showTab(key);
-  $(`tab-${key}`).focus();
-};
-
-let savedTab = null;
-try { savedTab = localStorage.getItem(TAB_KEY); } catch {}
-showTab(TABS.includes(savedTab) ? savedTab : TABS[0]);
 </script>
