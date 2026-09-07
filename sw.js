@@ -31,12 +31,22 @@ self.addEventListener("install", event => {
 
 async function precache() {
   const cache = await caches.open(CACHE);
-  await cache.addAll(SHELL);
+  await addFresh(cache, SHELL);
   // Thumbnails are precached so the list is complete offline; a banner is cached the first time its recipe is opened.
   const recipes = await cache.match("data/recipes.json").then(response => response.json());
   const { images } = await cache.match("config.json").then(response => response.json());
   const thumbs = recipes.map(recipe => recipe.image).filter(Boolean).map(path => path.replace(/\.jpg$/, `${images.thumbSuffix}.jpg`));
-  await cache.addAll(thumbs);
+  await addFresh(cache, thumbs);
+}
+
+// Every precache request goes to the network: GitHub Pages sends max-age=600, so the browser's own cache
+// can still hold the previous deploy and would otherwise be copied straight into the new version.
+async function addFresh(cache, paths) {
+  await Promise.all(paths.map(async path => {
+    const response = await fetch(new Request(path, { cache: "reload" }));
+    if (!response.ok) throw new Error(`precache ${path}: ${response.status}`);
+    await cache.put(path, response);
+  }));
 }
 
 self.addEventListener("activate", event => {

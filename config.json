@@ -131,9 +131,20 @@
       ]
     },
     {
+      "key": "diet",
+      "label": "Diet",
+      "rule": "vegetarian = no meat, fish or seafood anywhere in the recipe, including stock, lardons, anchovy, fish sauce and Worcestershire sauce. Cheese, eggs, butter and cream are fine.",
+      "tags": [
+        {
+          "key": "vegetarian",
+          "label": "Vegetarian"
+        }
+      ]
+    },
+    {
       "key": "occasion",
       "label": "Occasion",
-      "rule": "Starters, mains and desserts only. easy = weeknight dish, little hands-on work. weekend = the cooking fills most of a day. guests = what you would serve friends.",
+      "rule": "Starters, mains and desserts only. easy = weeknight dish, little hands-on work. weekend = the cooking fills most of a day. guests = what you would serve friends. apero = eaten standing, with a drink, before sitting down.",
       "tags": [
         {
           "key": "easy",
@@ -146,6 +157,10 @@
         {
           "key": "guests",
           "label": "Guests"
+        },
+        {
+          "key": "apero",
+          "label": "Apéro"
         }
       ]
     },
