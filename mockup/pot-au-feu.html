@@ -1,207 +1,205 @@
 <title>Pot-au-feu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap">
 <style>
   :root {
     color-scheme: light;
-    --ground: #F2F2F7;
-    --card: #FFFFFF;
-    --ink: #000000;
-    --secondary: #6E6E73;
-    --separator: #C6C6C8;
-    --accent: #007AFF;
-    --done: #34C759;
-    --warn: #FF9500;
-    --fill: rgba(120, 120, 128, .12);
-    --thumb: #FFFFFF;
-    --on-accent: #FFFFFF;
-    --shadow: 0 3px 8px rgba(0, 0, 0, .12), 0 3px 1px rgba(0, 0, 0, .04);
-    --bar: color-mix(in srgb, var(--card) 85%, transparent);
-    --band: color-mix(in srgb, var(--ground) 85%, transparent);
-    --accent-fill: color-mix(in srgb, var(--accent) 12%, transparent);
-    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --header-h: 52px;
+    --ground: #FFFFFF;
+    --ink: #1A1A1A;
+    --secondary: #6B6B6B;
+    --faint: #F2F2F2;
+    --hairline: #E8E8E8;
+    --ring: #C8C8C8;
+    --black: #111111;
+    --on-black: #FFFFFF;
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --bar-h: 48px;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       color-scheme: dark;
-      --ground: #000000;
-      --card: #1C1C1E;
-      --ink: #FFFFFF;
-      --secondary: #8E8E93;
-      --separator: #38383A;
-      --accent: #0A84FF;
-      --done: #30D158;
-      --warn: #FF9F0A;
-      --fill: rgba(120, 120, 128, .24);
-      --thumb: #636366;
-      --shadow: 0 3px 8px rgba(0, 0, 0, .45);
+      --ground: #111111;
+      --ink: #F2F2F2;
+      --secondary: #A0A0A0;
+      --faint: #262626;
+      --hairline: #2A2A2A;
+      --ring: #444444;
+      --black: #F2F2F2;
+      --on-black: #111111;
     }
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
-    --ground: #000000;
-    --card: #1C1C1E;
-    --ink: #FFFFFF;
-    --secondary: #8E8E93;
-    --separator: #38383A;
-    --accent: #0A84FF;
-    --done: #30D158;
-    --warn: #FF9F0A;
-    --fill: rgba(120, 120, 128, .24);
-    --thumb: #636366;
-    --shadow: 0 3px 8px rgba(0, 0, 0, .45);
+    --ground: #111111;
+    --ink: #F2F2F2;
+    --secondary: #A0A0A0;
+    --faint: #262626;
+    --hairline: #2A2A2A;
+    --ring: #444444;
+    --black: #F2F2F2;
+    --on-black: #111111;
   }
 
   * { box-sizing: border-box; }
-  [hidden] { display: none !important; }
+  html { scroll-behavior: smooth; }
   body {
     margin: 0;
     background: var(--ground);
     color: var(--ink);
-    font: 400 17px/1.35 var(--font);
+    font: 400 17px/1.55 var(--font);
     -webkit-text-size-adjust: 100%;
   }
-  main { max-width: 640px; margin: 0 auto; }
-  h1, h2, h3, p, ul, ol { margin: 0; }
-  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  button { font: inherit; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
-  .amt { font-variant-numeric: tabular-nums; }
-  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  [hidden] { display: none !important; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
+  .amt, .count, .timer { font-variant-numeric: tabular-nums; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  main.wrap { padding-top: 28px; padding-bottom: 72px; }
 
-  /* Sticky title bar: title left, servings right */
-  .bar {
-    position: sticky; top: 0; z-index: 3;
-    display: flex; align-items: center; gap: 12px;
-    height: var(--header-h); padding: 0 8px 0 16px;
-    background: var(--bar);
-    -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--separator);
+  /* Head: title, meta lines, control row */
+  h1 {
+    margin: 0 0 20px;
+    font-size: 30px; font-weight: 500; line-height: 1.2;
+    letter-spacing: -0.01em;
   }
-  .bar-title { flex: 1; min-width: 0; }
-  h1 { font: 600 21px/25px var(--font); letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .yield { display: block; font-size: 13px; line-height: 16px; color: var(--secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .stepper { display: flex; align-items: center; flex: none; }
-  .stepper button {
-    width: 44px; height: 44px; padding: 4px;                 /* 44px hit area, 36px visible circle */
-    border: 0; border-radius: 50%;
-    background: var(--fill); background-clip: content-box;
-    color: var(--accent); font-size: 22px; font-weight: 500; line-height: 1;
-    display: grid; place-content: center;
-  }
-  .stepper button:disabled { opacity: .35; cursor: default; }
-  .stepper output { min-width: 32px; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .meta { margin: 0; color: var(--secondary); }
+  .meta + .meta { margin-top: 2px; }
+  .notes { margin: 6px 0 0; padding-left: 20px; color: var(--secondary); }
+  .actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 20px; }
+  .yield { margin-top: 10px; }
 
-  /* Meta block: scrolls away under the bar */
-  .meta { padding: 12px 16px 0; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { padding: 4px 10px; border-radius: 999px; background: var(--fill); font-size: 13px; font-weight: 500; line-height: 16px; }
-  .chip.course { color: var(--accent); background: var(--accent-fill); }
-  .chip.status { color: var(--secondary); }
-  .meta .card { margin-top: 12px; }
-  .meta-row { padding: 10px 12px; }
-  .times { display: flex; gap: 20px; color: var(--secondary); }
-  .times b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
-  .meta-row ul { padding-left: 20px; }
-
-  /* Segmented tab control, sticky under the bar */
-  .band {
-    position: sticky; top: var(--header-h); z-index: 2;
-    padding: 8px 16px;
-    background: var(--band);
-    -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
-  }
-  .seg {
+  /* Servings control: shared by the head and the sticky bar */
+  .servings { display: flex; align-items: center; gap: 8px; }
+  .servings button {
     position: relative;
-    display: grid; grid-auto-flow: column; grid-auto-columns: 1fr;
-    height: 32px; padding: 2px; border-radius: 9px;
-    background: var(--fill);
+    width: 36px; height: 36px; padding: 0;
+    border: 1px solid var(--hairline); border-radius: 8px;
+    background: none; color: var(--ink);
+    font-size: 20px; line-height: 1;
+    display: grid; place-items: center;
   }
-  .seg .thumb {
-    position: absolute; top: 2px; bottom: 2px; left: 2px;
-    width: calc((100% - 4px) / var(--seg-count, 3));
-    border-radius: 7px; background: var(--thumb); box-shadow: var(--shadow);
-    transform: translateX(calc(var(--seg-index, 0) * 100%));
-    transition: transform .2s ease;
-  }
-  .seg button { position: relative; border: 0; border-radius: 7px; background: transparent; color: var(--ink); font-size: 13px; font-weight: 600; line-height: 1; }
-  .seg button:focus-visible { outline-offset: -2px; }
+  .servings button::after { content: ""; position: absolute; inset: -4px; }   /* 44px hit area */
+  .servings button:disabled { opacity: .35; cursor: default; }
+  .servings .count { min-width: 20px; text-align: center; font-size: 18px; font-weight: 500; }
+  .servings .word { margin-left: 4px; color: var(--secondary); }
+  .bar .servings { gap: 6px; }
+  .bar .servings button { width: 30px; height: 30px; font-size: 17px; }
+  .bar .servings button::after { inset: -7px; }
+  .bar .servings .count { font-size: 16px; }
+  .bar .servings .word { display: none; }
 
-  /* Grouped inset cards */
-  .panel { padding: 4px 16px calc(48px + env(safe-area-inset-bottom, 0px)); }
-  .label, .caption { font-size: 13px; font-weight: 600; line-height: 16px; text-transform: uppercase; letter-spacing: .03em; color: var(--secondary); }
-  .label { margin: 16px 0 6px; padding: 0 12px; }
-  .caption { margin-bottom: 2px; }
-  .card { background: var(--card); border-radius: 12px; list-style: none; padding: 0; }
-  .panel > .card { margin-top: 16px; }
-  .label + .card { margin-top: 0; }
-  .card > * + * { position: relative; }
-  .card > * + *::before { content: ""; position: absolute; top: 0; right: 0; left: var(--inset, 12px); height: 1px; background: var(--separator); }
-
-  /* Checklist rows */
-  .list { --inset: 48px; }
-  .row {
-    display: flex; align-items: flex-start; gap: 12px;
-    padding: 8px 12px; line-height: 24px;
-    cursor: pointer; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;
+  .pill {
+    flex: none;
+    height: 40px; padding: 0 18px;
+    border: 0; border-radius: 999px;
+    background: var(--black); color: var(--on-black);
+    font-size: 16px; font-weight: 600;
   }
+
+  /* Sticky bar: appears once the big title has scrolled away */
+  .bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 3;
+    height: var(--bar-h);
+    background: var(--ground);
+    border-bottom: 1px solid var(--hairline);
+    opacity: 0; visibility: hidden; transform: translateY(-4px);
+    transition: opacity .18s, transform .18s, visibility .18s;
+  }
+  .bar.on { opacity: 1; visibility: visible; transform: none; }
+  .bar .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .bar-title {
+    min-width: 0;
+    font-size: 17px; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  /* Sections */
+  h2 {
+    margin: 36px 0 12px;
+    font-size: 22px; font-weight: 600; line-height: 1.3;
+    scroll-margin-top: calc(var(--bar-h) + 12px);
+  }
+  h3 {
+    margin: 16px 0 6px;
+    font-size: 13px; font-weight: 600; line-height: 1.3;
+    text-transform: uppercase; letter-spacing: .04em;
+    color: var(--secondary);
+  }
+
+  /* Check rows: shopping list and mise en place */
+  .list { list-style: none; margin: 0; padding: 0; }
+  .row { display: flex; align-items: flex-start; gap: 12px; padding: 4px 0; cursor: pointer; }
   .row input {
     appearance: none; -webkit-appearance: none;
-    flex: none; width: 24px; height: 24px; margin: 0;
-    border: 1.5px solid var(--secondary); border-radius: 50%; background: transparent;
+    flex: none; width: 22px; height: 22px; margin: 2px 0 0;
+    border: 1.5px solid var(--ring); border-radius: 50%; background: none;
     display: grid; place-content: center; cursor: pointer;
     transition: background-color .15s, border-color .15s;
   }
   .row input::after {
-    content: ""; width: 6px; height: 11px;
-    border: solid var(--on-accent); border-width: 0 2px 2px 0;
+    content: ""; width: 5px; height: 10px;
+    border: solid var(--on-black); border-width: 0 2px 2px 0;
     transform: rotate(45deg) translate(-1px, -1px);
     opacity: 0;
   }
-  .row input:checked { background: var(--done); border-color: var(--done); }
+  .row input:checked { background: var(--ink); border-color: var(--ink); }
   .row input:checked::after { opacity: 1; }
-  .row input:checked + span { color: var(--secondary); text-decoration: line-through; }
+  .row input:checked + span { color: var(--secondary); text-decoration: line-through; text-decoration-thickness: 1px; }
   .prep { color: var(--secondary); }
 
   /* Steps */
-  .steps { --inset: 50px; }
-  .step { display: grid; grid-template-columns: 28px 1fr; gap: 10px; padding: 11px 12px; font-size: 18px; line-height: 1.4; }
-  .step .num { font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
-  .ing { font-weight: 600; }
-  .timer {
-    display: flex; align-items: center; justify-content: center;
-    width: 100%; height: 40px; margin-top: 10px;
-    border: 0; border-radius: 999px;
-    background: var(--accent); color: var(--on-accent);
-    font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums;
-    transition: background-color .15s;
+  .step { display: flex; align-items: flex-start; gap: 12px; }
+  .step + .step { margin-top: 14px; }
+  .step .num {
+    flex: none; width: 28px; height: 28px; margin-top: -1px;
+    border-radius: 50%; background: var(--faint);
+    display: grid; place-items: center;
+    font-size: 14px; font-weight: 600;
   }
-  .timer.running { background: var(--warn); }
-  .timer.done { background: var(--done); cursor: default; }
+  .step p { margin: 0; min-width: 0; }
+  .ing { font-weight: 500; }
+  .timer {
+    position: relative;
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-left: 2px; padding: 4px 10px;
+    border: 0; border-radius: 999px;
+    background: var(--faint); color: var(--ink);
+    font-size: 15px; font-weight: 500; line-height: 1.2;
+    vertical-align: baseline;
+    transition: background-color .15s, color .15s;
+  }
+  .timer::before { content: "\25B6\FE0E"; font-size: 12px;   /* text glyph, never the emoji face */ }
+  .timer::after { content: ""; position: absolute; inset: -7px; }   /* 40px hit area */
+  .timer.running { background: var(--ink); color: var(--on-black); }
+  .timer.done { background: var(--ink); color: var(--on-black); cursor: default; }
+  .timer.done::before { content: none; }
 
-  @media (prefers-reduced-motion: reduce) { *, ::before, ::after { transition: none !important; } }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, ::before, ::after { transition: none !important; }
+  }
 </style>
 
-<main>
-  <header class="bar" id="bar">
-    <div class="bar-title">
-      <h1 id="recipe-title"></h1>
-      <small class="yield" id="yield"></small>
-    </div>
-    <div class="stepper" id="stepper" role="group">
-      <button type="button" id="minus">&minus;</button>
-      <output id="servings" for="minus plus"></output>
-      <button type="button" id="plus">+</button>
-    </div>
-  </header>
-
-  <section class="meta" id="meta"></section>
-
-  <div class="band">
-    <div class="seg" id="tabs" role="tablist"></div>
+<div class="bar" id="bar">
+  <div class="wrap">
+    <span class="bar-title" id="bar-title"></span>
+    <div class="servings" role="group"></div>
   </div>
+</div>
 
-  <section class="panel" id="shopping" role="tabpanel" aria-labelledby="tab-shopping"></section>
-  <section class="panel" id="mise" role="tabpanel" aria-labelledby="tab-mise"></section>
-  <section class="panel" id="steps" role="tabpanel" aria-labelledby="tab-steps"></section>
+<main class="wrap">
+  <h1 id="title"></h1>
+  <div id="intro"></div>
+  <div class="actions">
+    <div class="servings" role="group"></div>
+    <button type="button" class="pill" id="cook"></button>
+  </div>
+  <p class="meta yield" id="yield" hidden></p>
+  <h2 id="shopping-heading"></h2>
+  <section id="shopping"></section>
+  <h2 id="mise-heading"></h2>
+  <section id="mise"></section>
+  <h2 id="steps-heading"></h2>
+  <section id="steps"></section>
 </main>
 
 <script>
@@ -616,11 +614,12 @@ const CONFIG = {
 };
 
 // Strings of the page itself, not of any recipe.
-const LABELS = { fewer: "Fewer servings", more: "More servings", start: "Start", done: "Done" };
+const LABELS = { fewer: "Fewer servings", more: "More servings", cook: "Start cooking", done: "Done" };
+const SEP = " · ";
 
 // Config lists become key -> label maps.
 const labels = list => Object.fromEntries(list.map(({ key, label }) => [key, label]));
-const COURSES = labels(CONFIG.courses), STATUSES = labels(CONFIG.statuses);
+const COURSES = labels(CONFIG.courses);
 const TAGS = labels(CONFIG.tags.flatMap(group => group.tags));
 
 // --- Amounts ---------------------------------------------------------------
@@ -669,6 +668,13 @@ function formatMinutes(minutes) {
   return (m ? T.hoursMinutes : T.hours).replace("{h}", h).replace("{m}", String(m).padStart(2, "0"));
 }
 
+// Timer chips show clock form: 3:00, 20:00, 2:30:00.
+const pad = n => String(n).padStart(2, "0");
+function clock(seconds) {
+  const h = Math.floor(seconds / 3600), m = Math.floor(seconds % 3600 / 60), s = seconds % 60;
+  return (h ? `${h}:${pad(m)}` : m) + `:${pad(s)}`;
+}
+
 // --- HTML pieces -----------------------------------------------------------
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -677,8 +683,8 @@ const tokens = text => [...text.matchAll(/\{([\w-]+)\}/g)].map(m => m[1]);
 // Amount and name render together, so the name can follow the scaled amount.
 const ingHtml = ing => ing.amount === null ? esc(ing.name)
   : `<span class="amt" data-base="${ing.amount}" data-unit="${ing.unit ?? ""}" data-name="${esc(ing.name)}"></span>`;
-const prepHtml = ing => ing.prep ? ` <span class="prep">(${esc(ing.prep)})</span>` : "";
-const section = (title, body) => `<h2 class="sr-only">${esc(title)}</h2>${body}`;   // the tab names the panel visually
+// Prep in brackets inside a step, after a comma in the mise en place.
+const prepHtml = (ing, [open, close]) => ing.prep ? `<span class="prep">${open}${esc(ing.prep)}${close}</span>` : "";
 
 function checkRow(key, html) {
   const id = `${RECIPE.id}:${key}`;
@@ -686,23 +692,25 @@ function checkRow(key, html) {
 }
 
 function timerButton(minutes) {
-  const label = `${LABELS.start} ${formatMinutes(minutes)}`;
-  return `<button type="button" class="timer" data-minutes="${minutes}" data-label="${esc(label)}">${esc(label)}</button>`;
+  const label = clock(minutes * 60);
+  return ` <button type="button" class="timer" data-minutes="${minutes}" data-label="${label}">${label}</button>`;
 }
+
+const servingsHtml = () =>
+  `<button type="button" class="minus" aria-label="${esc(LABELS.fewer)}">&minus;</button>` +
+  `<output class="count"></output>` +
+  `<button type="button" class="plus" aria-label="${esc(LABELS.more)}">+</button>` +
+  `<span class="word">${esc(CONFIG.sections.servings.toLowerCase())}</span>`;
 
 // --- Renderers, one per section --------------------------------------------
 
-function renderMeta() {
+function renderIntro() {
   const r = RECIPE, S = CONFIG.sections;
-  const chips = [
-    `<span class="chip course">${esc(COURSES[r.course])}</span>`,
-    ...r.tags.map(tag => `<span class="chip tag">${esc(TAGS[tag])}</span>`),
-    `<span class="chip status">${esc(STATUSES[r.status])}</span>`
-  ].join("");
-  const time = `<p class="meta-row times"><span>${esc(S.active)} <b>${formatMinutes(r.time.active)}</b></span><span>${esc(S.total)} <b>${formatMinutes(r.time.total)}</b></span></p>`;
-  const ahead = r.ahead ? `<div class="meta-row"><p class="caption">${esc(S.ahead)}</p><p>${esc(r.ahead)}</p></div>` : "";
-  const notes = r.notes.length ? `<div class="meta-row"><p class="caption">${esc(S.notes)}</p><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : "";
-  return `<div class="chips">${chips}</div><div class="card">${time}${ahead}${notes}</div>`;
+  const tags = [COURSES[r.course], ...r.tags.map(tag => TAGS[tag])].join(SEP);
+  const time = [`${S.active} ${formatMinutes(r.time.active)}`, `${S.total} ${formatMinutes(r.time.total)}`];
+  if (r.ahead) time.push(`${S.ahead}: ${r.ahead}`);
+  const notes = r.notes.length ? `<ul class="notes">${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : "";
+  return `<p class="meta">${esc(tags)}</p><p class="meta">${esc(time.join(SEP))}</p>${notes}`;
 }
 
 function renderShopping() {
@@ -715,31 +723,28 @@ function renderShopping() {
     }
     if (!lines.length) return "";
     const rows = lines.map(line => checkRow("shop:" + line.ids.join("+"), ingHtml(line))).join("");
-    return `<h3 class="label">${esc(cat.label)}</h3><ul class="card list">${rows}</ul>`;
+    return `<h3>${esc(cat.label)}</h3><ul class="list">${rows}</ul>`;
   }).join("");
 }
 
 function renderMise() {
   const order = [...new Set(RECIPE.steps.flatMap(step => tokens(step.text)))];   // order of first use
-  const rows = order.map(id => checkRow("mise:" + id, ingHtml(byId[id]) + prepHtml(byId[id]))).join("");
-  return `<ul class="card list">${rows}</ul>`;
+  const rows = order.map(id => checkRow("mise:" + id, ingHtml(byId[id]) + prepHtml(byId[id], [", ", ""]))).join("");
+  return `<ul class="list">${rows}</ul>`;
 }
 
 function renderSteps() {
   const seen = new Set();
-  const groups = [];                                            // one card per section heading
-  RECIPE.steps.forEach((step, i) => {
+  return RECIPE.steps.map((step, i) => {
     const text = esc(step.text).replace(/\{([\w-]+)\}/g, (_, id) => {
       const first = !seen.has(id);
       seen.add(id);
-      return `<span class="ing">${ingHtml(byId[id])}</span>` + (first ? prepHtml(byId[id]) : "");
+      return `<span class="ing">${ingHtml(byId[id])}</span>` + (first ? prepHtml(byId[id], [" (", ")"]) : "");
     });
+    const heading = step.section ? `<h3>${esc(step.section)}</h3>` : "";
     const timer = step.timer ? timerButton(step.timer) : "";
-    if (step.section || !groups.length) groups.push({ heading: step.section, rows: [] });
-    groups.at(-1).rows.push(`<li class="step"><span class="num">${i + 1}</span><div><p>${text}</p>${timer}</div></li>`);
-  });
-  return groups.map(({ heading, rows }) =>
-    `${heading ? `<h3 class="label">${esc(heading)}</h3>` : ""}<ol class="card steps">${rows.join("")}</ol>`).join("");
+    return `${heading}<div class="step"><span class="num">${i + 1}</span><p>${text}${timer}</p></div>`;
+  }).join("");
 }
 
 function updateAmounts() {
@@ -782,7 +787,7 @@ function toggleTimer(button) {
   const end = Date.now() + button.dataset.minutes * 60000;
   const tick = () => {
     const left = Math.max(0, Math.round((end - Date.now()) / 1000));
-    button.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`;
+    button.textContent = clock(left);
     if (left) return;
     clearInterval(button.interval);
     button.interval = null;
@@ -807,69 +812,45 @@ function resetTimer(button) {
 
 const $ = id => document.getElementById(id);
 
-$("recipe-title").textContent = RECIPE.title;
+$("title").textContent = RECIPE.title;
+$("bar-title").textContent = RECIPE.title;
+$("intro").innerHTML = renderIntro();
+$("cook").textContent = LABELS.cook;
 $("yield").textContent = RECIPE.yield ?? "";
-$("yield").hidden = RECIPE.yield == null;
-$("meta").innerHTML = renderMeta();
-$("shopping").innerHTML = section(CONFIG.sections.shopping, renderShopping());
-$("mise").innerHTML = section(CONFIG.sections.mise, renderMise());
-$("steps").innerHTML = section(CONFIG.sections.steps, renderSteps());
+$("yield").hidden = RECIPE.yield === null;
+for (const key of ["shopping", "mise", "steps"]) $(key + "-heading").textContent = CONFIG.sections[key];
+$("shopping").innerHTML = renderShopping();
+$("mise").innerHTML = renderMise();
+$("steps").innerHTML = renderSteps();
 
-$("stepper").setAttribute("aria-label", CONFIG.sections.servings);
-$("minus").setAttribute("aria-label", LABELS.fewer);
-$("plus").setAttribute("aria-label", LABELS.more);
+// Both servings controls (head and sticky bar) drive the same state.
+for (const group of document.querySelectorAll(".servings")) {
+  group.innerHTML = servingsHtml();
+  group.setAttribute("aria-label", CONFIG.sections.servings);
+}
 
 function setServings(n) {
   const { min, max } = CONFIG.servings;
   servings = Math.min(max, Math.max(min, n));
-  $("servings").textContent = servings;
-  $("minus").disabled = servings === min;
-  $("plus").disabled = servings === max;
+  for (const el of document.querySelectorAll(".count")) el.textContent = servings;
+  for (const el of document.querySelectorAll(".minus")) el.disabled = servings === min;
+  for (const el of document.querySelectorAll(".plus")) el.disabled = servings === max;
   updateAmounts();
 }
-$("minus").onclick = () => setServings(servings - 1);
-$("plus").onclick = () => setServings(servings + 1);
 setServings(servings);
+
+$("cook").onclick = () => $("steps-heading").scrollIntoView();   // smooth via CSS, unless reduced motion
+
+// Sticky bar shows once the big title has left the viewport.
+new IntersectionObserver(([entry]) => $("bar").classList.toggle("on", !entry.isIntersecting)).observe($("title"));
 
 document.addEventListener("change", e => {
   if (e.target.dataset.key) store(e.target.dataset.key, e.target.checked);
 });
 document.addEventListener("click", e => {
+  if (e.target.closest(".minus")) return setServings(servings - 1);
+  if (e.target.closest(".plus")) return setServings(servings + 1);
   const button = e.target.closest(".timer");
   if (button) toggleTimer(button);
 });
-
-// --- Tabs ------------------------------------------------------------------
-
-const TABS = Object.keys(CONFIG.sections.tabs);               // shopping, mise, steps: also the panel ids
-const TAB_KEY = `${RECIPE.id}:tab`;
-
-$("tabs").innerHTML = `<span class="thumb" aria-hidden="true"></span>` + TABS.map(key =>
-  `<button type="button" role="tab" id="tab-${key}" aria-controls="${key}" data-tab="${key}">${esc(CONFIG.sections.tabs[key])}</button>`).join("");
-$("tabs").style.setProperty("--seg-count", TABS.length);
-
-function showTab(key) {
-  for (const k of TABS) {
-    $(k).hidden = k !== key;
-    $(`tab-${k}`).setAttribute("aria-selected", k === key);
-    $(`tab-${k}`).tabIndex = k === key ? 0 : -1;
-  }
-  $("tabs").style.setProperty("--seg-index", TABS.indexOf(key));
-  try { localStorage.setItem(TAB_KEY, key); } catch {}
-}
-$("tabs").onclick = e => {
-  const tab = e.target.closest("[data-tab]");
-  if (tab) showTab(tab.dataset.tab);
-};
-$("tabs").onkeydown = e => {
-  const move = { ArrowLeft: -1, ArrowRight: 1 }[e.key];
-  if (!move || !e.target.dataset.tab) return;
-  const key = TABS[(TABS.indexOf(e.target.dataset.tab) + move + TABS.length) % TABS.length];
-  showTab(key);
-  $(`tab-${key}`).focus();
-};
-
-let savedTab = null;
-try { savedTab = localStorage.getItem(TAB_KEY); } catch {}
-showTab(TABS.includes(savedTab) ? savedTab : TABS[0]);
 </script>
