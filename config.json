@@ -340,7 +340,9 @@
     "cook": "Start cooking",
     "done": "Done",
     "fewer": "Fewer servings",
-    "more": "More servings"
+    "more": "More servings",
+    "star": "Star",
+    "starred": "Starred"
   },
   "images": {
     "thumbSuffix": "-thumb",
