@@ -1,0 +1,21 @@
+{
+  "id": "quiche",
+  "title": "Quiche",
+  "image": null,
+  "course": "main",
+  "status": "empty",
+  "tags": [
+    "french"
+  ],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

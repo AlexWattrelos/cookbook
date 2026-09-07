@@ -1,0 +1,108 @@
+{
+  "id": "potato-puree",
+  "title": "Potato purée",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "potato"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 20,
+    "total": 40
+  },
+  "ahead": null,
+  "notes": [
+    "Use a floury variety: Agria or Bintje.",
+    "Holds in the bowl at 70 °C, butterfly in, for up to 20 min; stir every few minutes (TM7: 5 sec / speed 2, reverse, butterfly). Do not overwork."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "water",
+      "amount": 500,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "potato",
+      "amount": 1000,
+      "unit": "g",
+      "name": "floury potatoes",
+      "prep": "peeled and halved",
+      "category": "produce"
+    },
+    {
+      "id": "milk",
+      "amount": 250,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "fine salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "butter",
+      "amount": 220,
+      "unit": "g",
+      "name": "butter",
+      "prep": "cold, cubed",
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Steam the potatoes",
+      "text": "Pour {water} into the bowl and fill the Varoma with {potato}. Set the Varoma on top and steam until just tender. TM7: 25 min / Varoma / speed 1",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat the milk",
+      "text": "Meanwhile, heat {milk} until hot.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Dry the potatoes",
+      "text": "Empty the bowl, tip in the potatoes and dry them off. TM7: 1 min / 100 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the mash",
+      "text": "Fit the butterfly and add {salt} and half of {butter}. Mash, then scrape down the bowl. TM7: 15 sec / speed 3, reverse, butterfly",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the mash",
+      "text": "Add the rest of the butter and mix just until smooth. Tiny flecks are fine. TM7: 10 sec / speed 2.5, reverse, butterfly",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Loosen the purée",
+      "text": "Add the hot milk a little at a time, mixing after each addition, until silky and slow-flowing. TM7: 10 sec / 70 °C / speed 2, reverse, butterfly",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season and serve",
+      "text": "Taste, season with salt and white pepper and serve.",
+      "timer": null
+    }
+  ]
+}

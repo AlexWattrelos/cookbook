@@ -1,0 +1,166 @@
+{
+  "id": "saucisson-vaudois-with-leek-and-potato-gratin",
+  "title": "Saucisson vaudois with leek and potato gratin",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "pork",
+    "potato",
+    "swiss",
+    "winter"
+  ],
+  "servings": 4,
+  "yield": "one 25 to 28 cm gratin dish",
+  "time": {
+    "active": 40,
+    "total": 110
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "butter-leeks",
+      "amount": 20,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "leek",
+      "amount": 3,
+      "unit": null,
+      "name": "leek",
+      "prep": "trimmed, washed, sliced into 5 mm rounds",
+      "category": "produce"
+    },
+    {
+      "id": "butter-dish",
+      "amount": 10,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "potato",
+      "amount": 800,
+      "unit": "g",
+      "name": "waxy potatoes",
+      "prep": "peeled, sliced 3 mm thin",
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "cream",
+      "amount": 400,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "nutmeg",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "gruyere",
+      "amount": 80,
+      "unit": "g",
+      "name": "Gruyère",
+      "prep": "grated",
+      "category": "fridge"
+    },
+    {
+      "id": "saucisson",
+      "amount": 1,
+      "unit": null,
+      "name": "saucisson vaudois",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "mustard",
+      "amount": null,
+      "unit": null,
+      "name": "wholegrain mustard",
+      "prep": null,
+      "category": "canned"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Gratin",
+      "cue": "Preheat the oven",
+      "text": "Preheat the oven to 180 °C conventional / 160 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sweat the leeks",
+      "text": "Melt {butter-leeks} in a large pan over medium heat. Add {leek}, season with salt and sweat until soft.",
+      "timer": 8
+    },
+    {
+      "section": null,
+      "cue": "Start the layers",
+      "text": "Butter a 25 to 28 cm baking dish with {butter-dish} and cover the base with a third of {potato}. Season with salt and pepper, then add half of the leeks and half of {garlic}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the layers",
+      "text": "Repeat with another third of the potatoes, salt and pepper, the remaining leeks and garlic. Finish with the last third of the potatoes, salt and pepper.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the cream",
+      "text": "Season {cream} with salt, pepper and {nutmeg} and pour evenly over the gratin. Press the layers down so the cream rises and nearly covers the top potatoes.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bake covered",
+      "text": "Scatter {gruyere} over the top, cover with foil and bake.",
+      "timer": 45
+    },
+    {
+      "section": "Saucisson",
+      "cue": "Poach the saucisson",
+      "text": "After 30 min of baking, put {saucisson} in a pot and cover with cold water. Bring to a bare simmer, never a boil or the casing will burst, and poach.",
+      "timer": 45
+    },
+    {
+      "section": "Finishing",
+      "cue": "Uncover and brown",
+      "text": "After 45 min of baking, remove the foil and turn the oven up to 200 °C conventional / 180 °C fan. Bake until golden and bubbling and a knife slides easily through the potatoes.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Let it settle",
+      "text": "Take the gratin out of the oven and leave it to rest.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Slice and serve",
+      "text": "Slice the saucisson into 1 cm rounds. Serve alongside the gratin, with {mustard} on the table.",
+      "timer": null
+    }
+  ]
+}

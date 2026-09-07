@@ -1,0 +1,251 @@
+{
+  "id": "raspberry-tart",
+  "title": "Raspberry tart",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "tags": [
+    "french",
+    "summer",
+    "weekend",
+    "guests"
+  ],
+  "servings": 8,
+  "yield": "one 24 cm tart, 8 slices",
+  "time": {
+    "active": 60,
+    "total": 200
+  },
+  "ahead": null,
+  "notes": [
+    "Make ahead: unbaked dough keeps 72 h in the fridge (take it out 20 min before rolling), pastry cream 48 h in the fridge, baked shell 24 h airtight at room temperature.",
+    "Assembled, the tart is best the same day; the crust softens after about 8 h."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "flour",
+      "amount": 250,
+      "unit": "g",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "icing-sugar",
+      "amount": 90,
+      "unit": "g",
+      "name": "icing sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "ground-almonds",
+      "amount": 50,
+      "unit": "g",
+      "name": "ground almonds",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "butter-dough",
+      "amount": 140,
+      "unit": "g",
+      "name": "butter",
+      "prep": "cold, cubed",
+      "category": "fridge"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "1 whole, 3 separated",
+      "category": "eggs"
+    },
+    {
+      "id": "milk",
+      "amount": 375,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "caster-sugar",
+      "amount": 75,
+      "unit": "g",
+      "name": "caster sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cornstarch",
+      "amount": 35,
+      "unit": "g",
+      "name": "cornstarch",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "vanilla",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "ground Bourbon vanilla",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter-cream",
+      "amount": 30,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "raspberries",
+      "amount": 500,
+      "unit": "g",
+      "name": "raspberries",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "jam",
+      "amount": 60,
+      "unit": "g",
+      "name": "seedless raspberry jam",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "water",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "pistachios",
+      "amount": 20,
+      "unit": "g",
+      "name": "shelled unsalted pistachios",
+      "prep": "crushed",
+      "category": "pantry"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Pâte sucrée",
+      "cue": "Make the dough",
+      "text": "In the TM7 bowl, put {flour}, {icing-sugar}, {ground-almonds}, {salt} and {butter-dough}. Mix until sandy. TM7: 10 sec / speed 6",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bind the dough",
+      "text": "Stop, add the whole egg from {eggs}, resume until it just clumps. Do not overmix. TM7: 15 sec / speed 5",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chill the dough",
+      "text": "Tip out, press into a flat disc and wrap. Chill in the fridge.",
+      "timer": 60
+    },
+    {
+      "section": "Pastry cream",
+      "cue": "Cook the cream",
+      "text": "Meanwhile, wash the bowl. Add {milk}, the yolks of {eggs}, {caster-sugar}, {cornstarch} and {vanilla} and cook until thick and glossy. TM7: 6 min / 90 °C / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish with butter",
+      "text": "Stop, add {butter-cream}, resume until glossy. TM7: 20 sec / speed 5",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chill the cream",
+      "text": "Transfer to a dish, press cling film flat onto the surface and let cool. Chill in the fridge.",
+      "timer": 120
+    },
+    {
+      "section": "Shell",
+      "cue": "Line the tin",
+      "text": "After 1 h, roll the chilled dough between two sheets of parchment to about 2 mm. Line a 24 cm tart tin, press into the edges, trim and freeze.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Preheat the oven",
+      "text": "Meanwhile, heat the oven to 200 °C conventional / 180 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blind bake",
+      "text": "Line the frozen shell with parchment, fill with baking beans and bake.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Brown the shell",
+      "text": "Remove the parchment and beans and bake until deep golden brown and crisp. If the rim colours too fast, cover it loosely with foil.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Seal the shell",
+      "text": "Brush the inside of the hot shell with a little of the egg white and bake to seal.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Cool the shell",
+      "text": "Leave the shell in the tin until completely cool, at room temperature.",
+      "timer": null
+    },
+    {
+      "section": "Assembly",
+      "cue": "Fill the shell",
+      "text": "No more than 3 h before serving, so the shell stays crisp, whisk the cold pastry cream smooth. Spread it evenly into the cooled shell and level the top.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Top with berries",
+      "text": "Arrange {raspberries} upright in tight concentric circles, hollow side down.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Glaze the berries",
+      "text": "Warm {jam} with {water} until fluid. Brush a thin coat over the raspberries.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add pistachios",
+      "text": "Optional: for colour and crunch, edge the tart with {pistachios}.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Serve",
+      "text": "Keep in the fridge and serve chilled.",
+      "timer": null
+    }
+  ]
+}

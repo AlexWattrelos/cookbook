@@ -1,0 +1,21 @@
+{
+  "id": "babaghanoush",
+  "title": "Babaghanoush",
+  "image": null,
+  "course": "starter",
+  "status": "empty",
+  "tags": [
+    "middle-eastern"
+  ],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

@@ -1,0 +1,202 @@
+{
+  "id": "coconut-curry-salmon",
+  "title": "Coconut curry salmon",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "seafood",
+    "easy",
+    "asian"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 25,
+    "total": 35
+  },
+  "ahead": null,
+  "notes": [
+    "Written from the dish name, not the video; check it against the video before cooking.",
+    "Best eaten straight away; leftovers keep 1 day, reheated gently so the salmon does not dry out."
+  ],
+  "source": "https://www.youtube.com/watch?v=Lrn2AONZyCM",
+  "ingredients": [
+    {
+      "id": "water",
+      "amount": 500,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "rice",
+      "amount": 300,
+      "unit": "g",
+      "name": "jasmine rice",
+      "prep": "rinsed until the water runs clear",
+      "category": "grains"
+    },
+    {
+      "id": "oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "shallot",
+      "amount": 2,
+      "unit": null,
+      "name": "shallot",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 3,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "ginger",
+      "amount": 20,
+      "unit": "g",
+      "name": "fresh ginger",
+      "prep": "peeled and finely grated",
+      "category": "produce"
+    },
+    {
+      "id": "curry-paste",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "Thai red curry paste",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "coconut-milk",
+      "amount": 400,
+      "unit": "ml",
+      "name": "coconut milk",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "fish-sauce",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "fish sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "sugar",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "salmon",
+      "amount": 4,
+      "unit": null,
+      "name": "skinless salmon fillet",
+      "prep": "patted dry",
+      "category": "meat-fish"
+    },
+    {
+      "id": "spinach",
+      "amount": 150,
+      "unit": "g",
+      "name": "baby spinach",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "lime-sauce",
+      "amount": 1,
+      "unit": null,
+      "name": "lime",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "coriander",
+      "amount": 15,
+      "unit": "g",
+      "name": "fresh coriander",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "lime-serve",
+      "amount": 1,
+      "unit": null,
+      "name": "lime",
+      "prep": "cut into wedges",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Rice",
+      "cue": "Start the rice",
+      "text": "Bring {water} to a boil in a small pan and add {rice}. Cover and cook on the lowest heat until the water is absorbed.",
+      "timer": 12
+    },
+    {
+      "section": "Curry",
+      "cue": "Fry the aromatics",
+      "text": "Meanwhile, heat {oil} in a large deep pan over medium heat. Add {shallot}, {garlic} and {ginger} and cook, stirring, until soft and fragrant.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Toast the paste",
+      "text": "Add {curry-paste} and stir until it darkens a shade and smells toasted.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Simmer the sauce",
+      "text": "Pour in {coconut-milk}, {fish-sauce} and {sugar}. Bring to a gentle simmer and cook, uncovered, until slightly thickened.",
+      "timer": 5
+    },
+    {
+      "section": "Rice",
+      "cue": "Rest the rice",
+      "text": "Take the rice off the heat and leave it covered until serving.",
+      "timer": null
+    },
+    {
+      "section": "Salmon",
+      "cue": "Poach the salmon",
+      "text": "Salt both sides of {salmon} and lower into the sauce, spooning some over. Cover and simmer gently until just opaque at the thickest point.",
+      "timer": 8
+    },
+    {
+      "section": null,
+      "cue": "Wilt the spinach",
+      "text": "Tuck {spinach} into the sauce around the fish and cover until just wilted.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the sauce",
+      "text": "Turn off the heat and stir the juice of {lime-sauce} into the sauce. Taste and add salt if needed.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Serve",
+      "text": "Fluff the rice into bowls and top with the salmon, spinach and sauce. Scatter with {coriander} and put on the table: {lime-serve}.",
+      "timer": null
+    }
+  ]
+}

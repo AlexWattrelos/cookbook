@@ -1,0 +1,113 @@
+{
+  "id": "galettes",
+  "title": "Galettes",
+  "image": null,
+  "course": "basic",
+  "status": "draft",
+  "tags": [
+    "french"
+  ],
+  "servings": 4,
+  "yield": "4 to 5 galettes",
+  "time": {
+    "active": 30,
+    "total": 150
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "buckwheat-flour",
+      "amount": 90,
+      "unit": "g",
+      "name": "buckwheat flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "salt",
+      "amount": 3,
+      "unit": "g",
+      "name": "fine salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "water-paste",
+      "amount": 170,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "water-thin",
+      "amount": 100,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "egg",
+      "amount": 1,
+      "unit": null,
+      "name": "egg",
+      "prep": null,
+      "category": "eggs"
+    },
+    {
+      "id": "butter",
+      "amount": 15,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Make the paste",
+      "text": "Whisk {buckwheat-flour} with {salt}. Whisk in {water-paste} to a thick paste, smoothing out the lumps.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the batter",
+      "text": "Whisk in {water-thin} until the batter is fluid and spreads easily. Whisk in {egg} until fully combined.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Rest the batter",
+      "text": "Press plastic film directly onto the surface and rest in the fridge, up to 12 h for maximum hydration.",
+      "timer": 120
+    },
+    {
+      "section": null,
+      "cue": "Prepare the pan",
+      "text": "Whisk the batter briefly. Heat a pan over medium-high heat until a drop of water sizzles instantly.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the first side",
+      "text": "Grease the pan with {butter}, a thin film for each galette. Pour a thin layer of batter, swirl fast and cook until the surface looks dry and the edges are well browned.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the second side",
+      "text": "Flip and cook until browned with spots and the galette feels drier and crisper. For extra crispness, flip once more briefly to dry the first side again.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the rest",
+      "text": "Repeat with the remaining batter, greasing the pan each time. If the galettes tear, whisk a little more buckwheat flour into the batter; if it has thickened, a little water.",
+      "timer": null
+    }
+  ]
+}

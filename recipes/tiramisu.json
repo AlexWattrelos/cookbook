@@ -1,0 +1,164 @@
+{
+  "id": "tiramisu",
+  "title": "Tiramisu",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "tags": [
+    "italian",
+    "guests"
+  ],
+  "servings": 8,
+  "yield": "one 20×25 cm dish",
+  "time": {
+    "active": 40,
+    "total": 400
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "espresso",
+      "amount": 240,
+      "unit": "ml",
+      "name": "strong espresso",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cocoa-coffee",
+      "amount": 10,
+      "unit": "g",
+      "name": "cocoa powder",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "marsala",
+      "amount": 3,
+      "unit": "tbsp",
+      "name": "Marsala",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "sugar",
+      "amount": 100,
+      "unit": "g",
+      "name": "sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "separated, only half the whites needed",
+      "category": "eggs"
+    },
+    {
+      "id": "mascarpone",
+      "amount": 500,
+      "unit": "g",
+      "name": "mascarpone",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "cream",
+      "amount": 200,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "savoiardi",
+      "amount": 200,
+      "unit": "g",
+      "name": "small savoiardi ladyfingers",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cocoa-middle",
+      "amount": 10,
+      "unit": "g",
+      "name": "cocoa powder",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cocoa-top",
+      "amount": 10,
+      "unit": "g",
+      "name": "cocoa powder",
+      "prep": null,
+      "category": "pantry"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Coffee",
+      "cue": "Make the coffee dip",
+      "text": "Brew {espresso} and drop in one big ice cube to cool. Whisk in {cocoa-coffee} and {marsala} until dissolved.",
+      "timer": null
+    },
+    {
+      "section": "Cream",
+      "cue": "Whisk the yolks",
+      "text": "In a large bowl, beat {sugar} with the yolks of {eggs}. Beat with a hand electric whisk until pale, thick and doubled in volume.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blend in the mascarpone",
+      "text": "Add {mascarpone} and a pinch of salt. Whisk on low speed until just smooth, without overworking it.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Whip the cream",
+      "text": "In a separate bowl, whip {cream} to soft peaks.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Whip the whites",
+      "text": "In another clean bowl, whip the egg whites to stiff peaks.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Lighten the mascarpone",
+      "text": "Fold the whipped cream into the mascarpone mixture with a spatula. Then gently fold in the egg whites in two additions, keeping it airy.",
+      "timer": null
+    },
+    {
+      "section": "Assembly",
+      "cue": "Prepare the ladyfingers",
+      "text": "Dip {savoiardi} one at a time into the coffee, about 1 second per side. Do not soak them, or they collapse.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Build the first layer",
+      "text": "Line the bottom of a 20×25 cm dish with a single layer of dipped ladyfingers. Spread half the cream over them and dust with {cocoa-middle}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Build the second layer",
+      "text": "Repeat with another layer of dipped ladyfingers, then the remaining cream. Sift {cocoa-top} over the top.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chill",
+      "text": "Cover with cling film and refrigerate at least 6 h, ideally overnight.",
+      "timer": null
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rosti",
+  "title": "Rösti",
+  "image": null,
+  "course": "side",
+  "status": "empty",
+  "tags": [
+    "potato",
+    "swiss"
+  ],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

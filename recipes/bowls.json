@@ -1,0 +1,21 @@
+{
+  "id": "bowls",
+  "title": "Bowls",
+  "image": null,
+  "course": "main",
+  "status": "empty",
+  "tags": [],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [
+    "Source was a ChatGPT chat link, not accessible."
+  ],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

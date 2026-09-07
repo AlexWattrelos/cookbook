@@ -1,0 +1,133 @@
+{
+  "id": "roasted-mushrooms",
+  "title": "Roasted mushrooms",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "vegetables"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 15,
+    "total": 45
+  },
+  "ahead": null,
+  "notes": [
+    "Drafted from the dish name only; check against the Fallow video before marking ready."
+  ],
+  "source": "https://www.youtube.com/watch?v=WOZ4m6dfjPg",
+  "ingredients": [
+    {
+      "id": "brown-mushrooms",
+      "amount": 400,
+      "unit": "g",
+      "name": "brown mushrooms",
+      "prep": "halved",
+      "category": "produce"
+    },
+    {
+      "id": "king-oyster",
+      "amount": 400,
+      "unit": "g",
+      "name": "king oyster mushrooms",
+      "prep": "halved lengthwise",
+      "category": "produce"
+    },
+    {
+      "id": "oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter",
+      "amount": 40,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "thyme",
+      "amount": 4,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 3,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely sliced",
+      "category": "produce"
+    },
+    {
+      "id": "soy-sauce",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "soy sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "parsley",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "leaves picked, roughly chopped",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Heat the oven",
+      "text": "Preheat the oven to 220 °C conventional / 200 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season the mushrooms",
+      "text": "Toss on a large tray with {oil} and a good pinch of salt: {brown-mushrooms}, {king-oyster}. Spread in a single layer, cut side down.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Drive off the water",
+      "text": "Roast until the tray is dry and the edges start to brown.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Make the garlic butter",
+      "text": "Meanwhile, melt {butter} in a small pan over low heat with {thyme} and {garlic}. Cook until the garlic is soft and the butter smells nutty, then stir in {soy-sauce}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Glaze the mushrooms",
+      "text": "Pour the garlic butter over the mushrooms and toss. Roast until deeply browned and glossy.",
+      "timer": 8
+    },
+    {
+      "section": null,
+      "cue": "Finish and serve",
+      "text": "Squeeze over the juice of {lemon}, then toss with pepper and {parsley}. Serve on a warm platter with the tray juices.",
+      "timer": null
+    }
+  ]
+}

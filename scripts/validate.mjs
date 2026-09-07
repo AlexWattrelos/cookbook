@@ -46,7 +46,7 @@ export function recipeErrors(recipe, filename) {
 
   if (recipe.id !== basename(filename, ".json")) errors.push(`id "${recipe.id}" does not match the filename ${filename}`);
   if (recipe.image && !existsSync(join(root, recipe.image))) errors.push(`image ${recipe.image} does not exist`);
-  if (MAIN_INGREDIENT_COURSES.includes(recipe.course) && !recipe.tags.some(tag => mainIngredientTags.includes(tag))) {
+  if (recipe.status !== "empty" && MAIN_INGREDIENT_COURSES.includes(recipe.course) && !recipe.tags.some(tag => mainIngredientTags.includes(tag))) {
     errors.push(`a ${recipe.course} needs a main-ingredient tag (${mainIngredientTags.join(", ")})`);
   }
 

@@ -1,0 +1,193 @@
+{
+  "id": "caramelised-pork-belly",
+  "title": "Caramelised pork belly",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "pork",
+    "asian",
+    "guests"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 40,
+    "total": 80
+  },
+  "ahead": null,
+  "notes": [
+    "Keeps 3 days in the fridge; reheat gently with a splash of water."
+  ],
+  "source": "https://www.youtube.com/watch?v=Td-sOB-cvgQ",
+  "ingredients": [
+    {
+      "id": "pork",
+      "amount": 800,
+      "unit": "g",
+      "name": "pork belly",
+      "prep": "rind removed, cut into 3 cm cubes",
+      "category": "meat-fish"
+    },
+    {
+      "id": "chilli",
+      "amount": 1,
+      "unit": null,
+      "name": "red chilli",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 4,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "shallot",
+      "amount": 2,
+      "unit": null,
+      "name": "shallot",
+      "prep": "peeled and thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "ginger",
+      "amount": 20,
+      "unit": "g",
+      "name": "ginger",
+      "prep": "peeled and finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "sugar",
+      "amount": 60,
+      "unit": "g",
+      "name": "sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "fish-sauce",
+      "amount": 3,
+      "unit": "tbsp",
+      "name": "fish sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "soy-sauce",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "soy sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "water-braise",
+      "amount": 300,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "pepper",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "black pepper",
+      "prep": "coarsely ground",
+      "category": "staple"
+    },
+    {
+      "id": "rice",
+      "amount": 300,
+      "unit": "g",
+      "name": "jasmine rice",
+      "prep": "rinsed until the water runs clear",
+      "category": "grains"
+    },
+    {
+      "id": "water-rice",
+      "amount": 450,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "spring-onion",
+      "amount": 3,
+      "unit": null,
+      "name": "spring onion",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "lime",
+      "amount": 1,
+      "unit": null,
+      "name": "lime",
+      "prep": "cut into wedges",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Pork",
+      "cue": "Render the pork",
+      "text": "Set a large heavy pot over medium heat and add {pork}. Cook, turning now and then, until the fat has rendered and the cubes are golden all over.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Fry the aromatics",
+      "text": "Spoon off all but 1 tbsp of the fat. Add {chilli}, {garlic}, {shallot} and {ginger} and fry until fragrant.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Caramelise the sugar",
+      "text": "Sprinkle over {sugar} and stir until it melts and the pork is coated in a deep amber caramel.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Braise the pork",
+      "text": "Add {fish-sauce}, {soy-sauce}, {water-braise} and {pepper}. Bring to a simmer, cover and cook on low heat until the pork is tender.",
+      "timer": 45
+    },
+    {
+      "section": "Rice",
+      "cue": "Cook the rice",
+      "text": "Halfway through the braise, put {water-rice} in a small pan with {rice} and bring to a boil. Cover and cook on the lowest heat until the water is absorbed.",
+      "timer": 12
+    },
+    {
+      "section": null,
+      "cue": "Rest the rice",
+      "text": "Take off the heat and leave covered.",
+      "timer": 10
+    },
+    {
+      "section": "Glaze",
+      "cue": "Reduce the sauce",
+      "text": "Once the pork is tender, uncover, raise the heat and simmer, stirring now and then, until the sauce is a sticky glaze that coats the pork.",
+      "timer": 10
+    },
+    {
+      "section": "Serving",
+      "cue": "Plate the rice",
+      "text": "Fluff the rice into bowls and top with the pork and its glaze.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Scatter with {spring-onion}. Put on the table: {lime}.",
+      "timer": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "id": "gougeres",
+  "title": "Gougères",
+  "image": null,
+  "course": "starter",
+  "status": "draft",
+  "tags": [
+    "cheese",
+    "guests",
+    "french"
+  ],
+  "servings": 4,
+  "yield": "~30 pieces",
+  "time": {
+    "active": 30,
+    "total": 55
+  },
+  "ahead": null,
+  "notes": [
+    "Keeps warm in an 80 °C oven for up to 45 min.",
+    "Freezes 1 month fully baked; recrisp 6 min at 180 °C from frozen."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "water",
+      "amount": 120,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "milk",
+      "amount": 120,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "butter",
+      "amount": 100,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "ground nutmeg",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "pepper",
+      "amount": 1,
+      "unit": "g",
+      "name": "black pepper",
+      "prep": "freshly ground",
+      "category": "staple"
+    },
+    {
+      "id": "flour",
+      "amount": 160,
+      "unit": "g",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "egg",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "beaten",
+      "category": "eggs"
+    },
+    {
+      "id": "gruyere",
+      "amount": 130,
+      "unit": "g",
+      "name": "Gruyère",
+      "prep": "finely grated",
+      "category": "fridge"
+    },
+    {
+      "id": "parmesan",
+      "amount": 70,
+      "unit": "g",
+      "name": "Parmesan",
+      "prep": "finely grated",
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Heat the oven",
+      "text": "Preheat the oven to 210 °C conventional, no fan, with racks in the upper and lower thirds.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the panade",
+      "text": "Put {water}, {milk}, {butter}, {salt}, {nutmeg} and {pepper} in the TM7 bowl. Heat until fully melted and just bubbling. TM7: 5 min / 98 °C / speed 1",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the flour",
+      "text": "Mix in {flour} until combined. TM7: 20 sec / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Dry the dough",
+      "text": "Cook until the dough forms a smooth ball pulling from the sides and leaves a thin film on the bowl. TM7: 3 min / 100 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cool slightly",
+      "text": "Mix without heat to bring the dough below about 60 °C, so the eggs will not scramble. TM7: 1 min / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Work in the eggs",
+      "text": "Add {egg} in 3 additions, mixing after each, keeping back the last few spoonfuls. TM7: 30 sec / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Check the texture",
+      "text": "Lift the spatula: the dough should stretch into a V-shaped ribbon that slowly breaks, glossy and holding soft ridges like thick mayonnaise. If it snaps stiffly, add the reserved egg a spoonful at a time, mixing briefly after each.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fold in the cheese",
+      "text": "Add {gruyere} and {parmesan}. Mix just to distribute, without overworking. TM7: 15 sec / speed 3.5",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Shape the gougères",
+      "text": "Spoon 4 cm mounds onto two trays lined with baking paper, 4 cm apart. Smooth the points with a finger dipped in water so they do not burn.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the tops",
+      "text": "Optional: sprinkle a little flaky salt on each.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Inflate the puffs",
+      "text": "Bake on the two racks. Do not open the door.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Lower the heat",
+      "text": "Turn the oven down to 185 °C, still without opening the door.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Vent and finish",
+      "text": "Open the door for 2 seconds to let the steam out, then bake until deep golden.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Release the steam",
+      "text": "Take the trays out and pierce each puff on the side with a skewer.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Dry the puffs",
+      "text": "Turn the oven off and return the trays, door ajar, to dry.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Bring to the table while still warm.",
+      "timer": null
+    }
+  ]
+}

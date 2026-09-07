@@ -1,0 +1,131 @@
+{
+  "id": "confit-cabbage",
+  "title": "Confit cabbage",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "vegetables"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 20,
+    "total": 75
+  },
+  "ahead": null,
+  "notes": [
+    "Written from the dish name; the video was not consulted."
+  ],
+  "source": "https://www.youtube.com/watch?v=WOZ4m6dfjPg",
+  "ingredients": [
+    {
+      "id": "oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cabbage",
+      "amount": 2,
+      "unit": null,
+      "name": "pointed cabbage",
+      "prep": "halved lengthwise through the core",
+      "category": "produce"
+    },
+    {
+      "id": "butter",
+      "amount": 120,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "thyme",
+      "amount": 6,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "fine salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "garlic",
+      "amount": 4,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "lightly crushed",
+      "category": "produce"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Preheat the oven",
+      "text": "Preheat the oven to 160 °C conventional / 140 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sear the cabbage",
+      "text": "Heat {oil} in a large frying pan over high heat and add, cut side down, half of {cabbage}. Sear without moving until the cut faces are deeply browned, almost black at the edges.",
+      "timer": 4
+    },
+    {
+      "section": null,
+      "cue": "Sear the rest",
+      "text": "Transfer to a roasting dish, cut side up, and sear the other half the same way.",
+      "timer": 4
+    },
+    {
+      "section": null,
+      "cue": "Make the confit butter",
+      "text": "Meanwhile, melt {butter} in a small pan with {thyme}, {bay}, {salt} and {garlic}. Warm gently until the garlic smells sweet.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Confit in the oven",
+      "text": "Add the second batch to the dish, pour the butter and aromatics over the cabbage and cover tightly with foil. Bake until a knife slides into the core with no resistance.",
+      "timer": 45
+    },
+    {
+      "section": null,
+      "cue": "Crisp the edges",
+      "text": "Turn the oven up to 220 °C conventional / 200 °C fan. Uncover, baste with the butter from the dish and roast until the edges are crisp and the butter has browned.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Finish and serve",
+      "text": "Lift the cabbage onto a warm platter. Whisk the juice of {lemon} into the butter left in the dish, spoon over and finish with flaky salt and pepper.",
+      "timer": null
+    }
+  ]
+}

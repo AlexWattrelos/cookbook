@@ -1,0 +1,228 @@
+{
+  "id": "cheese-souffle",
+  "title": "Cheese soufflé",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "cheese",
+    "french",
+    "guests"
+  ],
+  "servings": 2,
+  "yield": "6 ramekins",
+  "time": {
+    "active": 25,
+    "total": 40
+  },
+  "ahead": null,
+  "notes": [
+    "Serves 5 to 6 as a starter, 2 as a main.",
+    "Bake 17 min for a more set centre. One 1 l soufflé dish instead of the ramekins: 25 min."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "gruyere",
+      "amount": 130,
+      "unit": "g",
+      "name": "Gruyère",
+      "prep": "in 2 cm chunks",
+      "category": "fridge"
+    },
+    {
+      "id": "lemon-juice",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "lemon juice",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "separated",
+      "category": "eggs"
+    },
+    {
+      "id": "butter-roux",
+      "amount": 40,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "flour",
+      "amount": 40,
+      "unit": "g",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cornstarch",
+      "amount": 5,
+      "unit": "g",
+      "name": "cornstarch",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "milk",
+      "amount": 300,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "white-pepper",
+      "amount": 0.25,
+      "unit": "tsp",
+      "name": "white pepper",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "nutmeg",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter-dish",
+      "amount": 10,
+      "unit": "g",
+      "name": "butter",
+      "prep": "softened",
+      "category": "fridge"
+    },
+    {
+      "id": "parmesan",
+      "amount": 10,
+      "unit": "g",
+      "name": "Parmesan",
+      "prep": "finely grated",
+      "category": "fridge"
+    },
+    {
+      "id": "mustard",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "Dijon mustard",
+      "prep": null,
+      "category": "canned"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Prep",
+      "cue": "Start the oven",
+      "text": "Preheat to 200 °C conventional, no fan, rack in the lower-middle position.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Grate the cheese",
+      "text": "Blitz {gruyere}, scraping down and pulsing again if needed. Tip out and set aside. TM7: 8 sec / speed 8",
+      "timer": null
+    },
+    {
+      "section": "Egg whites",
+      "cue": "Whip the whites",
+      "text": "Put {lemon-juice} and the whites of {eggs} in a large grease-free bowl. Whip until soft-firm peaks: glossy, the tips just curl.",
+      "timer": null
+    },
+    {
+      "section": "Cheese base",
+      "cue": "Start the base",
+      "text": "Melt {butter-roux}. TM7: 2 min / 100 °C / speed 1",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the roux",
+      "text": "Add {flour} and {cornstarch}. Cook without colouring. TM7: 2 min / 100 °C / speed 2",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Thicken the base",
+      "text": "Add {milk}, {salt}, {white-pepper} and {nutmeg}. Cook until thick like yogurt. TM7: 5 min / 100 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Prepare the ramekins",
+      "text": "Meanwhile, brush the ramekins with upward strokes of {butter-dish} and dust with {parmesan}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Melt in the cheese",
+      "text": "Add the grated cheese and {mustard}. Blend until smooth. TM7: 30 sec / 90 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cool the base",
+      "text": "Stir without heat to vent the steam. TM7: 2 min / speed 2",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Mix in the yolks",
+      "text": "Add the egg yolks, just to combine. TM7: 15 sec / speed 3",
+      "timer": null
+    },
+    {
+      "section": "Fold and fill",
+      "cue": "Season and transfer",
+      "text": "Taste and season boldly: baking mutes it. Scrape the warm base into a large bowl.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Lighten the base",
+      "text": "Briskly mix in about a quarter of the whites.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Incorporate the whites",
+      "text": "Fold in the rest with a spatula: scoop under, lift, quarter turn. Stop while a few pale streaks remain.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fill the ramekins",
+      "text": "Spoon into the ramekins to 5 mm below the rim. Run a thumb around the inside rim to make a shallow channel, for an even top-hat rise.",
+      "timer": null
+    },
+    {
+      "section": "Bake and serve",
+      "cue": "Into the oven",
+      "text": "Bake, without opening the oven, until well risen and browned, a skewer just off-centre showing a slightly custardy smear.",
+      "timer": 14
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Crack the top with a spoon and serve immediately.",
+      "timer": null
+    }
+  ]
+}

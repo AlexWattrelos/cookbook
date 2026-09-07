@@ -1,0 +1,287 @@
+{
+  "id": "steak-frites",
+  "title": "Steak frites",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "red-meat",
+    "potato",
+    "french",
+    "guests"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 50,
+    "total": 65
+  },
+  "ahead": null,
+  "notes": [
+    "The sauce is the Relais de Venise (L'Entrecôte) one, from the source. The source has nothing on the steak or the frites; those are a plain draft.",
+    "For 2 people, make at most half the sauce."
+  ],
+  "source": "https://medium.com/@natashkela/le-relais-de-venise-lentrecote-steak-sauce-recipe-9242ef6ef343",
+  "ingredients": [
+    {
+      "id": "shallot",
+      "amount": 1,
+      "unit": null,
+      "name": "shallot",
+      "prep": "peeled and halved",
+      "category": "produce"
+    },
+    {
+      "id": "butter-shallot",
+      "amount": 50,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "butter-sauce",
+      "amount": 150,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "sage",
+      "amount": 4,
+      "unit": null,
+      "name": "sage leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "basil",
+      "amount": 4,
+      "unit": null,
+      "name": "basil leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "ground nutmeg",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "walnut",
+      "amount": 20,
+      "unit": "g",
+      "name": "walnut kernels",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "capers",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "capers",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "anchovy",
+      "amount": 25,
+      "unit": "g",
+      "name": "anchovy fillets in oil",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "parsley",
+      "amount": 25,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "tarragon",
+      "amount": 25,
+      "unit": "g",
+      "name": "tarragon",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "mustard",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "Dijon mustard",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "worcestershire",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "Worcestershire sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "vinegar",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "white wine vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "egg",
+      "amount": 1,
+      "unit": null,
+      "name": "egg",
+      "prep": "yolk only",
+      "category": "eggs"
+    },
+    {
+      "id": "potato",
+      "amount": 1000,
+      "unit": "g",
+      "name": "floury potatoes",
+      "prep": "peeled, cut into 1 cm sticks",
+      "category": "produce"
+    },
+    {
+      "id": "oil",
+      "amount": 1500,
+      "unit": "ml",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "steak",
+      "amount": 4,
+      "unit": null,
+      "name": "entrecôte steak",
+      "prep": "200 g each, at room temperature",
+      "category": "meat-fish"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Sauce",
+      "cue": "Start the sauce",
+      "text": "Chop {shallot}. TM7: 5 sec / speed 5.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sweat the shallot",
+      "text": "Scrape down, add {butter-shallot} and sweat until translucent, not browned. TM7: 4 min / 100 °C / speed 1.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Melt the butter",
+      "text": "Add {butter-sauce} and melt fully. TM7: 4 min / 60 °C / speed 1.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blend the herbs",
+      "text": "Add {sage}, {basil}, {nutmeg}, {walnut}, {capers}, {anchovy}, {parsley} and {tarragon}. Blend with a good grind of pepper until smooth. TM7: 1 min / speed 10.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Make the yolk base",
+      "text": "Whisk together in a bowl {mustard}, {worcestershire}, {vinegar} and the yolk of {egg}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Whisk in the butter",
+      "text": "Pour the herb butter into the bowl in a thin stream, whisking constantly, until it looks like mayonnaise.",
+      "timer": null
+    },
+    {
+      "section": "Frites",
+      "cue": "Wash off the starch",
+      "text": "Rinse {potato}. Drain and dry thoroughly in a tea towel.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat the oil",
+      "text": "Pour {oil} into a deep fryer or a large heavy pot, no more than half full. Heat to 150 °C.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "First bath",
+      "text": "Fry the potatoes in batches, without crowding the oil, until soft but still pale.",
+      "timer": 8
+    },
+    {
+      "section": null,
+      "cue": "Drain and cool",
+      "text": "Lift out onto a tray lined with kitchen paper. Leave to cool while you cook the steaks.",
+      "timer": null
+    },
+    {
+      "section": "Steak",
+      "cue": "Salt the steaks",
+      "text": "Pat dry and salt {steak}. Heat a heavy pan over high heat until it smokes.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sear the first side",
+      "text": "Add a spoonful of the frying oil and lay in the steaks. Sear without moving them until deeply browned.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Sear the second side",
+      "text": "Flip and sear until browned on the second side and still soft under a finger, medium-rare.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Rest the steaks",
+      "text": "Transfer to a warm plate and cover loosely. Rest while you finish the sauce and the frites.",
+      "timer": null
+    },
+    {
+      "section": "Finish the sauce",
+      "cue": "Heat two thirds",
+      "text": "Put two thirds of the sauce in a small saucepan and heat until it starts to turn a bit crumbly. Turn off the heat and wait 30 seconds.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bring it together",
+      "text": "Whisk the remaining third into the pan thoroughly.",
+      "timer": null
+    },
+    {
+      "section": "Finish the frites",
+      "cue": "Second bath",
+      "text": "Raise the oil to 190 °C. Fry the frites again in batches until golden and crisp.",
+      "timer": 3
+    },
+    {
+      "section": null,
+      "cue": "Salt the frites",
+      "text": "Drain on fresh kitchen paper and salt with fine salt.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Slice and plate",
+      "text": "Slice the steaks thinly across the grain. Arrange on warm plates: steak, sauce spooned over, frites alongside.",
+      "timer": null
+    }
+  ]
+}

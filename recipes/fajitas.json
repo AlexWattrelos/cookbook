@@ -1,0 +1,19 @@
+{
+  "id": "fajitas",
+  "title": "Fajitas",
+  "image": null,
+  "course": "main",
+  "status": "empty",
+  "tags": [],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

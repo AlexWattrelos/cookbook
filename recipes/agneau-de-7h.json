@@ -1,0 +1,223 @@
+{
+  "id": "agneau-de-7h",
+  "title": "Agneau de 7h",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "red-meat",
+    "french",
+    "winter",
+    "weekend",
+    "guests"
+  ],
+  "servings": 8,
+  "yield": "one 2 kg leg",
+  "time": {
+    "active": 60,
+    "total": 425
+  },
+  "ahead": "Salt the leg generously all over and leave it uncovered in the fridge, 1 to 24 h ahead, ideally the day before.",
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "lamb",
+      "amount": 1,
+      "unit": null,
+      "name": "bone-in leg of lamb, gigot",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "olive-oil",
+      "amount": 80,
+      "unit": "ml",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "onion",
+      "amount": 4,
+      "unit": null,
+      "name": "onion",
+      "prep": "peeled and quartered",
+      "category": "produce"
+    },
+    {
+      "id": "carrot",
+      "amount": 400,
+      "unit": "g",
+      "name": "carrots",
+      "prep": "peeled, cut into large pieces",
+      "category": "produce"
+    },
+    {
+      "id": "cognac",
+      "amount": 80,
+      "unit": "ml",
+      "name": "cognac",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "rind",
+      "amount": 200,
+      "unit": "g",
+      "name": "pork rind, couenne",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "wine",
+      "amount": 400,
+      "unit": "ml",
+      "name": "dry white wine",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "stock",
+      "amount": 250,
+      "unit": "ml",
+      "name": "beef stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "dried-tomato",
+      "amount": 200,
+      "unit": "g",
+      "name": "sun-dried tomatoes",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "tomato",
+      "amount": 400,
+      "unit": "g",
+      "name": "tomatoes",
+      "prep": "peeled, seeded, roughly chopped",
+      "category": "produce"
+    },
+    {
+      "id": "thyme",
+      "amount": 4,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "clove",
+      "amount": 1,
+      "unit": null,
+      "name": "whole clove",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "parsley",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "tied with the thyme and bay",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Heat the oven",
+      "text": "Preheat the oven to 120 °C conventional / 100 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Dry the lamb",
+      "text": "Pat {lamb} dry and season with pepper.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sear the lamb",
+      "text": "Heat {olive-oil} in a large cocotte over medium-high heat. Sear the lamb on all sides until well browned, then set aside.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sweat the vegetables",
+      "text": "Lower the heat. In the same cocotte, sweat {onion} and {carrot}.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Add the cognac",
+      "text": "Deglaze with {cognac}, scraping up the browned bits.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Build the base",
+      "text": "Lay {rind} over the vegetables. Add {wine}, {stock}, {dried-tomato} and {tomato}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the herbs",
+      "text": "Add {thyme}, {bay}, {clove} and {parsley}. Season lightly with salt and pepper and bring to a gentle simmer.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the lamb",
+      "text": "Set the lamb on top of the vegetables. Add water if needed so the liquid comes about two-thirds up the meat.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Braise the lamb",
+      "text": "Cover and transfer to the oven, keeping the liquid at a gentle simmer, never a hard boil. Braise 6 h, until the meat almost falls apart.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Test with a skewer",
+      "text": "Push a skewer into the thickest part: it should slide in very easily. If it still resists, cook another 30 min and check again.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Brown the crust",
+      "text": "Optional: uncover, raise the oven to 180 °C conventional / 160 °C fan and roast, basting once or twice, until nicely browned.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Rest the lamb",
+      "text": "Transfer the lamb to a warm platter and rest, loosely covered.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the sauce",
+      "text": "Meanwhile, skim the fat off the sauce and, if it is thin, reduce it on the stove with the lid off until slightly thickened and flavourful. Season with salt and pepper.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Spoon the vegetables and plenty of sauce around the lamb. It should be soft enough to portion with a spoon.",
+      "timer": null
+    }
+  ]
+}

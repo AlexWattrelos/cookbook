@@ -1,0 +1,150 @@
+{
+  "id": "asparagus-with-hollandaise-ham-and-baby-potatoes",
+  "title": "Asparagus with hollandaise, ham and baby potatoes",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "vegetables",
+    "pork",
+    "spring",
+    "easy"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 20,
+    "total": 25
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "amount": 600,
+      "unit": "g",
+      "name": "baby potatoes",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "butter",
+      "amount": 300,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "mustard",
+      "amount": 2,
+      "unit": "tsp",
+      "name": "Dijon mustard",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "lemon",
+      "amount": 1,
+      "unit": null,
+      "name": "lemon",
+      "prep": "juiced",
+      "category": "produce"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "yolks only",
+      "category": "eggs"
+    },
+    {
+      "id": "oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "asparagus",
+      "amount": 800,
+      "unit": "g",
+      "name": "green asparagus",
+      "prep": "woody ends snapped off",
+      "category": "produce"
+    },
+    {
+      "id": "ham",
+      "amount": 400,
+      "unit": "g",
+      "name": "cooked ham",
+      "prep": "in thick slices",
+      "category": "meat-fish"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Potatoes",
+      "cue": "Start the potatoes",
+      "text": "Boil {potatoes} in salted water until tender.",
+      "timer": 15
+    },
+    {
+      "section": "Hollandaise",
+      "cue": "Melt the butter",
+      "text": "Meanwhile, put {butter} in the TM7 bowl. TM7: 4 min / 75 °C / speed 1.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Set the butter aside",
+      "text": "Pour the melted butter into a jug. Insert the butterfly whisk.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the hollandaise",
+      "text": "Add {mustard}, a pinch of salt, a pinch of white pepper, the juice of {lemon} and the yolks of {eggs}. TM7: 30 sec / 60 °C / speed 3, butterfly.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the emulsion",
+      "text": "Pour in roughly a third of the melted butter. TM7: 1 min / 60 °C / speed 3, butterfly.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Thicken the sauce",
+      "text": "Pour in the rest of the butter. TM7: 3 min / 80 °C / speed 3, butterfly.",
+      "timer": null
+    },
+    {
+      "section": "Asparagus",
+      "cue": "Sear the asparagus",
+      "text": "While the hollandaise runs, heat {oil} in a large pan over high heat. Add {asparagus}, season with salt and sear, turning occasionally, until tender-crisp with light char.",
+      "timer": 4
+    },
+    {
+      "section": null,
+      "cue": "Season the asparagus",
+      "text": "Off the heat, finish with black pepper.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Taste the sauce",
+      "text": "Check that the hollandaise is thick and creamy, then adjust the salt.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Drain the potatoes. Arrange on warm plates: asparagus, potatoes and {ham}, with the hollandaise spooned over.",
+      "timer": null
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "white-chocolate-cheesecake",
+  "title": "White-chocolate cheesecake",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "tags": [
+    "guests"
+  ],
+  "servings": 12,
+  "yield": "one 23 cm cheesecake, 12 slices",
+  "time": {
+    "active": 35,
+    "total": 210
+  },
+  "ahead": "Make it the day before: it needs 24 h in the fridge. Take the cream cheese out 1 h ahead so it softens.",
+  "notes": [
+    "Improves after 2 to 3 days; keeps well covered in the fridge."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "speculoos",
+      "amount": 250,
+      "unit": "g",
+      "name": "speculoos biscuits",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter",
+      "amount": 75,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "creme-fraiche",
+      "amount": 220,
+      "unit": "ml",
+      "name": "crème fraîche",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "white-chocolate",
+      "amount": 400,
+      "unit": "g",
+      "name": "white chocolate",
+      "prep": "chopped",
+      "category": "pantry"
+    },
+    {
+      "id": "cream-cheese",
+      "amount": 730,
+      "unit": "g",
+      "name": "cream cheese",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "sugar",
+      "amount": 90,
+      "unit": "g",
+      "name": "sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "lime",
+      "amount": 1,
+      "unit": null,
+      "name": "lime",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "eggs",
+      "amount": 3,
+      "unit": null,
+      "name": "egg",
+      "prep": null,
+      "category": "eggs"
+    },
+    {
+      "id": "raspberry-puree",
+      "amount": 100,
+      "unit": "ml",
+      "name": "raspberry purée",
+      "prep": null,
+      "category": "canned"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Crust",
+      "cue": "Make the crumbs",
+      "text": "Crush {speculoos} to coarse crumbs, not dust. TM7: 6 sec / speed 5.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the butter",
+      "text": "Melt {butter} in the microwave, 600 W for 1 min 50. Pour over the crumbs and mix until every crumb is coated.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Line the base",
+      "text": "Press the crumbs firmly into the base of a 23 cm springform pan and chill.",
+      "timer": 45
+    },
+    {
+      "section": "Filling",
+      "cue": "Melt the chocolate",
+      "text": "Meanwhile, melt {creme-fraiche} with {white-chocolate} over low heat, stirring until smooth. TM7: 10 min / 50 °C / speed 2.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cream the cheese",
+      "text": "Beat {cream-cheese} with {sugar} and the juice of {lime} in a large bowl until creamy.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the eggs",
+      "text": "Gently beat in {eggs}, one at a time.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fold in the chocolate",
+      "text": "Stir in the melted chocolate until the batter is silky. Do not add air bubbles.",
+      "timer": null
+    },
+    {
+      "section": "Assembly and baking",
+      "cue": "Heat the oven",
+      "text": "Preheat the oven to 155 °C conventional, no fan. Put a small bowl of water on the oven floor.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Line the ring",
+      "text": "Once the crust is chilled, line the inside of the ring with a strip of baking parchment, stuck on with a little water.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fill and swirl",
+      "text": "Pour the batter over the crust. Swirl {raspberry-puree} over the top for a marbled look.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Into the oven",
+      "text": "Bake until the centre reads 66 °C on a probe. If it is not there yet, give it 10 min more and check again.",
+      "timer": 60
+    },
+    {
+      "section": null,
+      "cue": "Cool in the oven",
+      "text": "Turn the oven off and open the door slightly. Leave the cake inside to cool; this prevents cracks.",
+      "timer": 90
+    },
+    {
+      "section": null,
+      "cue": "Chill the cake",
+      "text": "Refrigerate, covered, at least 24 h.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Unmould and slice",
+      "text": "Release the ring, peel off the parchment and cut into slices.",
+      "timer": null
+    }
+  ]
+}

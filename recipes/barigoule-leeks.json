@@ -1,0 +1,165 @@
+{
+  "id": "barigoule-leeks",
+  "title": "Barigoule leeks",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "vegetables",
+    "french"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 30,
+    "total": 50
+  },
+  "ahead": null,
+  "notes": [
+    "Drafted from the dish name, not from the Fallow video; check against it before setting ready.",
+    "Keeps 2 days in the fridge; reheat gently in the liquor."
+  ],
+  "source": "https://www.youtube.com/watch?v=WOZ4m6dfjPg",
+  "ingredients": [
+    {
+      "id": "olive-oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "leek",
+      "amount": 4,
+      "unit": null,
+      "name": "leek",
+      "prep": "trimmed, halved lengthwise, washed",
+      "category": "produce"
+    },
+    {
+      "id": "thyme",
+      "amount": 3,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "bay",
+      "amount": 1,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "sliced",
+      "category": "produce"
+    },
+    {
+      "id": "shallot",
+      "amount": 2,
+      "unit": null,
+      "name": "shallot",
+      "prep": "peeled and thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "carrot",
+      "amount": 100,
+      "unit": "g",
+      "name": "carrots",
+      "prep": "peeled, thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "wine",
+      "amount": 150,
+      "unit": "ml",
+      "name": "dry white wine",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "stock",
+      "amount": 300,
+      "unit": "ml",
+      "name": "vegetable stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "butter",
+      "amount": 30,
+      "unit": "g",
+      "name": "butter",
+      "prep": "cold, diced",
+      "category": "fridge"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "parsley",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "leaves picked, chopped",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Sear the leeks",
+      "text": "Heat {olive-oil} in a large sauté pan over high heat and add {leek}. Sear cut side down, without moving them, until deeply browned.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Soften the aromatics",
+      "text": "Lift the leeks out, lower the heat and add {thyme}, {bay}, {garlic}, {shallot} and {carrot}. Cook gently until soft but not coloured.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Reduce the wine",
+      "text": "Pour in {wine} and boil until reduced by half.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Braise the leeks",
+      "text": "Add {stock} and return the leeks cut side up. Season with salt, cover and simmer gently until a knife slides through the leeks with no resistance.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Reduce the liquor",
+      "text": "Lift the leeks onto a warm platter. Boil the liquor over high heat until reduced by half.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Mount with butter",
+      "text": "Off the heat, whisk in {butter} and the juice of {lemon}. Season with salt and pepper.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Spoon the vegetables and liquor over the leeks and scatter with {parsley}.",
+      "timer": null
+    }
+  ]
+}

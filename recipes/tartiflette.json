@@ -1,0 +1,24 @@
+{
+  "id": "tartiflette",
+  "title": "Tartiflette",
+  "image": null,
+  "course": "main",
+  "status": "empty",
+  "tags": [
+    "potato",
+    "cheese",
+    "french",
+    "winter"
+  ],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

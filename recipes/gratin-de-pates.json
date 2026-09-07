@@ -1,0 +1,21 @@
+{
+  "id": "gratin-de-pates",
+  "title": "Gratin de pâtes",
+  "image": null,
+  "course": "main",
+  "status": "empty",
+  "tags": [
+    "pasta"
+  ],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

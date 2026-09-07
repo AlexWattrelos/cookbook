@@ -1,0 +1,65 @@
+{
+  "id": "quinoa",
+  "title": "Quinoa",
+  "image": null,
+  "course": "basic",
+  "status": "draft",
+  "tags": [
+    "grains"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 5,
+    "total": 25
+  },
+  "ahead": null,
+  "notes": [
+    "Ratio by volume: 1 volume quinoa, 2 volumes water."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "water",
+      "amount": 550,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "quinoa",
+      "amount": 200,
+      "unit": "g",
+      "name": "quinoa",
+      "prep": "rinsed until the water runs clear",
+      "category": "grains"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Start the quinoa",
+      "text": "Put {water} and a pinch of salt in a pan, add {quinoa} and bring to a boil.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Simmer",
+      "text": "Cover, reduce to the lowest heat and simmer until the water is absorbed and the grains show a little white spiral.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Rest",
+      "text": "Take off the heat and leave covered.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Finish",
+      "text": "Fluff with a fork and season to taste.",
+      "timer": null
+    }
+  ]
+}

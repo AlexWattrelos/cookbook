@@ -1,0 +1,148 @@
+{
+  "id": "tomato-basil-chicken",
+  "title": "Tomato basil chicken",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "chicken",
+    "easy"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 25,
+    "total": 35
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "chicken",
+      "amount": 650,
+      "unit": "g",
+      "name": "boneless, skinless chicken thighs",
+      "prep": "cut into bite-size pieces",
+      "category": "meat-fish"
+    },
+    {
+      "id": "oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": null,
+      "name": "onion",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 4,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "tomatoes",
+      "amount": 500,
+      "unit": "g",
+      "name": "crushed tomatoes",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "stock",
+      "amount": 80,
+      "unit": "ml",
+      "name": "chicken stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "vinegar",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "balsamic vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cream",
+      "amount": 40,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "basil-sauce",
+      "amount": 10,
+      "unit": "g",
+      "name": "basil",
+      "prep": "leaves torn",
+      "category": "produce"
+    },
+    {
+      "id": "parmesan",
+      "amount": 40,
+      "unit": "g",
+      "name": "Parmesan",
+      "prep": "grated",
+      "category": "fridge"
+    },
+    {
+      "id": "basil-serving",
+      "amount": 5,
+      "unit": "g",
+      "name": "basil",
+      "prep": "leaves picked",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Sear the chicken",
+      "text": "Salt and pepper {chicken}. Sear in a large pan with {oil} over medium-high heat until lightly browned, then transfer to a plate.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Soften the aromatics",
+      "text": "Lower the heat to medium and add a little more oil if the pan is dry. Cook {onion} and {garlic} until soft and lightly golden.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Make the sauce",
+      "text": "Add {tomatoes}, {stock} and {vinegar}. Simmer.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Finish the chicken",
+      "text": "Return the chicken and any juices to the pan. Simmer gently until cooked through and the sauce has thickened.",
+      "timer": 8
+    },
+    {
+      "section": null,
+      "cue": "Finish the sauce",
+      "text": "Stir in {cream} and {basil-sauce}. Taste and adjust with salt, pepper or a pinch of sugar if too acidic.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Top with {parmesan} and {basil-serving}.",
+      "timer": null
+    }
+  ]
+}

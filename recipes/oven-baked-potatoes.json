@@ -1,0 +1,63 @@
+{
+  "id": "oven-baked-potatoes",
+  "title": "Oven baked potatoes",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "potato"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 5,
+    "total": 60
+  },
+  "ahead": null,
+  "notes": [],
+  "source": "https://www.loveandlemons.com/baked-potato/",
+  "ingredients": [
+    {
+      "id": "potato",
+      "amount": 800,
+      "unit": "g",
+      "name": "floury potatoes",
+      "prep": "about 200 g each, scrubbed",
+      "category": "produce"
+    },
+    {
+      "id": "olive-oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Oven and tray",
+      "text": "Preheat the oven to 220 °C conventional / 200 °C fan. Line a baking sheet with baking paper.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season the potatoes",
+      "text": "Prick a few holes with a fork in {potato}. Put on the baking sheet, rub with {olive-oil} and sprinkle generously with coarse salt all over.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bake",
+      "text": "Bake until fork-tender and the skin is crisp.",
+      "timer": 45
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Slice open each potato and fluff the insides with a fork.",
+      "timer": null
+    }
+  ]
+}

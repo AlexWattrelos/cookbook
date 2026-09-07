@@ -1,0 +1,111 @@
+{
+  "id": "pesto",
+  "title": "Pesto",
+  "image": null,
+  "course": "sauce",
+  "status": "draft",
+  "tags": [
+    "italian"
+  ],
+  "servings": 4,
+  "yield": "~250 ml, for 400 g pasta",
+  "time": {
+    "active": 10,
+    "total": 10
+  },
+  "ahead": null,
+  "notes": [
+    "Keeps a few days in the fridge in a sealed jar; pour a thin layer of olive oil over the surface before sealing so it stays green."
+  ],
+  "source": "https://www.loveandlemons.com/pesto-recipe/",
+  "ingredients": [
+    {
+      "id": "pine-nuts",
+      "amount": 60,
+      "unit": "g",
+      "name": "pine nuts",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "salt",
+      "amount": 0.25,
+      "unit": "tsp",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 1,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "peeled",
+      "category": "produce"
+    },
+    {
+      "id": "basil",
+      "amount": 50,
+      "unit": "g",
+      "name": "basil",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "olive-oil",
+      "amount": 60,
+      "unit": "ml",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "parmesan",
+      "amount": 30,
+      "unit": "g",
+      "name": "Parmesan",
+      "prep": "finely grated",
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Toast the pine nuts",
+      "text": "Heat a dry pan over medium heat and toast {pine-nuts}, tossing, until golden and fragrant. Tip onto a plate to cool.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chop the base",
+      "text": "Put the cooled pine nuts in a small blender with {salt}, pepper, the juice of {lemon} and {garlic}. Pulse until well chopped.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blend in the basil",
+      "text": "Add {basil} and pulse until combined.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the oil",
+      "text": "Pour in {olive-oil} and blend until combined. Add more oil if you want it smoother.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish with Parmesan",
+      "text": "Add {parmesan} and pulse briefly to combine. Taste and adjust the salt.",
+      "timer": null
+    }
+  ]
+}

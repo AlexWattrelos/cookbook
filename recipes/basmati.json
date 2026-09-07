@@ -1,0 +1,65 @@
+{
+  "id": "basmati",
+  "title": "Basmati",
+  "image": null,
+  "course": "basic",
+  "status": "draft",
+  "tags": [
+    "grains"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 5,
+    "total": 20
+  },
+  "ahead": null,
+  "notes": [
+    "Ratio by volume: 1 volume rice, 1.5 volumes water."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "water",
+      "amount": 525,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "rice",
+      "amount": 300,
+      "unit": "g",
+      "name": "basmati rice",
+      "prep": "rinsed until the water runs clear",
+      "category": "grains"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Start the rice",
+      "text": "Put {water} and a pinch of salt in a pan, add {rice} and bring to a boil.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Simmer",
+      "text": "Cover, reduce to the lowest heat and simmer until the water is absorbed and small holes show on the surface.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Rest",
+      "text": "Take off the heat and leave covered.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Finish",
+      "text": "Fluff with a fork.",
+      "timer": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "smash-burgers",
+  "title": "Smash burgers",
+  "image": null,
+  "course": "main",
+  "status": "empty",
+  "tags": [
+    "red-meat"
+  ],
+  "servings": null,
+  "yield": null,
+  "time": {
+    "active": null,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [],
+  "steps": []
+}

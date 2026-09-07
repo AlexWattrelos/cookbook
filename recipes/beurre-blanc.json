@@ -1,0 +1,107 @@
+{
+  "id": "beurre-blanc",
+  "title": "Beurre blanc",
+  "image": null,
+  "course": "sauce",
+  "status": "draft",
+  "tags": [
+    "french"
+  ],
+  "servings": 4,
+  "yield": "~350 ml, for 1 kg turbot",
+  "time": {
+    "active": 10,
+    "total": 25
+  },
+  "ahead": null,
+  "notes": [
+    "Holds warm in the bowl for up to 20 min, TM7: 20 min / 60 °C / speed 1. Never let it overheat or boil."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "shallot",
+      "amount": 2,
+      "unit": null,
+      "name": "shallot",
+      "prep": "peeled and halved",
+      "category": "produce"
+    },
+    {
+      "id": "wine",
+      "amount": 120,
+      "unit": "ml",
+      "name": "dry white wine",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "vinegar",
+      "amount": 30,
+      "unit": "ml",
+      "name": "white wine vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter",
+      "amount": 250,
+      "unit": "g",
+      "name": "butter",
+      "prep": "fridge-cold, in 1 cm cubes",
+      "category": "fridge"
+    },
+    {
+      "id": "tarragon",
+      "amount": 2,
+      "unit": null,
+      "name": "tarragon sprig",
+      "prep": "leaves finely chopped",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Chop the shallots",
+      "text": "Put {shallot} in the bowl and chop, then scrape down. TM7: 5 sec / speed 6",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Reduce the wine",
+      "text": "Add {wine} and {vinegar}. Cook until reduced to a few spoonfuls of syrupy liquid. TM7: 12 min / 100 °C / speed 1",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cool slightly",
+      "text": "Let the reduction cool slightly in the bowl, so the sauce does not split.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Emulsify the butter",
+      "text": "Add {butter} in 8 batches, running the machine after each batch. Repeat until all the butter is fully emulsified and the sauce is glossy. TM7: 10 sec / 70 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Adjust the texture",
+      "text": "If the sauce looks thin, cook a little longer. If too thick, stop, add a splash of cold water, resume. TM7: 1 min / 70 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish with tarragon",
+      "text": "Optional: add {tarragon} and mix in. TM7: 5 sec / speed 2",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season and serve",
+      "text": "Season to taste with salt and white pepper. Serve immediately.",
+      "timer": null
+    }
+  ]
+}

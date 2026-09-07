@@ -1,0 +1,235 @@
+{
+  "id": "roasted-chicken",
+  "title": "Roasted chicken",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "chicken",
+    "guests",
+    "summer"
+  ],
+  "servings": 2,
+  "yield": "one 1 kg chicken",
+  "time": {
+    "active": 40,
+    "total": 90
+  },
+  "ahead": "Brine the chicken 24 h ahead.",
+  "notes": [
+    "For the Weber rotisserie on the gas grill: a 1 kg bird sits squarely on the spit.",
+    "Brine ratio: 3 % salt and 2 % baking soda by weight of water.",
+    "67 °C at the breast plus the rest is below the 74 °C guideline for whole poultry; for pregnant, immunocompromised or elderly guests, cook to 74 °C."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "salt",
+      "amount": 45,
+      "unit": "g",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "baking-soda",
+      "amount": 30,
+      "unit": "g",
+      "name": "baking soda",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "water",
+      "amount": 1500,
+      "unit": "ml",
+      "name": "cold water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "peppercorns",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "black peppercorns",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "garlic-brine",
+      "amount": 2,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "crushed",
+      "category": "produce"
+    },
+    {
+      "id": "chicken",
+      "amount": 1,
+      "unit": null,
+      "name": "chicken of about 1 kg",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.25,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "garlic-cavity",
+      "amount": 1,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "thyme",
+      "amount": 1,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "stock",
+      "amount": 250,
+      "unit": "ml",
+      "name": "low-salt chicken stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "smoked paprika",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "garlic-powder",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "garlic powder",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "pepper",
+      "amount": 0.25,
+      "unit": "tsp",
+      "name": "black pepper",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "wine",
+      "amount": 60,
+      "unit": "ml",
+      "name": "white wine",
+      "prep": null,
+      "category": "drinks"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Brine the chicken",
+      "text": "Dissolve {salt} and {baking-soda} in {water} with {bay}, {peppercorns} and {garlic-brine}. Submerge {chicken} and refrigerate 24 h.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Dry the bird",
+      "text": "Lift the chicken out of the brine and pat dry, inside and out.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Perfume the cavity",
+      "text": "Optional: slip {lemon}, {garlic-cavity} and {thyme} into the cavity, without over-stuffing.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Truss and skewer",
+      "text": "Tuck the wingtips under and tie the legs together. Slide the bird onto the spit, tighten the forks and spin it by hand to check the balance.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Set up the drip pan",
+      "text": "Remove the centre grate section and set a double-layer foil roasting pan on the Flavorizer bars, right under the spit. Pour in {stock}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat the grill",
+      "text": "Light the outer burners on medium to medium-low, centre burners off, and close the lid until the lid thermometer reads 185 °C.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Rub the skin",
+      "text": "Mix {oil}, {paprika}, {garlic-powder} and {pepper}. Brush all over the bird.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the spin",
+      "text": "Mount the spit, start the motor and close the lid.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Top up the pan",
+      "text": "After 20 min, top up the pan with hot water to keep at least 5 mm of liquid. Close the lid and keep cooking until the breast reads 67 °C at its thickest.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Rest in the open",
+      "text": "Lift the spit off the grill and rest the bird on it in the open air; a closed lid softens the skin and overshoots the temperature. Leave the probe in until it reads 70 °C and holds it for 2 min.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Make the jus",
+      "text": "Meanwhile, skim the fat off the pan juices and pour the juices into a small saucepan. Deglaze the foil pan with {wine} and add to the saucepan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Reduce the jus",
+      "text": "Simmer until it coats a spoon. Season.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Carve and serve",
+      "text": "Slide the bird off the spit and carve. Serve with the jus.",
+      "timer": null
+    }
+  ]
+}

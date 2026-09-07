@@ -90,7 +90,7 @@
     {
       "key": "ingredient",
       "label": "Main ingredient",
-      "rule": "Required on mains and sides: the one or two ingredients the dish is built around. Optional elsewhere.",
+      "rule": "Required on mains and sides once the recipe has content: the one or two ingredients the dish is built around. Optional elsewhere and on empty recipes.",
       "tags": [
         {
           "key": "red-meat",

@@ -1,0 +1,78 @@
+{
+  "id": "frites",
+  "title": "Frites",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "potato",
+    "french"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 30,
+    "total": 60
+  },
+  "ahead": null,
+  "notes": [
+    "The first bath can be done a few hours ahead: leave the blanched frites on their tray and give them the second bath just before serving."
+  ],
+  "source": "https://www.maspatule.com/blog/2023/04/04/recette-frites-maison/",
+  "ingredients": [
+    {
+      "id": "potato",
+      "amount": 800,
+      "unit": "g",
+      "name": "floury potatoes",
+      "prep": "peeled, cut into 1 cm sticks",
+      "category": "produce"
+    },
+    {
+      "id": "oil",
+      "amount": 1500,
+      "unit": "ml",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Wash off the starch",
+      "text": "Rinse {potato}. Drain and dry thoroughly in a tea towel.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat the oil",
+      "text": "Pour {oil} into a deep fryer or a large heavy pot, no more than half full. Heat to 150 °C.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blanch the frites",
+      "text": "Fry the potatoes in batches, without crowding the oil.",
+      "timer": 7
+    },
+    {
+      "section": null,
+      "cue": "Drain and cool",
+      "text": "Lift out onto a tray lined with kitchen paper and leave to cool.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Crisp the frites",
+      "text": "Raise the oil to 190 °C. Fry the frites again in batches.",
+      "timer": 3
+    },
+    {
+      "section": null,
+      "cue": "Salt and serve",
+      "text": "Drain on fresh kitchen paper. Season with fine salt and serve at once.",
+      "timer": null
+    }
+  ]
+}

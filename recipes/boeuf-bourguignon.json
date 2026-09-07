@@ -1,0 +1,244 @@
+{
+  "id": "boeuf-bourguignon",
+  "title": "Boeuf bourguignon",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "red-meat",
+    "french",
+    "winter",
+    "weekend",
+    "guests"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 50,
+    "total": 180
+  },
+  "ahead": null,
+  "notes": [
+    "Go easy on the salt: the bacon and the stock already bring plenty. Season only at the end, after tasting.",
+    "Better made a day ahead and keeps 3 days in the fridge: reheat gently over low heat, basting the meat with the sauce."
+  ],
+  "source": "https://cafedelites.com/beef-bourguignon/",
+  "ingredients": [
+    {
+      "id": "olive-oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "bacon",
+      "amount": 100,
+      "unit": "g",
+      "name": "smoked bacon, lardons",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "chuck",
+      "amount": 800,
+      "unit": "g",
+      "name": "beef chuck, paleron",
+      "prep": "in 5 cm chunks, patted dry",
+      "category": "meat-fish"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": null,
+      "name": "onion",
+      "prep": "diced",
+      "category": "produce"
+    },
+    {
+      "id": "carrot",
+      "amount": 150,
+      "unit": "g",
+      "name": "carrots",
+      "prep": "peeled, sliced 1 cm thick",
+      "category": "produce"
+    },
+    {
+      "id": "garlic-stew",
+      "amount": 3,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "minced",
+      "category": "produce"
+    },
+    {
+      "id": "flour",
+      "amount": 15,
+      "unit": "g",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "wine",
+      "amount": 375,
+      "unit": "ml",
+      "name": "red wine",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "stock",
+      "amount": 300,
+      "unit": "ml",
+      "name": "beef stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "tomato-paste",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "tomato paste",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "thyme",
+      "amount": 3,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "pearl-onion",
+      "amount": 8,
+      "unit": null,
+      "name": "pearl onion",
+      "prep": "peeled",
+      "category": "produce"
+    },
+    {
+      "id": "butter",
+      "amount": 20,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "garlic-mushrooms",
+      "amount": 1,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "minced",
+      "category": "produce"
+    },
+    {
+      "id": "mushroom",
+      "amount": 250,
+      "unit": "g",
+      "name": "button mushrooms",
+      "prep": "quartered",
+      "category": "produce"
+    },
+    {
+      "id": "parsley",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "chopped",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Stew",
+      "cue": "Start the oven",
+      "text": "Preheat the oven to 180 °C conventional / 160 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Crisp the bacon",
+      "text": "Heat {olive-oil} in a large cast-iron pot over medium heat and add {bacon}. Cook until crisp and browned, then lift out with a slotted spoon.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sear the beef",
+      "text": "Raise the heat and, in batches, sear {chuck}. Brown on all sides, then set aside with the bacon.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Soften the vegetables",
+      "text": "Lower the heat to medium and soften {onion} and {carrot}. Add {garlic-stew} and cook until fragrant.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Flour the meat",
+      "text": "Return the bacon and beef to the pot and season with pepper. Sprinkle with {flour}, toss well and cook, stirring, until browned.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the liquid",
+      "text": "Pour in {wine} and {stock}; the meat should be barely covered. Stir in {tomato-paste}, {thyme}, {bay} and {pearl-onion}, then bring to a simmer.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Braise",
+      "text": "Cover and braise in the lower part of the oven until the meat is fall-apart tender. If the liquid boils rather than barely simmers, lower the oven.",
+      "timer": 120
+    },
+    {
+      "section": "Mushrooms",
+      "cue": "Start the mushrooms",
+      "text": "While the beef finishes, melt {butter} in a frying pan over medium-high heat and add {garlic-mushrooms}. Cook until fragrant, then add {mushroom}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Brown the mushrooms",
+      "text": "Cook, shaking the pan now and then, until browned.",
+      "timer": 5
+    },
+    {
+      "section": "Finishing",
+      "cue": "Skim the sauce",
+      "text": "Take the pot out of the oven and discard the thyme and bay leaves. Skim the fat off the surface.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Check the sauce",
+      "text": "Reduce the sauce if it is thin: lift out the meat with a slotted spoon and boil until the sauce lightly coats the back of a spoon. Return the meat.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat through",
+      "text": "Stir in the mushrooms and simmer gently to heat through.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Season and serve",
+      "text": "Taste, then season with salt and pepper. Scatter with {parsley} and serve.",
+      "timer": null
+    }
+  ]
+}

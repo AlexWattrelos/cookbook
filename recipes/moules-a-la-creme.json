@@ -1,0 +1,159 @@
+{
+  "id": "moules-a-la-creme",
+  "title": "Moules à la crème",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "seafood",
+    "french",
+    "easy"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 15,
+    "total": 20
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "mussels",
+      "amount": 2000,
+      "unit": "g",
+      "name": "mussels",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "butter",
+      "amount": 40,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "shallot",
+      "amount": 3,
+      "unit": null,
+      "name": "shallot",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 4,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "wine",
+      "amount": 250,
+      "unit": "ml",
+      "name": "dry white wine",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "pepper",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "black pepper",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "espelette",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "Espelette pepper",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "creme-fraiche",
+      "amount": 250,
+      "unit": "g",
+      "name": "crème fraîche",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "parsley",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "leaves chopped",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Clean the mussels",
+      "text": "Rinse {mussels} under cold water, scrub if needed and pull off the beards. Discard any that are cracked or do not close when tapped.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Soften the shallots",
+      "text": "Melt {butter} in a large pot over medium heat. Add {shallot} and cook until soft and translucent, without browning.",
+      "timer": 3
+    },
+    {
+      "section": null,
+      "cue": "Add the garlic",
+      "text": "Stir in {garlic} and cook until fragrant.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the wine",
+      "text": "Pour in {wine} and bring to a lively simmer.",
+      "timer": 1
+    },
+    {
+      "section": null,
+      "cue": "Steam the mussels",
+      "text": "Add the mussels and cover. Steam, shaking the pot once or twice, until most have opened.",
+      "timer": 4
+    },
+    {
+      "section": null,
+      "cue": "Stir in the cream",
+      "text": "Lower the heat to medium-low, then stir in {pepper}, {espelette} and {creme-fraiche} until the sauce is smooth. Simmer, without boiling hard.",
+      "timer": 1
+    },
+    {
+      "section": null,
+      "cue": "Finish the sauce",
+      "text": "Stir in the juice of {lemon}. Taste, then salt only if needed: mussels can be salty.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the parsley",
+      "text": "Turn off the heat and stir in {parsley}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Ladle into bowls with plenty of sauce and serve immediately. Discard any mussels that stayed closed.",
+      "timer": null
+    }
+  ]
+}

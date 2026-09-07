@@ -1,0 +1,423 @@
+{
+  "id": "lasagna",
+  "title": "Lasagna",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "red-meat",
+    "pasta",
+    "italian",
+    "weekend",
+    "guests"
+  ],
+  "servings": 12,
+  "yield": "one 23×33 cm tray",
+  "time": {
+    "active": 90,
+    "total": 190
+  },
+  "ahead": null,
+  "notes": [
+    "The sauce can simmer up to 2 h before the milk goes in."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": null,
+      "name": "large onion",
+      "prep": "peeled and quartered",
+      "category": "produce"
+    },
+    {
+      "id": "celery",
+      "amount": 150,
+      "unit": "g",
+      "name": "celery",
+      "prep": "in 2 cm chunks",
+      "category": "produce"
+    },
+    {
+      "id": "carrot",
+      "amount": 150,
+      "unit": "g",
+      "name": "carrots",
+      "prep": "peeled, in 2 cm chunks",
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 5,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "peeled",
+      "category": "produce"
+    },
+    {
+      "id": "marrow",
+      "amount": 1,
+      "unit": null,
+      "name": "marrow bone",
+      "prep": "cut lengthwise",
+      "category": "meat-fish"
+    },
+    {
+      "id": "pancetta",
+      "amount": 120,
+      "unit": "g",
+      "name": "pancetta",
+      "prep": "diced",
+      "category": "meat-fish"
+    },
+    {
+      "id": "beef",
+      "amount": 700,
+      "unit": "g",
+      "name": "minced beef",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "pork",
+      "amount": 350,
+      "unit": "g",
+      "name": "minced pork",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "tomato-paste",
+      "amount": 30,
+      "unit": "g",
+      "name": "tomato paste",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "wine",
+      "amount": 250,
+      "unit": "ml",
+      "name": "dry red wine",
+      "prep": null,
+      "category": "drinks"
+    },
+    {
+      "id": "tomatoes",
+      "amount": 1200,
+      "unit": "g",
+      "name": "crushed tomatoes",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "oregano",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "dried oregano",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "thyme",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "dried thyme",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "stock",
+      "amount": 250,
+      "unit": "ml",
+      "name": "beef stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "butter-sauce",
+      "amount": 100,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "flour",
+      "amount": 100,
+      "unit": "g",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "milk-white",
+      "amount": 1700,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "ground nutmeg",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "parmesan-sauce",
+      "amount": 200,
+      "unit": "g",
+      "name": "Parmesan",
+      "prep": "in 2 cm chunks",
+      "category": "fridge"
+    },
+    {
+      "id": "sheets",
+      "amount": 250,
+      "unit": "g",
+      "name": "dried lasagna sheets",
+      "prep": null,
+      "category": "grains"
+    },
+    {
+      "id": "milk-ragu",
+      "amount": 250,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "butter-dish",
+      "amount": 10,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "mozzarella",
+      "amount": 300,
+      "unit": "g",
+      "name": "low-moisture mozzarella",
+      "prep": "grated",
+      "category": "fridge"
+    },
+    {
+      "id": "parmesan-topping",
+      "amount": 40,
+      "unit": "g",
+      "name": "Parmesan",
+      "prep": "very finely grated",
+      "category": "fridge"
+    },
+    {
+      "id": "basil",
+      "amount": 15,
+      "unit": "g",
+      "name": "basil",
+      "prep": "leaves picked",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Aromatics",
+      "cue": "Chop the onion",
+      "text": "Chop {onion}. Scrape down. TM7: 4 sec / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chop the roots",
+      "text": "Add {celery} and {carrot}, chop again and scrape down. TM7: 4 sec / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chop the garlic",
+      "text": "Transfer the vegetables to a bowl. Chop {garlic} and keep it separate. TM7: 2 sec / speed 7",
+      "timer": null
+    },
+    {
+      "section": "Sauce",
+      "cue": "Render the marrow",
+      "text": "Put {marrow} in a large heavy pot over medium-low heat, marrow side up. Cook until the marrow softens and the fat starts rendering.",
+      "timer": 6
+    },
+    {
+      "section": null,
+      "cue": "Mash the marrow",
+      "text": "Scoop the marrow into the pot and discard the bone. Mash it into the fat and let it sizzle.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sweat the vegetables",
+      "text": "Add the chopped onion, celery and carrot with a pinch of salt. Cook over low heat until translucent and sweet, without browning.",
+      "timer": 12
+    },
+    {
+      "section": null,
+      "cue": "Brown the pancetta",
+      "text": "Scrape the vegetables into a bowl. In the same pot over medium heat, cook {pancetta} until browned and the fat renders.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Brown the beef",
+      "text": "Add {beef}, spread it out and leave it undisturbed to brown.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Add the pork",
+      "text": "Add {pork}. Cook, breaking the meat into chunks and letting it brown again.",
+      "timer": 6
+    },
+    {
+      "section": null,
+      "cue": "Return the vegetables",
+      "text": "Add the reserved vegetables and cook, scraping up the browned bits.",
+      "timer": 3
+    },
+    {
+      "section": null,
+      "cue": "Toast the tomato paste",
+      "text": "Add the garlic and cook until fragrant. Add {tomato-paste} and cook until it darkens slightly.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Deglaze with wine",
+      "text": "Pour in {wine} and simmer until reduced by about half.",
+      "timer": 3
+    },
+    {
+      "section": null,
+      "cue": "Build the sauce",
+      "text": "Add {tomatoes}, {bay}, {oregano} and {thyme} and bring to a gentle simmer. Add {stock}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Simmer",
+      "text": "Keep at a gentle simmer, partially covered, stirring occasionally. Add more stock if the sauce gets too thick before the flavours develop.",
+      "timer": 40
+    },
+    {
+      "section": "White sauce",
+      "cue": "Start the white sauce",
+      "text": "Meanwhile, melt {butter-sauce} in the clean, dry TM7 bowl. TM7: 3 min / 100 °C / speed 1",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the roux",
+      "text": "Add {flour} and cook. TM7: 2 min / 100 °C / speed 1",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the béchamel",
+      "text": "Add {milk-white} and {nutmeg} and cook. TM7: 12 min / 90 °C / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blend in the Parmesan",
+      "text": "Add {parmesan-sauce} and blend. TM7: 10 sec / speed 10",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat through",
+      "text": "Cook the sauce once more. TM7: 1 min / 90 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": "Pasta",
+      "cue": "Soften the pasta",
+      "text": "Blanch {sheets} in salted boiling water until flexible but still very al dente.",
+      "timer": 4
+    },
+    {
+      "section": null,
+      "cue": "Lay the sheets flat",
+      "text": "Drain and spread the sheets out flat on a tray.",
+      "timer": null
+    },
+    {
+      "section": "Finish the sauce",
+      "cue": "Enrich with milk",
+      "text": "After 40 min, add {milk-ragu} and simmer until thick and rich.",
+      "timer": 20
+    },
+    {
+      "section": "Assembly",
+      "cue": "Turn the oven on",
+      "text": "Heat the oven to 140 °C conventional / 120 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Prepare the dish",
+      "text": "Remove the bay leaves from the sauce. Grease a 23×33 cm baking dish with {butter-dish}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the layers",
+      "text": "Spread a thin layer of the sauce over the bottom of the dish and cover with a layer of sheets.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Build the layers",
+      "text": "Layer 3 times: a third of the remaining sauce, a quarter of the white sauce, a quarter of {mozzarella}, a layer of sheets.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the top",
+      "text": "Spread the remaining white sauce over the top and scatter the remaining mozzarella.",
+      "timer": null
+    },
+    {
+      "section": "Baking",
+      "cue": "Bake",
+      "text": "Put the dish on a middle rack and bake.",
+      "timer": 30
+    },
+    {
+      "section": null,
+      "cue": "Grill the top",
+      "text": "Switch the oven to grill on high and move the dish to an upper rack. Grill until deeply golden and bubbling, watching constantly.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Finish and rest",
+      "text": "Scatter {parmesan-topping} over the top. Rest before slicing.",
+      "timer": 25
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Optional: serve scattered with {basil}.",
+      "timer": null
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "id": "chicken-ruby",
+  "title": "Chicken ruby",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "chicken",
+    "asian",
+    "guests"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 40,
+    "total": 95
+  },
+  "ahead": "Marinate the chicken 6 to 24 h ahead.",
+  "notes": [
+    "The sauce can be made ahead: chill it before the cream goes in, add the first cream when reheating and the second with the chicken. It keeps frozen 3 months."
+  ],
+  "source": "Dishoom cookbook",
+  "ingredients": [
+    {
+      "id": "salt-marinade",
+      "amount": 2,
+      "unit": "tsp",
+      "name": "fine sea salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "chilli-marinade",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "deggi mirch chilli powder",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cumin-marinade",
+      "amount": 1.5,
+      "unit": "tsp",
+      "name": "ground cumin",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "garam-masala-marinade",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "garam masala",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "oil-marinade",
+      "amount": 10,
+      "unit": "ml",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "yoghurt",
+      "amount": 75,
+      "unit": "g",
+      "name": "Greek yoghurt",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "lime",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lime",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "garlic-marinade",
+      "amount": 4,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "ginger-marinade",
+      "amount": 10,
+      "unit": "g",
+      "name": "fresh ginger",
+      "prep": "peeled",
+      "category": "produce"
+    },
+    {
+      "id": "chicken",
+      "amount": 700,
+      "unit": "g",
+      "name": "boneless skinless chicken thighs",
+      "prep": "cut into 4 cm chunks",
+      "category": "meat-fish"
+    },
+    {
+      "id": "tomatoes",
+      "amount": 800,
+      "unit": "g",
+      "name": "tinned chopped tomatoes",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "oil-makhani",
+      "amount": 175,
+      "unit": "ml",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "garlic-chips",
+      "amount": 3,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "bay",
+      "amount": 2,
+      "unit": null,
+      "name": "bay leaf",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "green-cardamom",
+      "amount": 6,
+      "unit": null,
+      "name": "green cardamom pod",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "black-cardamom",
+      "amount": 2,
+      "unit": null,
+      "name": "black cardamom pod",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cinnamon",
+      "amount": 1,
+      "unit": null,
+      "name": "cinnamon stick",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "garlic-sauce",
+      "amount": 4,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "ginger-sauce",
+      "amount": 20,
+      "unit": "g",
+      "name": "fresh ginger",
+      "prep": "peeled, in chunks",
+      "category": "produce"
+    },
+    {
+      "id": "salt-sauce",
+      "amount": 2,
+      "unit": "tsp",
+      "name": "fine sea salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "chilli-sauce",
+      "amount": 1.5,
+      "unit": "tsp",
+      "name": "deggi mirch chilli powder",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter-sauce",
+      "amount": 30,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "garam-masala-sauce",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "garam masala",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "sugar",
+      "amount": 20,
+      "unit": "g",
+      "name": "sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "honey",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "liquid honey",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "cumin-sauce",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "ground cumin",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "kasoori-methi",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "kasoori methi",
+      "prep": "crushed",
+      "category": "pantry"
+    },
+    {
+      "id": "dill",
+      "amount": 2,
+      "unit": null,
+      "name": "dill sprig",
+      "prep": "chopped",
+      "category": "produce"
+    },
+    {
+      "id": "cream-sauce",
+      "amount": 80,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "butter-chicken",
+      "amount": 20,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "cream-finish",
+      "amount": 50,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "pomegranate",
+      "amount": 15,
+      "unit": "g",
+      "name": "pomegranate seeds",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "coriander",
+      "amount": 10,
+      "unit": "g",
+      "name": "fresh coriander",
+      "prep": "chopped",
+      "category": "produce"
+    },
+    {
+      "id": "ginger-garnish",
+      "amount": 10,
+      "unit": "g",
+      "name": "fresh ginger",
+      "prep": "peeled, cut into matchsticks",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Marinade",
+      "cue": "Make the marinade",
+      "text": "Add {salt-marinade}, {chilli-marinade}, {cumin-marinade}, {garam-masala-marinade}, {oil-marinade}, {yoghurt}, the juice of {lime}, {garlic-marinade} and {ginger-marinade}. Blitz until smooth. TM7: 20 sec / speed 8",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Marinate",
+      "text": "Toss the marinade through {chicken}. Cover and refrigerate 6 to 24 h.",
+      "timer": null
+    },
+    {
+      "section": "Makhani sauce",
+      "cue": "Purée the tomatoes",
+      "text": "Blend {tomatoes} until smooth, then pour into a bowl and set aside. TM7: 10 sec / speed 8",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fry the garlic chips",
+      "text": "Put {oil-makhani} in the bowl with {garlic-chips}. Fit the splash guard and brown until pale gold. TM7: 6 min / browning / speed soft",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Reserve the chips",
+      "text": "Lift out the garlic chips with a slotted spoon and set aside, leaving the oil in the bowl.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Infuse the spices",
+      "text": "Add {bay}, {green-cardamom}, {black-cardamom} and {cinnamon} to the hot oil. TM7: 2 min / 120 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chop the aromatics",
+      "text": "Lift out the whole spices and discard. Chop {garlic-sauce} and {ginger-sauce}. TM7: 5 sec / speed 7",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sauté the paste",
+      "text": "Scrape down the bowl and sauté. TM7: 4 min / 120 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Reduce the tomatoes",
+      "text": "Add the tomato purée, {salt-sauce} and {chilli-sauce}. Set the simmering basket on the lid and cook until reduced by about half and glossy. TM7: 25 min / steaming / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Enrich with butter",
+      "text": "Add {butter-sauce}. TM7: 3 min / 100 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season the sauce",
+      "text": "Add the garlic chips, {garam-masala-sauce}, {sugar}, {honey}, {cumin-sauce}, {kasoori-methi} and {dill}. TM7: 12 min / 100 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Stir in the cream",
+      "text": "Add {cream-sauce} and stir. TM7: 1 min / 90 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Keep warm",
+      "text": "Hold the sauce warm while you grill the chicken. TM7: 20 min / 70 °C / speed 1, reverse",
+      "timer": null
+    },
+    {
+      "section": "Chicken",
+      "cue": "Preheat the grill",
+      "text": "Turn the oven grill to maximum.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Butter the chicken",
+      "text": "Arrange the chicken on a rack over a tray, to catch the marinade that drips. Melt {butter-chicken} and brush over the chicken.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Char the chicken",
+      "text": "Grill, turning once, until lightly charred and cooked through.",
+      "timer": 8
+    },
+    {
+      "section": "Finish",
+      "cue": "Add the chicken",
+      "text": "Tip the grilled chicken into the sauce with {cream-finish}. Cook gently, so the chicken stays in chunks. TM7: 10 min / 80 °C / speed soft, reverse",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Rest the curry",
+      "text": "Leave to rest in the bowl.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Taste for salt. Spoon into a warm dish and scatter over {pomegranate}, {coriander} and {ginger-garnish}.",
+      "timer": null
+    }
+  ]
+}

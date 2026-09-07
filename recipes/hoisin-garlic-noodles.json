@@ -1,0 +1,187 @@
+{
+  "id": "hoisin-garlic-noodles",
+  "title": "Hoisin garlic noodles",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "pasta",
+    "easy",
+    "asian"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 15,
+    "total": 20
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "noodles",
+      "amount": 500,
+      "unit": "g",
+      "name": "dried egg noodles",
+      "prep": null,
+      "category": "grains"
+    },
+    {
+      "id": "hoisin",
+      "amount": 8,
+      "unit": "tbsp",
+      "name": "hoisin sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "soy-sauce",
+      "amount": 4,
+      "unit": "tbsp",
+      "name": "soy sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "rice-vinegar",
+      "amount": 2,
+      "unit": "tsp",
+      "name": "rice vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "sugar",
+      "amount": 2,
+      "unit": "tsp",
+      "name": "sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "sesame-oil",
+      "amount": 2,
+      "unit": "tsp",
+      "name": "toasted sesame oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cooking-water",
+      "amount": 120,
+      "unit": "ml",
+      "name": "noodle cooking water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "oil",
+      "amount": 4,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "garlic",
+      "amount": 8,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "ginger",
+      "amount": 10,
+      "unit": "g",
+      "name": "fresh ginger",
+      "prep": "peeled and finely grated",
+      "category": "produce"
+    },
+    {
+      "id": "coriander-stir",
+      "amount": 15,
+      "unit": "g",
+      "name": "fresh coriander",
+      "prep": "chopped",
+      "category": "produce"
+    },
+    {
+      "id": "spring-onion-stir",
+      "amount": 3,
+      "unit": null,
+      "name": "spring onion",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "sesame-seeds",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "toasted sesame seeds",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "coriander-top",
+      "amount": 5,
+      "unit": "g",
+      "name": "fresh coriander",
+      "prep": "chopped",
+      "category": "produce"
+    },
+    {
+      "id": "spring-onion-top",
+      "amount": 1,
+      "unit": null,
+      "name": "spring onion",
+      "prep": "thinly sliced",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Cook the noodles",
+      "text": "Bring a large pot of salted water to a boil and cook {noodles} until just tender.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Mix the sauce",
+      "text": "Meanwhile, whisk {hoisin}, {soy-sauce}, {rice-vinegar}, {sugar} and {sesame-oil} in a bowl.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the sauce",
+      "text": "Drain the noodles, keeping {cooking-water} aside. Whisk it into the sauce.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fry the aromatics",
+      "text": "Heat {oil} in a large pan over medium heat and add {garlic} and {ginger}. Cook until just fragrant, without browning too much.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Toss the noodles",
+      "text": "Add the noodles and the sauce. Toss over medium heat until glossy and well coated.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the herbs",
+      "text": "Turn off the heat and season with salt and pepper. Stir in {coriander-stir} and {spring-onion-stir}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Plate the noodles and top with {sesame-seeds}, {coriander-top} and {spring-onion-top}.",
+      "timer": null
+    }
+  ]
+}

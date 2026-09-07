@@ -1,0 +1,160 @@
+{
+  "id": "baked-chicken-thighs",
+  "title": "Baked chicken thighs",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "chicken",
+    "easy"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 15,
+    "total": 55
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "mustard",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "Dijon mustard",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "soy",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "soy sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "honey",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "honey",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "smoked paprika",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "oregano",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "dried oregano",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "lemon",
+      "amount": 0.5,
+      "unit": null,
+      "name": "lemon",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "garlic",
+      "amount": 3,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "grated",
+      "category": "produce"
+    },
+    {
+      "id": "chicken",
+      "amount": 1000,
+      "unit": "g",
+      "name": "bone-in, skin-on chicken thighs",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "neutral oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter",
+      "amount": 15,
+      "unit": "g",
+      "name": "butter",
+      "prep": "in small pieces",
+      "category": "fridge"
+    },
+    {
+      "id": "parsley",
+      "amount": 10,
+      "unit": "g",
+      "name": "flat-leaf parsley",
+      "prep": "chopped",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Heat the oven",
+      "text": "Set the oven to 220 °C conventional / 200 °C fan. Line a baking tray with parchment.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Make the marinade",
+      "text": "Mix {mustard}, {soy}, {honey}, {paprika}, {oregano}, the juice of {lemon} and {garlic}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season the chicken",
+      "text": "Pat {chicken} dry. Rub all over with salt, pepper and {oil}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Rub in the marinade",
+      "text": "Coat the chicken with the marinade, pushing some under the skin. Arrange skin side up on the tray and dot with {butter}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Into the oven",
+      "text": "Bake until the skin is browned and crisp and the juices run clear, about 75 °C inside.",
+      "timer": 30
+    },
+    {
+      "section": null,
+      "cue": "Crisp the skin",
+      "text": "Optional: switch the oven to grill until the skin is extra crisp.",
+      "timer": 2
+    },
+    {
+      "section": null,
+      "cue": "Out of the oven",
+      "text": "Rest the chicken on the tray.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Sprinkle with {parsley}. Serve on a warm platter.",
+      "timer": null
+    }
+  ]
+}

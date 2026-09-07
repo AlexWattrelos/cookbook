@@ -1,0 +1,140 @@
+{
+  "id": "pommes-de-terre-boulangeres",
+  "title": "Pommes de terre boulangères",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "tags": [
+    "potato",
+    "french"
+  ],
+  "servings": 4,
+  "yield": "one 20×30 cm gratin dish",
+  "time": {
+    "active": 25,
+    "total": 90
+  },
+  "ahead": null,
+  "notes": [
+    "Written from the dish name; the video was not consulted.",
+    "Use a waxy variety (Charlotte, Amandine): the slices hold their shape. Floury potatoes collapse into the stock.",
+    "Reheats well: cover with foil, 20 min at 180 °C conventional / 160 °C fan."
+  ],
+  "source": "https://www.youtube.com/watch?v=-Z3P_NujFos",
+  "ingredients": [
+    {
+      "id": "butter-dish",
+      "amount": 10,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "butter-onions",
+      "amount": 40,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "onion",
+      "amount": 2,
+      "unit": null,
+      "name": "onion",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "stock",
+      "amount": 500,
+      "unit": "ml",
+      "name": "chicken stock",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "thyme",
+      "amount": 4,
+      "unit": null,
+      "name": "thyme sprig",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "potato",
+      "amount": 1000,
+      "unit": "g",
+      "name": "waxy potatoes",
+      "prep": "peeled, sliced 3 mm thick",
+      "category": "produce"
+    },
+    {
+      "id": "butter-top",
+      "amount": 20,
+      "unit": "g",
+      "name": "butter",
+      "prep": "cubed",
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Oven and dish",
+      "text": "Preheat the oven to 200 °C conventional / 180 °C fan. Grease a 20×30 cm gratin dish with {butter-dish}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sweat the onions",
+      "text": "Melt {butter-onions} in a wide pan over medium-low heat and add {onion}. Cook, stirring now and then, until soft and lightly golden.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Heat the stock",
+      "text": "Meanwhile, bring {stock} to a simmer in a small pan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the onions",
+      "text": "Stir {garlic} and {thyme} into the onions. Cook until fragrant, then take off the heat.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Layer the dish",
+      "text": "In the dish, alternate layers of onions and {potato}, seasoning each potato layer with salt and pepper. Finish with a neat, overlapping layer of potatoes.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the stock",
+      "text": "Pour the hot stock over the potatoes. Dot the top with {butter-top}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bake",
+      "text": "Bake, uncovered, until a knife slides through the potatoes without resistance and the top is golden.",
+      "timer": 50
+    },
+    {
+      "section": null,
+      "cue": "Rest",
+      "text": "Rest before serving, so the slices hold together and the last of the stock is absorbed.",
+      "timer": 10
+    }
+  ]
+}

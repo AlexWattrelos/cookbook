@@ -1,0 +1,214 @@
+{
+  "id": "salmon-quinoa-avocado-bowl",
+  "title": "Salmon quinoa avocado bowl",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "tags": [
+    "seafood",
+    "grains",
+    "easy",
+    "summer"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 25,
+    "total": 40
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "quinoa",
+      "amount": 170,
+      "unit": "g",
+      "name": "quinoa",
+      "prep": null,
+      "category": "grains"
+    },
+    {
+      "id": "olive-oil-salmon",
+      "amount": 30,
+      "unit": "ml",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "salmon",
+      "amount": 4,
+      "unit": null,
+      "name": "skinless salmon fillet",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "olive-oil-quinoa",
+      "amount": 30,
+      "unit": "ml",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "olive-oil-vinaigrette",
+      "amount": 80,
+      "unit": "ml",
+      "name": "olive oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "soy-sauce",
+      "amount": 40,
+      "unit": "ml",
+      "name": "soy sauce",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "rice-vinegar",
+      "amount": 30,
+      "unit": "ml",
+      "name": "rice vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "sesame-oil",
+      "amount": 10,
+      "unit": "ml",
+      "name": "toasted sesame oil",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "chilli-flakes",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "chilli flakes",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "finely grated",
+      "category": "produce"
+    },
+    {
+      "id": "water-vinaigrette",
+      "amount": 20,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "radish",
+      "amount": 150,
+      "unit": "g",
+      "name": "radishes",
+      "prep": "thinly sliced",
+      "category": "produce"
+    },
+    {
+      "id": "tomato",
+      "amount": 300,
+      "unit": "g",
+      "name": "cherry tomatoes",
+      "prep": "halved",
+      "category": "produce"
+    },
+    {
+      "id": "avocado",
+      "amount": 2,
+      "unit": null,
+      "name": "avocado",
+      "prep": "pitted and diced",
+      "category": "produce"
+    },
+    {
+      "id": "chives",
+      "amount": 10,
+      "unit": "g",
+      "name": "chives",
+      "prep": "finely chopped",
+      "category": "produce"
+    },
+    {
+      "id": "lemon",
+      "amount": 1,
+      "unit": null,
+      "name": "lemon",
+      "prep": "cut into wedges",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Quinoa",
+      "cue": "Start the quinoa",
+      "text": "Cook {quinoa} per the pack instructions.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cool the quinoa",
+      "text": "Fluff with a fork and spread on a large plate to cool.",
+      "timer": null
+    },
+    {
+      "section": "Salmon",
+      "cue": "Start the oven",
+      "text": "Meanwhile, heat the oven to 220 °C conventional / 200 °C fan. Line a large baking tray with foil.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Oil and season",
+      "text": "Brush the foil with half of {olive-oil-salmon}. Pat {salmon} dry, set on the tray, season with salt and pepper and drizzle with the rest of the oil.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Roast the salmon",
+      "text": "Bake until just cooked through.",
+      "timer": 8
+    },
+    {
+      "section": "Quinoa",
+      "cue": "Dress the quinoa",
+      "text": "Meanwhile, toss the quinoa with {olive-oil-quinoa} and a pinch of salt.",
+      "timer": null
+    },
+    {
+      "section": "Vinaigrette",
+      "cue": "Make the vinaigrette",
+      "text": "Shake {olive-oil-vinaigrette}, {soy-sauce}, {rice-vinegar}, {sesame-oil}, {chilli-flakes} and {garlic} in a jar. Add {water-vinaigrette} and shake again until pourable and mellow, adding more water if needed.",
+      "timer": null
+    },
+    {
+      "section": "Bowls",
+      "cue": "Build the bowls",
+      "text": "Divide the quinoa among 4 bowls. Top with the salmon, {radish}, {tomato} and {avocado}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season and finish",
+      "text": "Lightly salt the vegetables and avocado and sprinkle with {chives}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Drizzle generously with the vinaigrette. Serve with {lemon} on the side.",
+      "timer": null
+    }
+  ]
+}
