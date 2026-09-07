@@ -1,6 +1,7 @@
 {
   "id": "pot-au-feu",
   "title": "Pot-au-feu",
+  "image": "images/pot-au-feu.jpg",
   "course": "main",
   "status": "draft",
   "tags": [
@@ -231,71 +232,85 @@
   "steps": [
     {
       "section": "Broth",
+      "cue": "Start the broth",
       "text": "Put {chuck} and {shank} in a large pot, cover with {water} and bring to a boil. Skim until the broth stays clear.",
       "timer": null
     },
     {
       "section": null,
+      "cue": "Add the aromatics",
       "text": "Stud {onion} with {clove}. Add to the pot with {thyme}, {bay}, {peppercorns}, {salt} and {parsley-stems}.",
       "timer": null
     },
     {
       "section": null,
+      "cue": "Simmer",
       "text": "Reduce to the gentlest simmer, an occasional bubble only. Partially cover.",
       "timer": 150
     },
     {
       "section": "Sauce verte",
+      "cue": "Make the sauce verte",
       "text": "Meanwhile, fill a small blender with {cornichon}, {capers}, {fish-sauce}, {vinegar} and {parsley-leaves}. Pulse until roughly chopped.",
       "timer": null
     },
     {
       "section": null,
+      "cue": "Add the oil",
       "text": "Add {olive-oil} and pepper. Blend briefly, until combined but still slightly chunky.",
       "timer": null
     },
     {
       "section": "Vegetables",
+      "cue": "Blanch the cabbage",
       "text": "Bring a pot of salted water to a boil and blanch {cabbage}.",
       "timer": 3
     },
     {
       "section": null,
+      "cue": "Set aside",
       "text": "Drain and set aside with {leek}.",
       "timer": null
     },
     {
       "section": null,
+      "cue": "Add the roots",
       "text": "After 2.5 h, add {turnip}, {potato}, {carrot} and {celeriac}. Simmer.",
       "timer": 20
     },
     {
       "section": null,
+      "cue": "Finish the vegetables",
       "text": "Add the leeks and cabbage. Simmer until all the vegetables are tender.",
       "timer": 20
     },
     {
       "section": "Marrow and bread",
+      "cue": "Grill the marrow",
       "text": "Meanwhile, grill {marrow} cut side up on a hot grill until bubbling, soft and golden on top.",
       "timer": 15
     },
     {
       "section": null,
+      "cue": "Salt the marrow",
       "text": "Off the grill, sprinkle with coarse sea salt.",
       "timer": null
     },
     {
       "section": null,
+      "cue": "Grill the bread",
       "text": "Grill {bread} until charred on both sides. Rub immediately with {garlic}.",
       "timer": null
     },
     {
       "section": "Serving",
+      "cue": "Slice and plate",
       "text": "Slice the meat thickly against the grain. Arrange on a warm platter: meat, vegetables, marrow bones, garlic bread.",
       "timer": null
     },
     {
       "section": null,
+      "cue": "Serve",
       "text": "Strain the broth into bowls. Put on the table: sauce verte, {mustard}, coarse sea salt.",
       "timer": null
     }
