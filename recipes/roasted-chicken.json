@@ -1,7 +1,7 @@
 {
   "id": "roasted-chicken",
   "title": "Roasted chicken",
-  "image": null,
+  "image": "images/roasted-chicken.jpg",
   "course": "main",
   "status": "draft",
   "tags": [

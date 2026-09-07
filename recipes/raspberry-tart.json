@@ -1,7 +1,7 @@
 {
   "id": "raspberry-tart",
   "title": "Raspberry tart",
-  "image": null,
+  "image": "images/raspberry-tart.jpg",
   "course": "dessert",
   "status": "draft",
   "tags": [

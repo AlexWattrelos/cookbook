@@ -1,7 +1,7 @@
 {
   "id": "galettes",
   "title": "Galettes",
-  "image": null,
+  "image": "images/galettes.jpg",
   "course": "basic",
   "status": "draft",
   "tags": [

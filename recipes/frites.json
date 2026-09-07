@@ -1,7 +1,7 @@
 {
   "id": "frites",
   "title": "Frites",
-  "image": null,
+  "image": "images/frites.jpg",
   "course": "side",
   "status": "draft",
   "tags": [

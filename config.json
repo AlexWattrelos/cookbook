@@ -326,5 +326,11 @@
     "done": "Done",
     "fewer": "Fewer servings",
     "more": "More servings"
+  },
+  "images": {
+    "thumbSuffix": "-thumb",
+    "thumbSize": 192,
+    "heroWidth": 1280,
+    "heroHeight": 640
   }
 }

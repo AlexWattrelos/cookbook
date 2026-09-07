@@ -65,7 +65,7 @@ Every key is always present, inside ingredient and step objects too: null when t
 
 ## Field rules
 
-- `image`: path of a photo under `images/` (jpg, about 1280 px wide, shown at the top of the page) or null. Alex supplies photos; never invent, generate or download one.
+- `image`: `images/<id>.jpg` or null. Add a photo with `node scripts/photo.mjs <id> <file or URL>`, which writes the banner and the square thumbnail the list needs; the recipe file names only the banner.
 - `title`: the dish name as Alex gives it (INDEX.md for the import folder), sentence case, with accents, never translated in either direction: "Agneau de 7h", "Moules à la crème", "Raspberry tart". `id`: the title in kebab-case ASCII, accents stripped (moules-a-la-creme, agneau-de-7h); also the filename.
 - `course`: `starter` | `main` | `side` | `sauce` | `basic` | `dessert`.
 - `status`: `empty` | `draft` | `ready`. Everything you write is `draft`; only Alex sets `ready`. `empty` = title, course, status, source, notes and tags only; ingredients [] and steps []; servings, yield, ahead and both times null.

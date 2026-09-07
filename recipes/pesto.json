@@ -1,7 +1,7 @@
 {
   "id": "pesto",
   "title": "Pesto",
-  "image": null,
+  "image": "images/pesto.jpg",
   "course": "sauce",
   "status": "draft",
   "tags": [

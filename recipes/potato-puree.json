@@ -1,7 +1,7 @@
 {
   "id": "potato-puree",
   "title": "Potato purée",
-  "image": null,
+  "image": "images/potato-puree.jpg",
   "course": "side",
   "status": "draft",
   "tags": [

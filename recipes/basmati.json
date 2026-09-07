@@ -1,7 +1,7 @@
 {
   "id": "basmati",
   "title": "Basmati",
-  "image": null,
+  "image": "images/basmati.jpg",
   "course": "basic",
   "status": "draft",
   "tags": [

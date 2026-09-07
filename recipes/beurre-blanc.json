@@ -1,7 +1,7 @@
 {
   "id": "beurre-blanc",
   "title": "Beurre blanc",
-  "image": null,
+  "image": "images/beurre-blanc.jpg",
   "course": "sauce",
   "status": "draft",
   "tags": [

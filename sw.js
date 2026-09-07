@@ -32,8 +32,11 @@ self.addEventListener("install", event => {
 async function precache() {
   const cache = await caches.open(CACHE);
   await cache.addAll(SHELL);
+  // Thumbnails are precached so the list is complete offline; a banner is cached the first time its recipe is opened.
   const recipes = await cache.match("data/recipes.json").then(response => response.json());
-  await cache.addAll(recipes.map(recipe => recipe.image).filter(Boolean));
+  const { images } = await cache.match("config.json").then(response => response.json());
+  const thumbs = recipes.map(recipe => recipe.image).filter(Boolean).map(path => path.replace(/\.jpg$/, `${images.thumbSuffix}.jpg`));
+  await cache.addAll(thumbs);
 }
 
 self.addEventListener("activate", event => {

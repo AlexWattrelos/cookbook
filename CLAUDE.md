@@ -10,6 +10,7 @@ Every push to `main` deploys `dist/` to GitHub Pages. Installable on iPhone as a
 - `config.json` — everything about display: labels, course/status/category/tag vocabulary and order, section names, unit rounding, kg/l thresholds, fractions, plurals, timer formats. Nothing display-related lives in recipe files or code.
 - `schema/recipe.schema.json` — shape only (types, required keys, no extra keys). Enums are injected from `config.json` at validation time.
 - `scripts/validate.mjs` — schema plus cross-checks (id = filename, ingredient ids, `{id}` references, shared names, units, tags, image files). Runs before every build.
+- `scripts/photo.mjs` — `node scripts/photo.mjs <recipe-id> <file or URL>` writes `images/<id>.jpg` (banner) and `images/<id>-thumb.jpg` (list square). Photo credits go in `images/CREDITS.md`.
 - `scripts/build.mjs` — writes `dist/`: shells, `app/`, `images/`, `icons/`, `config.json`, `data/recipes.json` (the bundle of all recipes) and `sw.js` stamped with the deploy version, so every push updates installed phones.
 - `index.html` + `app/home.js` — home: recipes grouped by course in config order, search, filters by course, tag and status.
 - `recipe.html?id=<id>` + `app/recipe.js` — recipe page: servings, shopping list, mise en place, steps with cues and timers.

@@ -1,7 +1,7 @@
 {
   "id": "quinoa",
   "title": "Quinoa",
-  "image": null,
+  "image": "images/quinoa.jpg",
   "course": "basic",
   "status": "draft",
   "tags": [

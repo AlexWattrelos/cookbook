@@ -1,7 +1,7 @@
 {
   "id": "boeuf-bourguignon",
   "title": "Boeuf bourguignon",
-  "image": null,
+  "image": "images/boeuf-bourguignon.jpg",
   "course": "main",
   "status": "draft",
   "tags": [

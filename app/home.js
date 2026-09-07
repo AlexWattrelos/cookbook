@@ -39,12 +39,20 @@ function renderFacets() {
   }).join("");
 }
 
+// A square thumbnail sits beside every row; the file is the hero photo with the config suffix, or an empty tile.
+function renderThumb(recipe) {
+  if (!recipe.image) return `<span class="thumb"></span>`;
+  const source = recipe.image.replace(/\.jpg$/, `${config.images.thumbSuffix}.jpg`);
+  return `<img class="thumb" src="${source}" alt="" loading="lazy" width="48" height="48">`;
+}
+
 // Title and total time on the first line, tag labels beneath; empty recipes grey with their status instead of a time.
 function renderRow(recipe) {
   const empty = recipe.status === "empty";
   const aside = empty ? STATUSES[recipe.status] : recipe.time.total === null ? "" : formatMinutes(config, recipe.time.total);
   const tags = recipe.tags.map(tag => TAGS[tag]).join(SEPARATOR);
-  const inner = `<span class="name">${escapeHtml(recipe.title)}</span><span class="time">${escapeHtml(aside)}</span>` +
+  const inner = renderThumb(recipe) +
+    `<span class="name">${escapeHtml(recipe.title)}</span><span class="time">${escapeHtml(aside)}</span>` +
     (tags ? `<span class="tags">${escapeHtml(tags)}</span>` : "");
   return empty ? `<li><span class="recipe empty">${inner}</span></li>`   // nothing to open yet
     : `<li><a class="recipe" href="recipe.html?id=${recipe.id}">${inner}</a></li>`;

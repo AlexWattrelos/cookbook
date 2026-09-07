@@ -1,7 +1,7 @@
 {
   "id": "cheese-souffle",
   "title": "Cheese soufflé",
-  "image": null,
+  "image": "images/cheese-souffle.jpg",
   "course": "main",
   "status": "draft",
   "tags": [

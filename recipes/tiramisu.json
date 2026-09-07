@@ -1,7 +1,7 @@
 {
   "id": "tiramisu",
   "title": "Tiramisu",
-  "image": null,
+  "image": "images/tiramisu.jpg",
   "course": "dessert",
   "status": "draft",
   "tags": [

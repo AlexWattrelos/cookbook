@@ -1,7 +1,7 @@
 {
   "id": "steak-frites",
   "title": "Steak frites",
-  "image": null,
+  "image": "images/steak-frites.jpg",
   "course": "main",
   "status": "draft",
   "tags": [

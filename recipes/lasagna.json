@@ -1,7 +1,7 @@
 {
   "id": "lasagna",
   "title": "Lasagna",
-  "image": null,
+  "image": "images/lasagna.jpg",
   "course": "main",
   "status": "draft",
   "tags": [
