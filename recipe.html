@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<title>Cookbook</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+
+<div class="bar" id="bar">
+  <div class="wrap">
+    <span class="bar-title" id="bar-title"></span>
+    <div class="servings" role="group"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <a class="back" id="back" href="./"></a>
+  <figure class="hero" id="hero" hidden><img id="hero-img" alt=""></figure>
+  <h1 id="title"></h1>
+  <div id="intro"></div>
+  <div class="actions">
+    <div class="servings" role="group"></div>
+    <button type="button" class="pill" id="cook"></button>
+  </div>
+  <p class="meta yield" id="yield" hidden></p>
+  <details class="fold" id="shopping-fold">
+    <summary><h2 id="shopping-heading"></h2><span class="tally" id="shopping-tally"></span></summary>
+    <section id="shopping"></section>
+  </details>
+  <details class="fold" id="mise-fold">
+    <summary><h2 id="mise-heading"></h2><span class="tally" id="mise-tally"></span></summary>
+    <section id="mise"></section>
+  </details>
+  <h2 id="steps-heading"></h2>
+  <section id="steps"></section>
+</main>
+
+<script type="module" src="app/recipe.js"></script>
+<script type="module" src="app/pwa.js"></script>
+</body>
+</html>

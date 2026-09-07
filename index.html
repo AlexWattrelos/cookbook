@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<title>Cookbook</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+
+<main class="wrap">
+  <h1 id="title"></h1>
+  <input class="search" id="search" type="search" autocomplete="off">
+  <details class="fold" id="filters-fold">
+    <summary><h2 id="filters-heading"></h2><span class="tally" id="filters-tally"></span></summary>
+    <section id="filters"></section>
+  </details>
+  <section id="recipes"></section>
+  <p class="notice" id="none" hidden></p>
+</main>
+
+<script type="module" src="app/home.js"></script>
+<script type="module" src="app/pwa.js"></script>
+</body>
+</html>

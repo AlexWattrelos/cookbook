@@ -314,5 +314,17 @@
     "minutes": "{n} min",
     "hours": "{h} h",
     "hoursMinutes": "{h} h {m}"
+  },
+  "labels": {
+    "app": "Cookbook",
+    "search": "Search",
+    "filters": "Filters",
+    "course": "Course",
+    "status": "Status",
+    "none": "No recipes match",
+    "cook": "Start cooking",
+    "done": "Done",
+    "fewer": "Fewer servings",
+    "more": "More servings"
   }
 }
