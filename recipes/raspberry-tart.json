@@ -148,7 +148,7 @@
     {
       "section": "Pâte sucrée",
       "cue": "Make the dough",
-      "text": "In the TM7 bowl, put {flour}, {icing-sugar}, {ground-almonds}, {salt} and {butter-dough}. Mix until sandy. TM7: 10 sec / speed 6",
+      "text": "Put {flour}, {icing-sugar}, {ground-almonds}, {salt} and {butter-dough} in the TM7 bowl. Mix until sandy. TM7: 10 sec / speed 6",
       "timer": null
     },
     {
@@ -238,7 +238,7 @@
     {
       "section": null,
       "cue": "Add pistachios",
-      "text": "Optional: for colour and crunch, edge the tart with {pistachios}.",
+      "text": "Optional: scatter {pistachios} around the rim.",
       "timer": null
     },
     {

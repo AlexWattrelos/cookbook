@@ -64,7 +64,7 @@
     {
       "section": null,
       "cue": "Chop the shallots",
-      "text": "Put {shallot} in the bowl and chop, then scrape down. TM7: 5 sec / speed 6",
+      "text": "Fill the bowl with {shallot}. Chop, then scrape down. TM7: 5 sec / speed 6",
       "timer": null
     },
     {
@@ -82,7 +82,7 @@
     {
       "section": null,
       "cue": "Emulsify the butter",
-      "text": "Add {butter} in 8 batches, running the machine after each batch. Repeat until all the butter is fully emulsified and the sauce is glossy. TM7: 10 sec / 70 °C / speed 3",
+      "text": "Add an eighth of {butter} and mix. Repeat until all the butter is fully emulsified and the sauce is glossy. TM7: 10 sec / 70 °C / speed 3",
       "timer": null
     },
     {

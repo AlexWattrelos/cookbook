@@ -10,7 +10,7 @@
     "spring",
     "easy"
   ],
-  "servings": 4,
+  "servings": 2,
   "yield": null,
   "time": {
     "active": 20,
@@ -22,7 +22,7 @@
   "ingredients": [
     {
       "id": "potatoes",
-      "amount": 600,
+      "amount": 300,
       "unit": "g",
       "name": "baby potatoes",
       "prep": null,
@@ -30,7 +30,7 @@
     },
     {
       "id": "butter",
-      "amount": 300,
+      "amount": 150,
       "unit": "g",
       "name": "butter",
       "prep": null,
@@ -38,7 +38,7 @@
     },
     {
       "id": "mustard",
-      "amount": 2,
+      "amount": 1,
       "unit": "tsp",
       "name": "Dijon mustard",
       "prep": null,
@@ -54,7 +54,7 @@
     },
     {
       "id": "eggs",
-      "amount": 4,
+      "amount": 2,
       "unit": null,
       "name": "egg",
       "prep": "yolks only",
@@ -70,7 +70,7 @@
     },
     {
       "id": "asparagus",
-      "amount": 800,
+      "amount": 400,
       "unit": "g",
       "name": "green asparagus",
       "prep": "woody ends snapped off",
@@ -78,7 +78,7 @@
     },
     {
       "id": "ham",
-      "amount": 400,
+      "amount": 200,
       "unit": "g",
       "name": "cooked ham",
       "prep": "in thick slices",
@@ -137,7 +137,7 @@
     {
       "section": "Serving",
       "cue": "Taste the sauce",
-      "text": "Check that the hollandaise is thick and creamy, then adjust the salt.",
+      "text": "Check that the hollandaise is thick and creamy, then adjust the salt and lemon.",
       "timer": null
     },
     {

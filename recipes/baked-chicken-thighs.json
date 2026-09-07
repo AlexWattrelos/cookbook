@@ -59,10 +59,10 @@
       "category": "pantry"
     },
     {
-      "id": "lemon",
-      "amount": 0.5,
-      "unit": null,
-      "name": "lemon",
+      "id": "lemon-juice",
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "lemon juice",
       "prep": null,
       "category": "produce"
     },
@@ -117,7 +117,7 @@
     {
       "section": null,
       "cue": "Make the marinade",
-      "text": "Mix {mustard}, {soy}, {honey}, {paprika}, {oregano}, the juice of {lemon} and {garlic}.",
+      "text": "Mix {mustard}, {soy}, {honey}, {paprika}, {oregano}, {lemon-juice} and {garlic}.",
       "timer": null
     },
     {

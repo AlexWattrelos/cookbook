@@ -6,8 +6,8 @@
   "status": "draft",
   "tags": [
     "chicken",
-    "guests",
-    "summer"
+    "summer",
+    "guests"
   ],
   "servings": 2,
   "yield": "one 1 kg chicken",
@@ -211,7 +211,7 @@
       "section": null,
       "cue": "Rest in the open",
       "text": "Lift the spit off the grill and rest the bird on it in the open air; a closed lid softens the skin and overshoots the temperature. Leave the probe in until it reads 70 °C and holds it for 2 min.",
-      "timer": 10
+      "timer": null
     },
     {
       "section": null,

@@ -207,7 +207,7 @@
     {
       "section": "Mushrooms",
       "cue": "Start the mushrooms",
-      "text": "While the beef finishes, melt {butter} in a frying pan over medium-high heat and add {garlic-mushrooms}. Cook until fragrant, then add {mushroom}.",
+      "text": "While the beef finishes, melt {butter} in a frying pan over medium heat and add {garlic-mushrooms}. Cook until fragrant, then add {mushroom}.",
       "timer": null
     },
     {

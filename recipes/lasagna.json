@@ -235,7 +235,7 @@
   "steps": [
     {
       "section": "Aromatics",
-      "cue": "Chop the onion",
+      "cue": "Start with the onion",
       "text": "Chop {onion}. Scrape down. TM7: 4 sec / speed 4",
       "timer": null
     },
@@ -283,7 +283,7 @@
     },
     {
       "section": null,
-      "cue": "Add the pork",
+      "cue": "Brown the pork",
       "text": "Add {pork}. Cook, breaking the meat into chunks and letting it brown again.",
       "timer": 6
     },

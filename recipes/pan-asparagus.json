@@ -15,9 +15,7 @@
     "total": 15
   },
   "ahead": null,
-  "notes": [
-    "Written from the dish name, not the video; check against Fallow's method before marking ready."
-  ],
+  "notes": [],
   "source": "https://www.youtube.com/watch?v=WOZ4m6dfjPg",
   "ingredients": [
     {
@@ -87,7 +85,7 @@
     {
       "section": null,
       "cue": "Char the asparagus",
-      "text": "Lay {asparagus} in a single layer and season with salt. Leave untouched until charred underneath.",
+      "text": "Add {asparagus}, season with salt and spread to a single layer. Leave untouched until charred underneath.",
       "timer": 3
     },
     {

@@ -14,9 +14,7 @@
     "total": 75
   },
   "ahead": null,
-  "notes": [
-    "Written from the dish name; the video was not consulted."
-  ],
+  "notes": [],
   "source": "https://www.youtube.com/watch?v=WOZ4m6dfjPg",
   "ingredients": [
     {
@@ -87,7 +85,7 @@
   "steps": [
     {
       "section": null,
-      "cue": "Preheat the oven",
+      "cue": "Heat the oven",
       "text": "Preheat the oven to 160 °C conventional / 140 °C fan.",
       "timer": null
     },
@@ -100,7 +98,7 @@
     {
       "section": null,
       "cue": "Sear the rest",
-      "text": "Transfer to a roasting dish, cut side up, and sear the other half the same way.",
+      "text": "Transfer to a roasting dish, cut side up. Sear the other half the same way, until deeply browned.",
       "timer": 4
     },
     {

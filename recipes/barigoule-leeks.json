@@ -16,7 +16,6 @@
   },
   "ahead": null,
   "notes": [
-    "Drafted from the dish name, not from the Fallow video; check against it before setting ready.",
     "Keeps 2 days in the fridge; reheat gently in the liquor."
   ],
   "source": "https://www.youtube.com/watch?v=WOZ4m6dfjPg",
@@ -128,7 +127,7 @@
     {
       "section": null,
       "cue": "Soften the aromatics",
-      "text": "Lift the leeks out, lower the heat and add {thyme}, {bay}, {garlic}, {shallot} and {carrot}. Cook gently until soft but not coloured.",
+      "text": "Lift the leeks out, lower the heat and add {thyme}, {bay}, {garlic}, {carrot} and {shallot}. Cook gently until soft but not coloured.",
       "timer": 5
     },
     {
@@ -152,7 +151,7 @@
     {
       "section": null,
       "cue": "Mount with butter",
-      "text": "Off the heat, whisk in {butter} and the juice of {lemon}. Season with salt and pepper.",
+      "text": "Off the heat, whisk in the juice of {lemon} and {butter}. Season with salt and pepper.",
       "timer": null
     },
     {

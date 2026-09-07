@@ -6,8 +6,8 @@
   "status": "draft",
   "tags": [
     "cheese",
-    "guests",
-    "french"
+    "french",
+    "guests"
   ],
   "servings": 4,
   "yield": "~30 pieces",
@@ -137,7 +137,7 @@
     {
       "section": null,
       "cue": "Work in the eggs",
-      "text": "Add {egg} in 3 additions, mixing after each, keeping back the last few spoonfuls. TM7: 30 sec / speed 4",
+      "text": "Add {egg} in 3 additions, mixing after each, keeping back the last few spoonfuls. TM7: 1 min 30 sec / speed 4",
       "timer": null
     },
     {

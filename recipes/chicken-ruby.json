@@ -71,7 +71,7 @@
     },
     {
       "id": "lime",
-      "amount": 0.5,
+      "amount": 1,
       "unit": null,
       "name": "lime",
       "prep": null,
@@ -239,7 +239,7 @@
     },
     {
       "id": "dill",
-      "amount": 2,
+      "amount": 1,
       "unit": null,
       "name": "dill sprig",
       "prep": "chopped",

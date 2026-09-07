@@ -22,7 +22,7 @@
   "ingredients": [
     {
       "id": "potato",
-      "amount": 800,
+      "amount": 600,
       "unit": "g",
       "name": "floury potatoes",
       "prep": "peeled, cut into 1 cm sticks",
@@ -65,7 +65,7 @@
     {
       "section": null,
       "cue": "Crisp the frites",
-      "text": "Raise the oil to 190 °C. Fry the frites again in batches.",
+      "text": "Raise the oil to 190 °C. Fry the frites again in batches, until golden and crisp.",
       "timer": 3
     },
     {
