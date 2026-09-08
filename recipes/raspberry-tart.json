@@ -4,6 +4,7 @@
   "image": "images/raspberry-tart.jpg",
   "course": "dessert",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetarian",
     "french",

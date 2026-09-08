@@ -4,6 +4,7 @@
   "image": "images/chicken-ruby.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "chicken",
     "asian",

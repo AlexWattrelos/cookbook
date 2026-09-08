@@ -4,6 +4,7 @@
   "image": "images/roasted-chicken.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "chicken",
     "summer",

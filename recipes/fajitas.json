@@ -4,6 +4,7 @@
   "image": null,
   "course": "main",
   "status": "empty",
+  "starred": false,
   "tags": [],
   "servings": null,
   "yield": null,

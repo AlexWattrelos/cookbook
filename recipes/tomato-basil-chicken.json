@@ -4,6 +4,7 @@
   "image": "images/tomato-basil-chicken.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "chicken",
     "easy"

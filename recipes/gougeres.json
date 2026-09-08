@@ -4,6 +4,7 @@
   "image": "images/gougeres.jpg",
   "course": "starter",
   "status": "draft",
+  "starred": false,
   "tags": [
     "cheese",
     "vegetarian",

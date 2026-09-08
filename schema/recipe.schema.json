@@ -3,44 +3,163 @@
   "$comment": "Shape only. scripts/validate.mjs injects the enums for course, status, tags, category and unit from config.json.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "image", "course", "status", "tags", "servings", "yield", "time", "ahead", "notes", "source", "ingredients", "steps"],
+  "required": [
+    "id",
+    "title",
+    "image",
+    "course",
+    "status",
+    "starred",
+    "tags",
+    "servings",
+    "yield",
+    "time",
+    "ahead",
+    "notes",
+    "source",
+    "ingredients",
+    "steps"
+  ],
   "definitions": {
-    "kebab": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    "kebab": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    }
   },
   "properties": {
-    "id": { "$ref": "#/definitions/kebab" },
-    "title": { "type": "string", "minLength": 1 },
-    "image": { "type": ["string", "null"], "pattern": "^images/[a-z0-9-]+\\.jpg$" },
-    "course": { "type": "string" },
-    "status": { "type": "string" },
-    "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
-    "servings": { "type": ["integer", "null"], "minimum": 1 },
-    "yield": { "type": ["string", "null"], "minLength": 1 },
+    "id": {
+      "$ref": "#/definitions/kebab"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^images/[a-z0-9-]+\\.jpg$"
+    },
+    "course": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "starred": {
+      "type": "boolean"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "servings": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "yield": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
     "time": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["active", "total"],
+      "required": [
+        "active",
+        "total"
+      ],
       "properties": {
-        "active": { "type": ["integer", "null"], "minimum": 1 },
-        "total": { "type": ["integer", "null"], "minimum": 1 }
+        "active": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "total": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
       }
     },
-    "ahead": { "type": ["string", "null"], "minLength": 1 },
-    "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-    "source": { "type": ["string", "null"], "minLength": 1 },
+    "ahead": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
     "ingredients": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "amount", "unit", "name", "prep", "category"],
+        "required": [
+          "id",
+          "amount",
+          "unit",
+          "name",
+          "prep",
+          "category"
+        ],
         "properties": {
-          "id": { "$ref": "#/definitions/kebab" },
-          "amount": { "type": ["number", "null"], "exclusiveMinimum": 0 },
-          "unit": { "type": ["string", "null"] },
-          "name": { "type": "string", "minLength": 1 },
-          "prep": { "type": ["string", "null"], "minLength": 1 },
-          "category": { "type": "string" }
+          "id": {
+            "$ref": "#/definitions/kebab"
+          },
+          "amount": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "prep": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "category": {
+            "type": "string"
+          }
         }
       }
     },
@@ -49,12 +168,35 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["section", "cue", "text", "timer"],
+        "required": [
+          "section",
+          "cue",
+          "text",
+          "timer"
+        ],
         "properties": {
-          "section": { "type": ["string", "null"], "minLength": 1 },
-          "cue": { "type": "string", "minLength": 1 },
-          "text": { "type": "string", "minLength": 1 },
-          "timer": { "type": ["integer", "null"], "minimum": 1 }
+          "section": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "cue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "timer": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          }
         }
       }
     }

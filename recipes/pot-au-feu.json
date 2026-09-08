@@ -4,6 +4,7 @@
   "image": "images/pot-au-feu.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "red-meat",
     "french",

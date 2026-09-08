@@ -4,6 +4,7 @@
   "image": "images/white-chocolate-cheesecake.jpg",
   "course": "dessert",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetarian",
     "guests"

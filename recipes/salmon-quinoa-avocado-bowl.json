@@ -4,6 +4,7 @@
   "image": "images/salmon-quinoa-avocado-bowl.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "seafood",
     "grains",

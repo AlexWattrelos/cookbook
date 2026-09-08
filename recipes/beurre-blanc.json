@@ -4,6 +4,7 @@
   "image": "images/beurre-blanc.jpg",
   "course": "sauce",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetarian",
     "french"

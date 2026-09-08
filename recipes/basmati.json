@@ -4,6 +4,7 @@
   "image": "images/basmati.jpg",
   "course": "basic",
   "status": "draft",
+  "starred": false,
   "tags": [
     "grains",
     "vegetarian"

@@ -4,6 +4,7 @@
   "image": "images/pesto.jpg",
   "course": "sauce",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetarian",
     "italian"

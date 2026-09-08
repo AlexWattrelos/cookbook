@@ -4,6 +4,7 @@
   "image": "images/coconut-curry-salmon.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "seafood",
     "asian",

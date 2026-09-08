@@ -4,6 +4,7 @@
   "image": "images/potato-puree.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "potato",
     "vegetarian"

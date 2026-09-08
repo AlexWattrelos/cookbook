@@ -4,6 +4,7 @@
   "image": "images/agneau-de-7h.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "red-meat",
     "french",

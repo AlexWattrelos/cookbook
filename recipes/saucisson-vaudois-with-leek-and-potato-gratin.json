@@ -4,6 +4,7 @@
   "image": "images/saucisson-vaudois-with-leek-and-potato-gratin.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "pork",
     "potato",

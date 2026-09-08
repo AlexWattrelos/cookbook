@@ -4,6 +4,7 @@
   "image": "images/roasted-mushrooms.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetables",
     "vegetarian"

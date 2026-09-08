@@ -4,6 +4,7 @@
   "image": "images/quinoa.jpg",
   "course": "basic",
   "status": "draft",
+  "starred": false,
   "tags": [
     "grains",
     "vegetarian"

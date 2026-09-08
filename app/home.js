@@ -7,16 +7,6 @@ const SEPARATOR = " · ";
 const { config, recipes } = await loadData();
 const LABELS = config.labels;
 
-// --- Stars (kept on this device) --------------------------------------------
-
-const starKey = id => `${id}:star`;
-const starred = id => {
-  try { return localStorage.getItem(starKey(id)) === "1"; } catch { return false; }
-};
-const setStarred = (id, on) => {
-  try { on ? localStorage.setItem(starKey(id), "1") : localStorage.removeItem(starKey(id)); } catch {}
-};
-
 // Config lists become key -> label maps.
 const labels = list => Object.fromEntries(list.map(({ key, label }) => [key, label]));
 const TAGS = labels(config.tags.flatMap(group => group.tags));
@@ -24,7 +14,7 @@ const STATUSES = labels(config.statuses);
 
 // One facet per chip group; keys() returns what the recipe has in that facet.
 const facets = [
-  { label: LABELS.star, options: [{ key: "starred", label: LABELS.starred }], keys: recipe => starred(recipe.id) ? ["starred"] : [] },
+  { label: LABELS.star, options: [{ key: "starred", label: LABELS.starred }], keys: recipe => recipe.starred ? ["starred"] : [] },
   { label: LABELS.course, options: config.courses, keys: recipe => [recipe.course] },
   ...config.tags.map(group => ({ label: group.label, options: group.tags, keys: recipe => recipe.tags })),
   { label: LABELS.status, options: config.statuses, keys: recipe => [recipe.status] },
@@ -57,9 +47,9 @@ function renderThumb(recipe) {
   return `<img class="thumb" src="${source}" alt="" loading="lazy" width="48" height="48">`;
 }
 
-const STAR = `<svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M12 3.6l2.55 5.17 5.7.83-4.13 4.02.98 5.68L12 16.62l-5.1 2.68.98-5.68L3.75 9.6l5.7-.83z"/></svg>`;
+const STAR = `<svg viewBox="0 0 24 24" width="21" height="21"><path d="M12 3.6l2.55 5.17 5.7.83-4.13 4.02.98 5.68L12 16.62l-5.1 2.68.98-5.68L3.75 9.6l5.7-.83z"/></svg>`;
 
-// The name carries the time after it; the star sits outside the link so tapping it does not open the recipe.
+// The name carries the time after it. The star comes from the recipe file, so both devices show the same favourites.
 function renderRow(recipe) {
   const empty = recipe.status === "empty";
   const aside = empty ? STATUSES[recipe.status] : recipe.time.total === null ? "" : formatMinutes(config, recipe.time.total);
@@ -72,7 +62,7 @@ function renderRow(recipe) {
   const inner = renderThumb(recipe) + text;
   const open = empty ? `<span class="open">${inner}</span>`   // nothing to open yet
     : `<a class="open" href="recipe.html?id=${recipe.id}">${inner}</a>`;
-  const star = `<button type="button" class="star" data-id="${recipe.id}" aria-pressed="${starred(recipe.id)}" aria-label="${escapeHtml(LABELS.star)}">${STAR}</button>`;
+  const star = `<span class="star">${recipe.starred ? `<span role="img" aria-label="${escapeHtml(LABELS.starred)}">${STAR}</span>` : ""}</span>`;
   return `<li><div class="recipe${empty ? " empty" : ""}">${open}${star}</div></li>`;
 }
 
@@ -112,16 +102,6 @@ function update() {
 update();
 
 $("search").addEventListener("input", update);
-// Starring redraws the list only when the list is filtered by it; otherwise the one button is enough.
-$("recipes").addEventListener("click", event => {
-  const button = event.target.closest(".star");
-  if (!button) return;
-  const on = button.getAttribute("aria-pressed") !== "true";
-  button.setAttribute("aria-pressed", String(on));
-  setStarred(button.dataset.id, on);
-  if ($("filters").querySelector('[data-facet="0"][aria-pressed="true"]')) update();
-});
-
 $("filters").addEventListener("click", event => {
   const chip = event.target.closest(".chip");
   if (!chip) return;

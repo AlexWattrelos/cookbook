@@ -4,6 +4,7 @@
   "image": "images/oven-baked-potatoes.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "potato",
     "vegetarian"

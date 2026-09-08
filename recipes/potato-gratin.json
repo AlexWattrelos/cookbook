@@ -4,6 +4,7 @@
   "image": null,
   "course": "side",
   "status": "empty",
+  "starred": false,
   "tags": [
     "potato",
     "vegetarian"

@@ -4,6 +4,7 @@
   "image": "images/cheese-souffle.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "cheese",
     "vegetarian",

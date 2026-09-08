@@ -4,6 +4,7 @@
   "image": "images/barigoule-leeks.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetables",
     "vegetarian",

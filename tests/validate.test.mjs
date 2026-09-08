@@ -73,6 +73,12 @@ test("the image file must exist when set", () => {
   assert.deepEqual(errorsAfter(recipe => { recipe.image = null; }), []);
 });
 
+test("starred is a boolean every recipe carries", () => {
+  assertSingleError(errorsAfter(recipe => { delete recipe.starred; }), /required property 'starred'/);
+  assertSingleError(errorsAfter(recipe => { recipe.starred = "yes"; }), /\/starred must be boolean/);
+  assert.deepEqual(errorsAfter(recipe => { recipe.starred = true; }), []);
+});
+
 test("mains and sides need a main-ingredient tag", () => {
   const dropRedMeat = recipe => { recipe.tags = recipe.tags.filter(tag => tag !== "red-meat"); };
   assertSingleError(errorsAfter(dropRedMeat), /a main needs a main-ingredient tag \(red-meat, .*vegetables\)/);

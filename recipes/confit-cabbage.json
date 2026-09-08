@@ -4,6 +4,7 @@
   "image": "images/confit-cabbage.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetables",
     "vegetarian"

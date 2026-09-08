@@ -4,6 +4,7 @@
   "image": "images/tiramisu.jpg",
   "course": "dessert",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetarian",
     "italian",

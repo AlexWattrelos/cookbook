@@ -4,6 +4,7 @@
   "image": null,
   "course": "dessert",
   "status": "empty",
+  "starred": false,
   "tags": [
     "vegetarian",
     "french"

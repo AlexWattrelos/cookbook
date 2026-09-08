@@ -4,6 +4,7 @@
   "image": "images/baked-chicken-thighs.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "chicken",
     "easy"

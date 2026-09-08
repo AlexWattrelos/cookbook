@@ -240,14 +240,9 @@ h3 {
   border-radius: 10px; background: var(--faint);
   object-fit: cover;
 }
-.star {
-  flex: none; width: 34px; height: 34px; margin: -4px -6px 0 0; padding: 0;
-  border: 0; background: none; color: var(--ring);
-  display: grid; place-items: center;
-}
-.star svg { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; }
-.star[aria-pressed="true"] { color: var(--ink); }
-.star[aria-pressed="true"] svg { fill: currentColor; }
+.star { width: 26px; height: 22px; display: grid; place-items: center; color: var(--ink); }
+.star svg { fill: currentColor; }
+.recipe.empty .star { color: var(--tertiary); }
 .list li + li .recipe { border-top: 1px solid var(--hairline); }
 .recipe .line { display: block; }
 .recipe .name { font-weight: 500; }

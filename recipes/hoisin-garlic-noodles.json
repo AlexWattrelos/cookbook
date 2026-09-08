@@ -4,6 +4,7 @@
   "image": "images/hoisin-garlic-noodles.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "pasta",
     "vegetarian",

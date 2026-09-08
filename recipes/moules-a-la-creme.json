@@ -4,6 +4,7 @@
   "image": "images/moules-a-la-creme.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "seafood",
     "french",

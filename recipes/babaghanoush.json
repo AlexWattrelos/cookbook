@@ -4,6 +4,7 @@
   "image": null,
   "course": "starter",
   "status": "empty",
+  "starred": false,
   "tags": [
     "vegetarian",
     "middle-eastern",

@@ -19,7 +19,7 @@ Turn `$ARGUMENTS` into one validated, committed file under `recipes/`.
 ## Write
 
 - File `recipes/<id>.json`, `id` derived from the title as the rules say; it is also the filename. If that file already exists, apply the request to it instead of starting over.
-- `status`: `draft`. `image`: `images/<id>.jpg` when that file exists, else null; never create or download a photo.
+- `status`: `draft`. `starred`: `false` — only Alex marks a favourite, by asking for it. `image`: `images/<id>.jpg` when that file exists, else null; never create or download a photo.
 - Tags: only keys from `config.json`; the main-ingredient tag is required on mains and sides. A tag that does not exist: leave it out of the file and propose it in chat (group, key, label). Never invent one.
 - Two-space indent, like `recipes/pot-au-feu.json`.
 

@@ -4,6 +4,7 @@
   "image": "images/asparagus-with-hollandaise-ham-and-baby-potatoes.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetables",
     "pork",

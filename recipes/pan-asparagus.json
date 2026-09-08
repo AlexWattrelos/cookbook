@@ -4,6 +4,7 @@
   "image": "images/pan-asparagus.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "vegetables",
     "vegetarian",

@@ -4,6 +4,7 @@
   "image": "images/pommes-de-terre-boulangeres.jpg",
   "course": "side",
   "status": "draft",
+  "starred": false,
   "tags": [
     "potato",
     "french"

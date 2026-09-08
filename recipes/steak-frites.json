@@ -4,6 +4,7 @@
   "image": "images/steak-frites.jpg",
   "course": "main",
   "status": "draft",
+  "starred": false,
   "tags": [
     "red-meat",
     "potato",
