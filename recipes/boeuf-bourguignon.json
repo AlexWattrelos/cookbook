@@ -4,7 +4,7 @@
   "image": "images/boeuf-bourguignon.jpg",
   "course": "main",
   "status": "draft",
-  "starred": false,
+  "starred": true,
   "tags": [
     "red-meat",
     "french",

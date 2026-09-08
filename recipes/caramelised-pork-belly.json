@@ -4,7 +4,7 @@
   "image": "images/caramelised-pork-belly.jpg",
   "course": "main",
   "status": "draft",
-  "starred": false,
+  "starred": true,
   "tags": [
     "pork",
     "asian",

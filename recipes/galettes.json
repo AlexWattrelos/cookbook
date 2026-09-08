@@ -4,7 +4,7 @@
   "image": "images/galettes.jpg",
   "course": "basic",
   "status": "draft",
-  "starred": false,
+  "starred": true,
   "tags": [
     "vegetarian",
     "french"
