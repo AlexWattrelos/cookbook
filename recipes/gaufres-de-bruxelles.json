@@ -1,0 +1,217 @@
+{
+  "id": "gaufres-de-bruxelles",
+  "title": "Gaufres de Bruxelles",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "starred": true,
+  "tags": [
+    "vegetarian"
+  ],
+  "servings": 4,
+  "yield": "8 waffles",
+  "time": {
+    "active": 45,
+    "total": 130
+  },
+  "ahead": null,
+  "notes": [
+    "Yeast check: use yeast within its use-by date. There is no blooming step, so the rise is the only test; if the batter has not visibly grown after an hour the yeast was dead. Rescue: whisk in 10 g of baking powder, skip straight to the whites and cook immediately. The result is good, just less complex.",
+    "Fresh yeast instead: half a 42 g cube, about 21 g, crumbled into the warm liquid.",
+    "Overnight version: refrigerate the batter once mixed, up to 12 h, take it out 30 min before cooking and carry on with the rise. Better flavour.",
+    "Freezing: cool the waffles completely and freeze flat in a bag. Revive from frozen at 180 °C conventional / 160 °C fan for 5 min on a rack."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "milk",
+      "amount": 250,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "water",
+      "amount": 125,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "butter",
+      "amount": 90,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "flour",
+      "amount": 250,
+      "unit": "g",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "yeast",
+      "amount": 7,
+      "unit": "g",
+      "name": "instant dry yeast",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "caster-sugar",
+      "amount": 25,
+      "unit": "g",
+      "name": "caster sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "salt",
+      "amount": 3,
+      "unit": "g",
+      "name": "fine salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "vanilla",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "vanilla extract",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "eggs",
+      "amount": 3,
+      "unit": null,
+      "name": "egg",
+      "prep": "separated, whites covered at room temperature",
+      "category": "eggs"
+    },
+    {
+      "id": "cream",
+      "amount": 250,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "icing-sugar-chantilly",
+      "amount": 25,
+      "unit": "g",
+      "name": "icing sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "strawberries",
+      "amount": 300,
+      "unit": "g",
+      "name": "strawberries",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "icing-sugar-dusting",
+      "amount": 10,
+      "unit": "g",
+      "name": "icing sugar",
+      "prep": null,
+      "category": "pantry"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Batter",
+      "cue": "Warm the liquid",
+      "text": "Warm {milk} and {water} together to lukewarm, about 35 °C, neutral on the inside of your wrist. TM7: 2 min / 37 °C / speed 2",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Melt the butter",
+      "text": "Melt {butter} and set it aside. It must be no more than lukewarm before it meets the batter.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Mix the dry ingredients",
+      "text": "Whisk {flour}, {yeast}, {caster-sugar} and {salt} in a large bowl.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Make the batter",
+      "text": "Add {vanilla}, the warm liquid and the yolks of {eggs}. Whisk until smooth, then whisk in the melted butter.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Let it rise",
+      "text": "Cover the bowl and leave at room temperature until doubled, domed and visibly bubbly.",
+      "timer": 60
+    },
+    {
+      "section": "Iron and whites",
+      "cue": "Heat the iron",
+      "text": "Heat the waffle iron at about three-quarters of its thermostat range. Give it the full time before the first waffle.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Whip the whites",
+      "text": "Whip the whites in a clean grease-free bowl to soft peaks, a tip that droops when you lift the whisk. TM7: 3 min / speed 4, butterfly",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Lighten the batter",
+      "text": "Fold a third of the whites into the risen batter to loosen it, then fold in the rest, stopping as soon as the streaks disappear. Use the batter within 30 min.",
+      "timer": null
+    },
+    {
+      "section": "Chantilly",
+      "cue": "Make the chantilly",
+      "text": "Now, and not before, whip {cream} with {icing-sugar-chantilly} to soft peaks in a cold bowl, stopping early: it keeps thickening as you spoon it. Refrigerate until serving.",
+      "timer": null
+    },
+    {
+      "section": "Waffles",
+      "cue": "Fill the iron",
+      "text": "Pour a large ladleful of batter into the centre of each plate. Close the lid gently, let it ride up as the waffle grows and do not press it down.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bake the waffles",
+      "text": "Bake until deep gold and the steam from the sides has almost stopped. Lift a corner to check before opening fully.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Rack and recover",
+      "text": "Move the waffles to a wire rack. Let the iron come back up to temperature before the next pour.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Serve",
+      "text": "Serve within a few minutes, with the chantilly.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the strawberries",
+      "text": "Optional: top with {strawberries} and a dusting of {icing-sugar-dusting}.",
+      "timer": null
+    }
+  ]
+}
