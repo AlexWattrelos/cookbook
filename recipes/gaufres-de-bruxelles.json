@@ -132,7 +132,7 @@
     {
       "section": "Batter",
       "cue": "Warm the liquid",
-      "text": "Warm {milk} and {water} together to lukewarm, about 35 °C, neutral on the inside of your wrist. TM7: 2 min / 37 °C / speed 2",
+      "text": "Warm {milk} and {water} together to lukewarm, about 35 °C, neutral on the inside of your wrist.",
       "timer": null
     },
     {
@@ -168,7 +168,7 @@
     {
       "section": null,
       "cue": "Whip the whites",
-      "text": "Whip the whites in a clean grease-free bowl to soft peaks, a tip that droops when you lift the whisk. TM7: 3 min / speed 4, butterfly",
+      "text": "Whip the whites in a clean grease-free bowl to soft peaks, a tip that droops when you lift the whisk.",
       "timer": null
     },
     {
