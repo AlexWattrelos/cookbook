@@ -1,0 +1,126 @@
+{
+  "id": "gratin-dauphinois",
+  "title": "Gratin dauphinois",
+  "image": null,
+  "course": "side",
+  "status": "draft",
+  "starred": true,
+  "tags": [
+    "potato",
+    "vegetarian",
+    "french"
+  ],
+  "servings": 4,
+  "yield": "one 20×30 cm gratin dish",
+  "time": {
+    "active": 25,
+    "total": 90
+  },
+  "ahead": null,
+  "notes": [
+    "Keeps 2 days in the fridge. Reheat covered with foil, 20 min at 180 °C conventional / 160 °C fan."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "garlic",
+      "amount": 1,
+      "unit": null,
+      "name": "garlic clove",
+      "prep": "halved",
+      "category": "produce"
+    },
+    {
+      "id": "butter",
+      "amount": 10,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "milk",
+      "amount": 300,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "cream",
+      "amount": 300,
+      "unit": "ml",
+      "name": "cream",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "salt",
+      "amount": 1.5,
+      "unit": "tsp",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "ground nutmeg",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "potato",
+      "amount": 1000,
+      "unit": "g",
+      "name": "floury potatoes",
+      "prep": "peeled, sliced 3 mm, not rinsed",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Heat the oven",
+      "text": "Preheat the oven to 180 °C conventional / 160 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Prepare the dish",
+      "text": "Rub a 20×30 cm gratin dish with the cut sides of {garlic}, then grease it with {butter}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Warm the dairy",
+      "text": "Put {milk}, {cream}, {salt}, {nutmeg} and the garlic in a large pan. Season with pepper and bring to a simmer.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Simmer the potatoes",
+      "text": "Add {potato}. Simmer, stirring gently from the bottom so nothing catches, until the slices are slightly soft but not yet falling apart.",
+      "timer": 8
+    },
+    {
+      "section": null,
+      "cue": "Fill the dish",
+      "text": "Discard the garlic. Tip the potatoes and cream into the dish and level the top.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Into the oven",
+      "text": "Bake until deep golden on top and a knife slides through the potatoes without resistance.",
+      "timer": 45
+    },
+    {
+      "section": null,
+      "cue": "Rest",
+      "text": "Leave to stand before serving, so the cream sets and the slices hold together.",
+      "timer": 10
+    }
+  ]
+}
