@@ -27,10 +27,11 @@ Every push to `main` deploys `dist/` to GitHub Pages. Installable on iPhone as a
 - `npm run validate` — validate every recipe against the schema and cross-checks
 - `npm run build` — validate, then write `dist/`
 - `npm run serve` — serve `dist/` at http://localhost:8080
-- `/recipe <dish | pasted text | URL | import/<file>.txt>` — write a recipe file, validate, commit
+- `/recipe <dish | pasted text | URL | import/<file>.txt>` — write a recipe file, validate, commit, push
 
 ## Rules
 
+- Push right after every commit, without asking: nothing here is sensitive, and Alex wants every change live on his phone at once.
 - Recipes go through `/recipe`; `status: ready` is set by Alex only.
 - A change to labels, vocabulary, order or number formatting is a change to `config.json`, never to code or recipes.
 - A tag missing from `config.json` is proposed in chat, never invented in a recipe.

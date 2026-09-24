@@ -1,9 +1,9 @@
 ---
-description: Write one recipe file from a dish name, pasted text, a URL or an import/ file; validate it; commit it
+description: Write one recipe file from a dish name, pasted text, a URL or an import/ file; validate it; commit and push it
 argument-hint: <dish name | pasted recipe text | URL | import/<file>.txt>
 ---
 
-Turn `$ARGUMENTS` into one validated, committed file under `recipes/`.
+Turn `$ARGUMENTS` into one validated, committed, pushed file under `recipes/`.
 
 ## Read first, every time
 
@@ -23,8 +23,9 @@ Turn `$ARGUMENTS` into one validated, committed file under `recipes/`.
 - Tags: only keys from `config.json`; the main-ingredient tag is required on mains and sides. A tag that does not exist: leave it out of the file and propose it in chat (group, key, label). Never invent one.
 - Two-space indent, like `recipes/pot-au-feu.json`.
 
-## Validate and commit
+## Validate, commit, push
 
 1. `npm run validate`. Fix the recipe until it passes. Never edit `config.json`, the schema or the validator to make it pass; if a rule seems wrong, say so instead.
 2. `git add recipes/<id>.json`, then commit: `feat(recipe): add <title>` for a new file, `fix(recipe): <what changed> in <title>` for a change. Nothing else in the commit.
-3. Reply with the file path and any tag proposal. No summary of the recipe.
+3. `git push`, without asking (see CLAUDE.md).
+4. Reply with the file path and any tag proposal. No summary of the recipe.
