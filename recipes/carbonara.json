@@ -1,0 +1,169 @@
+{
+  "id": "carbonara",
+  "title": "Carbonara",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "starred": false,
+  "tags": [
+    "pork",
+    "pasta",
+    "italian",
+    "easy"
+  ],
+  "servings": 2,
+  "yield": null,
+  "time": {
+    "active": 15,
+    "total": 30
+  },
+  "ahead": null,
+  "notes": [
+    "Pick the eggs with the darkest yolks; colour comes from the hen's feed.",
+    "If using a whole piece of guanciale: cut off the rind, slice 1 cm thick, then into batons 1 × 1 × 4 cm. Pat pre-cut cubes very dry before rendering.",
+    "If the cream comes out grainy, use 60 °C next time; if it stays thin, 70 °C."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "pecorino",
+      "amount": 50,
+      "unit": "g",
+      "name": "Pecorino Romano",
+      "prep": "in 3 cm chunks",
+      "category": "fridge"
+    },
+    {
+      "id": "parmigiano",
+      "amount": 30,
+      "unit": "g",
+      "name": "Parmigiano Reggiano",
+      "prep": "in 3 cm chunks",
+      "category": "fridge"
+    },
+    {
+      "id": "eggs",
+      "amount": 5,
+      "unit": null,
+      "name": "egg",
+      "prep": "yolks only",
+      "category": "eggs"
+    },
+    {
+      "id": "guanciale",
+      "amount": 120,
+      "unit": "g",
+      "name": "guanciale",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "spaghetti",
+      "amount": 200,
+      "unit": "g",
+      "name": "spaghetti",
+      "prep": null,
+      "category": "grains"
+    },
+    {
+      "id": "pepper-fat",
+      "amount": 1,
+      "unit": "g",
+      "name": "black peppercorns",
+      "prep": "coarsely crushed in a mortar",
+      "category": "staple"
+    },
+    {
+      "id": "pasta-water-cream",
+      "amount": 50,
+      "unit": "ml",
+      "name": "pasta cooking water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "pasta-water-toss",
+      "amount": 100,
+      "unit": "ml",
+      "name": "pasta cooking water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "pepper-top",
+      "amount": 1,
+      "unit": "g",
+      "name": "black peppercorns",
+      "prep": "coarsely crushed in a mortar",
+      "category": "staple"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Blitz the cheese",
+      "text": "Fill the TM7 bowl with {pecorino} and {parmigiano}. Blend, then scrape down the sides. TM7: 10 sec / speed 10",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the yolks",
+      "text": "Put in the yolks of {eggs}. Mix to a paste and leave it in the bowl. TM7: 20 sec / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Boil the water",
+      "text": "Bring a large pot of water to the boil with 7 g salt per litre.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Render the guanciale",
+      "text": "Meanwhile, put {guanciale} in a cold wide pan in a single layer, no oil. Cook over medium-low heat, stirring once or twice, until the fat pools and the pieces turn translucent.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the pasta",
+      "text": "Drop {spaghetti} into the boiling water. Cook 1 min less than the packet time.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Crisp the guanciale",
+      "text": "Meanwhile, raise the pan to medium-high. Leave the pieces mostly alone until deep golden and crackling.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Pepper the fat",
+      "text": "Lift the pieces onto a plate with a slotted spoon, then take the pan off the heat. Add {pepper-fat}, then wait 20 seconds.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Make the cream",
+      "text": "Once the pasta has cooked 3 min, ladle {pasta-water-cream} into the TM7 bowl and pour in the fat with its pepper. Cook until thick, smooth and glossy, like a custard. TM7: 5 min / 65 °C / speed 3",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Reserve and drain",
+      "text": "Scoop out {pasta-water-toss} and set it aside. Drain the pasta and return it to the empty pot, off the heat.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Toss the pasta",
+      "text": "Pour the cream over and toss hard. Add the reserved water a splash at a time until every strand is coated and glossy.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Plate immediately. Top with the guanciale, then {pepper-top}.",
+      "timer": null
+    }
+  ]
+}
