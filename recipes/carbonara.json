@@ -30,7 +30,7 @@
       "amount": 50,
       "unit": "g",
       "name": "Pecorino Romano",
-      "prep": "in 3 cm chunks",
+      "prep": null,
       "category": "fridge"
     },
     {
@@ -38,7 +38,7 @@
       "amount": 30,
       "unit": "g",
       "name": "Parmigiano Reggiano",
-      "prep": "in 3 cm chunks",
+      "prep": null,
       "category": "fridge"
     },
     {
@@ -66,32 +66,8 @@
       "category": "grains"
     },
     {
-      "id": "pepper-fat",
-      "amount": 1,
-      "unit": "g",
-      "name": "black peppercorns",
-      "prep": "coarsely crushed in a mortar",
-      "category": "staple"
-    },
-    {
-      "id": "pasta-water-cream",
-      "amount": 50,
-      "unit": "ml",
-      "name": "pasta cooking water",
-      "prep": null,
-      "category": "staple"
-    },
-    {
-      "id": "pasta-water-toss",
-      "amount": 100,
-      "unit": "ml",
-      "name": "pasta cooking water",
-      "prep": null,
-      "category": "staple"
-    },
-    {
-      "id": "pepper-top",
-      "amount": 1,
+      "id": "pepper",
+      "amount": 2,
       "unit": "g",
       "name": "black peppercorns",
       "prep": "coarsely crushed in a mortar",
@@ -138,19 +114,19 @@
     {
       "section": null,
       "cue": "Pepper the fat",
-      "text": "Lift the pieces onto a plate with a slotted spoon, then take the pan off the heat. Add {pepper-fat}, then wait 20 seconds.",
+      "text": "Lift the pieces onto a plate with a slotted spoon, then take the pan off the heat. Add half of {pepper}, then wait 20 seconds.",
       "timer": null
     },
     {
       "section": null,
       "cue": "Make the cream",
-      "text": "Once the pasta has cooked 3 min, ladle {pasta-water-cream} into the TM7 bowl and pour in the fat with its pepper. Cook until thick, smooth and glossy, like a custard. TM7: 5 min / 65 °C / speed 3",
+      "text": "Once the pasta has cooked 3 min, ladle 50 ml of the pasta water into the TM7 bowl and pour in the fat with its pepper. Cook until thick, smooth and glossy, like a custard. TM7: 5 min / 65 °C / speed 3",
       "timer": null
     },
     {
       "section": null,
       "cue": "Reserve and drain",
-      "text": "Scoop out {pasta-water-toss} and set it aside. Drain the pasta and return it to the empty pot, off the heat.",
+      "text": "Scoop out 100 ml of the pasta water and set it aside. Drain the pasta and return it to the empty pot, off the heat.",
       "timer": null
     },
     {
@@ -162,7 +138,7 @@
     {
       "section": null,
       "cue": "Serve",
-      "text": "Plate immediately. Top with the guanciale, then {pepper-top}.",
+      "text": "Plate immediately. Top with the guanciale, then the rest of the pepper.",
       "timer": null
     }
   ]
