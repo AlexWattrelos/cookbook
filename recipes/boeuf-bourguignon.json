@@ -75,8 +75,8 @@
     },
     {
       "id": "flour",
-      "amount": 15,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "flour",
       "prep": null,
       "category": "pantry"

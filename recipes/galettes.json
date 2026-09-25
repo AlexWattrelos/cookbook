@@ -29,8 +29,8 @@
     },
     {
       "id": "salt",
-      "amount": 3,
-      "unit": "g",
+      "amount": 0.5,
+      "unit": "tsp",
       "name": "fine salt",
       "prep": null,
       "category": "staple"

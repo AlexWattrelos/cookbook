@@ -30,8 +30,8 @@
     },
     {
       "id": "cocoa-coffee",
-      "amount": 10,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "cocoa powder",
       "prep": null,
       "category": "pantry"
@@ -86,16 +86,16 @@
     },
     {
       "id": "cocoa-middle",
-      "amount": 10,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "cocoa powder",
       "prep": null,
       "category": "pantry"
     },
     {
       "id": "cocoa-top",
-      "amount": 10,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "cocoa powder",
       "prep": null,
       "category": "pantry"

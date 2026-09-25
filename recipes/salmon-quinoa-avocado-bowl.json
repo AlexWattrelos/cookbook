@@ -63,24 +63,24 @@
     },
     {
       "id": "soy-sauce",
-      "amount": 40,
-      "unit": "ml",
+      "amount": 2.5,
+      "unit": "tbsp",
       "name": "soy sauce",
       "prep": null,
       "category": "canned"
     },
     {
       "id": "rice-vinegar",
-      "amount": 30,
-      "unit": "ml",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "rice vinegar",
       "prep": null,
       "category": "pantry"
     },
     {
       "id": "sesame-oil",
-      "amount": 10,
-      "unit": "ml",
+      "amount": 2,
+      "unit": "tsp",
       "name": "toasted sesame oil",
       "prep": null,
       "category": "pantry"
@@ -103,8 +103,8 @@
     },
     {
       "id": "water-vinaigrette",
-      "amount": 20,
-      "unit": "ml",
+      "amount": 1.5,
+      "unit": "tbsp",
       "name": "water",
       "prep": null,
       "category": "staple"

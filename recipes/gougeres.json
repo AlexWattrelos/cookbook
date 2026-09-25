@@ -67,8 +67,8 @@
     },
     {
       "id": "pepper",
-      "amount": 1,
-      "unit": "g",
+      "amount": 0.5,
+      "unit": "tsp",
       "name": "black pepper",
       "prep": "freshly ground",
       "category": "staple"

@@ -66,8 +66,8 @@
     },
     {
       "id": "cornstarch",
-      "amount": 5,
-      "unit": "g",
+      "amount": 1,
+      "unit": "tsp",
       "name": "cornstarch",
       "prep": null,
       "category": "pantry"

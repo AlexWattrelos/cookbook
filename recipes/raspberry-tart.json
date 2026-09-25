@@ -123,8 +123,8 @@
     },
     {
       "id": "jam",
-      "amount": 60,
-      "unit": "g",
+      "amount": 3,
+      "unit": "tbsp",
       "name": "seedless raspberry jam",
       "prep": null,
       "category": "canned"

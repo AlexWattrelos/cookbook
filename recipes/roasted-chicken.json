@@ -26,16 +26,16 @@
   "ingredients": [
     {
       "id": "salt",
-      "amount": 45,
-      "unit": "g",
-      "name": "salt",
+      "amount": 2.5,
+      "unit": "tbsp",
+      "name": "fine salt",
       "prep": null,
       "category": "staple"
     },
     {
       "id": "baking-soda",
-      "amount": 30,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "baking soda",
       "prep": null,
       "category": "pantry"

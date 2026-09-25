@@ -67,8 +67,8 @@
     },
     {
       "id": "pepper",
-      "amount": 2,
-      "unit": "g",
+      "amount": 0.75,
+      "unit": "tsp",
       "name": "black peppercorns",
       "prep": "coarsely crushed in a mortar",
       "category": "staple"
@@ -90,7 +90,7 @@
     {
       "section": null,
       "cue": "Boil the water",
-      "text": "Bring a large pot of water to the boil with 7 g salt per litre.",
+      "text": "Bring a large pot of water to the boil with 1¼ tsp fine salt per litre.",
       "timer": null
     },
     {

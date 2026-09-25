@@ -90,8 +90,8 @@
     },
     {
       "id": "tomato-paste",
-      "amount": 30,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "tomato paste",
       "prep": null,
       "category": "canned"

@@ -16,7 +16,7 @@
   },
   "ahead": null,
   "notes": [
-    "Yeast check: use yeast within its use-by date. There is no blooming step, so the rise is the only test; if the batter has not visibly grown after an hour the yeast was dead. Rescue: whisk in 10 g of baking powder, skip straight to the whites and cook immediately. The result is good, just less complex.",
+    "Yeast check: use yeast within its use-by date. There is no blooming step, so the rise is the only test; if the batter has not visibly grown after an hour the yeast was dead. Rescue: whisk in 2¼ tsp baking powder, skip straight to the whites and cook immediately. The result is good, just less complex.",
     "Fresh yeast instead: half a 42 g cube, about 21 g, crumbled into the warm liquid.",
     "Overnight version: refrigerate the batter once mixed, up to 12 h, take it out 30 min before cooking and carry on with the rise. Better flavour.",
     "Freezing: cool the waffles completely and freeze flat in a bag. Revive from frozen at 180 °C conventional / 160 °C fan for 5 min on a rack."
@@ -57,24 +57,24 @@
     },
     {
       "id": "yeast",
-      "amount": 7,
-      "unit": "g",
+      "amount": 2.25,
+      "unit": "tsp",
       "name": "instant dry yeast",
       "prep": null,
       "category": "pantry"
     },
     {
       "id": "caster-sugar",
-      "amount": 25,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "caster sugar",
       "prep": null,
       "category": "pantry"
     },
     {
       "id": "salt",
-      "amount": 3,
-      "unit": "g",
+      "amount": 0.5,
+      "unit": "tsp",
       "name": "fine salt",
       "prep": null,
       "category": "staple"
@@ -105,8 +105,8 @@
     },
     {
       "id": "icing-sugar-chantilly",
-      "amount": 25,
-      "unit": "g",
+      "amount": 3,
+      "unit": "tbsp",
       "name": "icing sugar",
       "prep": null,
       "category": "pantry"
@@ -121,8 +121,8 @@
     },
     {
       "id": "icing-sugar-dusting",
-      "amount": 10,
-      "unit": "g",
+      "amount": 1,
+      "unit": "tbsp",
       "name": "icing sugar",
       "prep": null,
       "category": "pantry"

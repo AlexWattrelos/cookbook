@@ -77,8 +77,8 @@
     },
     {
       "id": "cream",
-      "amount": 40,
-      "unit": "ml",
+      "amount": 2.5,
+      "unit": "tbsp",
       "name": "cream",
       "prep": null,
       "category": "fridge"

@@ -208,8 +208,8 @@
     },
     {
       "id": "sugar",
-      "amount": 20,
-      "unit": "g",
+      "amount": 1.5,
+      "unit": "tbsp",
       "name": "sugar",
       "prep": null,
       "category": "pantry"

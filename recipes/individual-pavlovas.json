@@ -50,8 +50,8 @@
     },
     {
       "id": "cornstarch",
-      "amount": 6,
-      "unit": "g",
+      "amount": 2,
+      "unit": "tsp",
       "name": "cornstarch",
       "prep": null,
       "category": "pantry"
@@ -74,15 +74,15 @@
     },
     {
       "id": "icing-sugar",
-      "amount": 8,
-      "unit": "g",
+      "amount": 1,
+      "unit": "tbsp",
       "name": "icing sugar",
       "prep": null,
       "category": "pantry"
     },
     {
       "id": "vanilla-cream",
-      "amount": 0.333,
+      "amount": 0.25,
       "unit": "tsp",
       "name": "ground vanilla",
       "prep": null,

@@ -39,8 +39,8 @@
     },
     {
       "id": "vinegar",
-      "amount": 30,
-      "unit": "ml",
+      "amount": 2,
+      "unit": "tbsp",
       "name": "white wine vinegar",
       "prep": null,
       "category": "pantry"
