@@ -1,0 +1,238 @@
+{
+  "id": "individual-pavlovas",
+  "title": "Individual pavlovas",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "starred": false,
+  "tags": [
+    "vegetarian",
+    "summer",
+    "guests"
+  ],
+  "servings": 8,
+  "yield": "8 nests, 9 cm across",
+  "time": {
+    "active": 45,
+    "total": null
+  },
+  "ahead": null,
+  "notes": [
+    "4 large whites weigh about 140 g.",
+    "Unfilled shells keep 2 days in an airtight box at room temperature. Do not refrigerate them.",
+    "On a humid or rainy day, bake 5 min longer."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "whites only, at room temperature",
+      "category": "eggs"
+    },
+    {
+      "id": "sugar",
+      "amount": 220,
+      "unit": "g",
+      "name": "caster sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cornstarch",
+      "amount": 6,
+      "unit": "g",
+      "name": "cornstarch",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "vanilla-meringue",
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "ground vanilla",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "vinegar",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "white wine vinegar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "icing-sugar",
+      "amount": 8,
+      "unit": "g",
+      "name": "icing sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "vanilla-cream",
+      "amount": 0.333,
+      "unit": "tsp",
+      "name": "ground vanilla",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cream",
+      "amount": 300,
+      "unit": "ml",
+      "name": "cream",
+      "prep": "fridge-cold",
+      "category": "fridge"
+    },
+    {
+      "id": "creme-fraiche",
+      "amount": 100,
+      "unit": "g",
+      "name": "crème fraîche",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "strawberries",
+      "amount": 100,
+      "unit": "g",
+      "name": "strawberries",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "raspberries",
+      "amount": 100,
+      "unit": "g",
+      "name": "raspberries",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "blueberries",
+      "amount": 100,
+      "unit": "g",
+      "name": "blueberries",
+      "prep": null,
+      "category": "produce"
+    },
+    {
+      "id": "passion-fruit",
+      "amount": 3,
+      "unit": null,
+      "name": "passion fruit",
+      "prep": "halved",
+      "category": "produce"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Meringue",
+      "cue": "Start the oven",
+      "text": "Preheat to 130 °C conventional, no fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Prepare the tray",
+      "text": "Line a large tray with baking paper. Draw 8 circles of 8 cm on the paper, then flip it over.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Whisk the whites",
+      "text": "Fill a clean, dry bowl with {salt} and the whites of {eggs}. Whisk on medium speed with an electric hand whisk until soft peaks form.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add the sugar slowly",
+      "text": "Keep whisking and add {sugar} a tablespoon at a time, waiting about 30 seconds between additions.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the meringue",
+      "text": "Whisk on high until thick and glossy. Rub a little between two fingers: it must feel smooth, not gritty.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Sift in the starch",
+      "text": "Mix {cornstarch} and {vanilla-meringue}, then sift over the meringue.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fold in stabilisers",
+      "text": "Add {vinegar}. Fold in gently with a spatula, just until no streaks remain.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Shape the nests",
+      "text": "Spoon the meringue onto the circles, building each nest about 4 cm tall. Press a shallow well in the centre with the back of a spoon, keeping the sides high.",
+      "timer": null
+    },
+    {
+      "section": "Baking",
+      "cue": "Into the oven",
+      "text": "Bake on the middle shelf, keeping the door shut until the timer rings. Bake on if needed, until the shells feel dry and crisp to the touch and are pale cream, not brown.",
+      "timer": 45
+    },
+    {
+      "section": null,
+      "cue": "Cool in the oven",
+      "text": "Switch the oven off and wedge the door open with a wooden spoon. Leave the tray inside.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cool on a rack",
+      "text": "Move the nests to a rack and leave to cool fully.",
+      "timer": null
+    },
+    {
+      "section": "Vanilla cream",
+      "cue": "Whip the vanilla cream",
+      "text": "Fill a bowl with {icing-sugar}, {vanilla-cream} and {cream}. Whisk to soft peaks.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the cream",
+      "text": "Fold in {creme-fraiche}. Keep in the fridge until serving.",
+      "timer": null
+    },
+    {
+      "section": "Assembly",
+      "cue": "Prepare the berries",
+      "text": "Just before serving, wash and dry {strawberries}, {raspberries} and {blueberries}.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fill the nests",
+      "text": "Spoon the cream into each well. Top with the berries.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish with passion fruit",
+      "text": "Spoon over the pulp of {passion-fruit}. Serve within 30 minutes of filling.",
+      "timer": null
+    }
+  ]
+}
