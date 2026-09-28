@@ -70,14 +70,6 @@
       "category": "pantry"
     },
     {
-      "id": "cooking-water",
-      "amount": 120,
-      "unit": "ml",
-      "name": "noodle cooking water",
-      "prep": null,
-      "category": "staple"
-    },
-    {
       "id": "oil",
       "amount": 4,
       "unit": "tbsp",
@@ -158,7 +150,7 @@
     {
       "section": null,
       "cue": "Finish the sauce",
-      "text": "Drain the noodles, keeping {cooking-water} aside. Whisk it into the sauce.",
+      "text": "Drain the noodles, keeping 120 ml of the cooking water aside. Whisk it into the sauce.",
       "timer": null
     },
     {
