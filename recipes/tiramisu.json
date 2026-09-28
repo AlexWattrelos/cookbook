@@ -29,9 +29,9 @@
       "category": "pantry"
     },
     {
-      "id": "cocoa-coffee",
-      "amount": 2,
-      "unit": "tbsp",
+      "id": "cocoa",
+      "amount": 30,
+      "unit": "g",
       "name": "cocoa powder",
       "prep": null,
       "category": "pantry"
@@ -83,29 +83,13 @@
       "name": "small savoiardi ladyfingers",
       "prep": null,
       "category": "pantry"
-    },
-    {
-      "id": "cocoa-middle",
-      "amount": 2,
-      "unit": "tbsp",
-      "name": "cocoa powder",
-      "prep": null,
-      "category": "pantry"
-    },
-    {
-      "id": "cocoa-top",
-      "amount": 2,
-      "unit": "tbsp",
-      "name": "cocoa powder",
-      "prep": null,
-      "category": "pantry"
     }
   ],
   "steps": [
     {
       "section": "Coffee",
       "cue": "Make the coffee dip",
-      "text": "Brew {espresso} and drop in one big ice cube to cool. Whisk in {cocoa-coffee} and {marsala} until dissolved.",
+      "text": "Brew {espresso} and drop in one big ice cube to cool. Whisk in a third of {cocoa} and {marsala} until dissolved.",
       "timer": null
     },
     {
@@ -147,13 +131,13 @@
     {
       "section": null,
       "cue": "Build the first layer",
-      "text": "Line the bottom of a 20×25 cm dish with a single layer of dipped ladyfingers. Spread half the cream over them and dust with {cocoa-middle}.",
+      "text": "Line the bottom of a 20×25 cm dish with a single layer of dipped ladyfingers. Spread half the cream over them and dust with a third of the cocoa.",
       "timer": null
     },
     {
       "section": null,
       "cue": "Build the second layer",
-      "text": "Repeat with another layer of dipped ladyfingers, then the remaining cream. Sift {cocoa-top} over the top.",
+      "text": "Repeat with another layer of dipped ladyfingers, then the remaining cream. Sift the rest of the cocoa over the top.",
       "timer": null
     },
     {
