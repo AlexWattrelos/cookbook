@@ -14,7 +14,7 @@
   "yield": "8 nests, 9 cm across",
   "time": {
     "active": 45,
-    "total": null
+    "total": 120
   },
   "ahead": null,
   "notes": [
@@ -196,7 +196,7 @@
       "section": null,
       "cue": "Cool in the oven",
       "text": "Switch the oven off and wedge the door open with a wooden spoon. Leave the tray inside.",
-      "timer": null
+      "timer": 20
     },
     {
       "section": null,
