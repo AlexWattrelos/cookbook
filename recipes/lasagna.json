@@ -57,14 +57,6 @@
       "category": "produce"
     },
     {
-      "id": "butter-soffritto",
-      "amount": 30,
-      "unit": "g",
-      "name": "butter",
-      "prep": null,
-      "category": "fridge"
-    },
-    {
       "id": "pancetta",
       "amount": 120,
       "unit": "g",
@@ -138,7 +130,7 @@
     },
     {
       "id": "butter-sauce",
-      "amount": 100,
+      "amount": 80,
       "unit": "g",
       "name": "butter",
       "prep": null,
@@ -146,7 +138,7 @@
     },
     {
       "id": "flour",
-      "amount": 100,
+      "amount": 80,
       "unit": "g",
       "name": "flour",
       "prep": null,
@@ -154,7 +146,7 @@
     },
     {
       "id": "milk-white",
-      "amount": 1700,
+      "amount": 1400,
       "unit": "ml",
       "name": "milk",
       "prep": null,
@@ -225,19 +217,25 @@
     {
       "section": null,
       "cue": "Render the pancetta",
-      "text": "Melt {butter-soffritto} in a large heavy pot over medium heat. Add {pancetta} and cook until browned and the fat renders.",
+      "text": "Cook {pancetta} in a large heavy pot over medium heat until browned and the fat renders.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Sear the beef",
+      "text": "Push the pancetta to the edges and raise the heat to high. Add {beef}, press it into one flat layer and leave it undisturbed until a dark crust forms underneath.",
+      "timer": 5
+    },
+    {
+      "section": null,
+      "cue": "Add the pork",
+      "text": "Break the beef into chunks and add {pork}. Cook, breaking it up, until no longer pink.",
       "timer": 5
     },
     {
       "section": null,
       "cue": "Sweat the vegetables",
-      "text": "Add the chopped vegetables and garlic with a pinch of salt. Cook over low heat until translucent and sweet, without browning.",
-      "timer": 12
-    },
-    {
-      "section": null,
-      "cue": "Cook the meat",
-      "text": "Add {beef} and {pork}, raise the heat to medium-high and break the meat up. Cook until it loses its raw colour and the liquid has cooked off.",
+      "text": "Lower the heat to medium-low. Add the chopped vegetables and garlic with a pinch of salt and cook, scraping up the browned bits, until soft and sweet.",
       "timer": 10
     },
     {
