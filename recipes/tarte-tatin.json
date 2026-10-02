@@ -1,0 +1,155 @@
+{
+  "id": "tarte-tatin",
+  "title": "Tarte Tatin",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "starred": false,
+  "tags": [
+    "french",
+    "guests",
+    "winter"
+  ],
+  "servings": 8,
+  "yield": "one 24 cm tart, 8 slices",
+  "time": {
+    "active": 10,
+    "total": 60
+  },
+  "ahead": "Bake the apples in their caramel the day before.",
+  "notes": [
+    "The baked apples keep 3 days in the fridge before the pastry goes on.",
+    "Best the day it is baked; the pastry softens after a few hours."
+  ],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "apples",
+      "amount": 1600,
+      "unit": "g",
+      "name": "Boskoop apples",
+      "prep": "peeled, cored and quartered",
+      "category": "produce"
+    },
+    {
+      "id": "sugar",
+      "amount": 180,
+      "unit": "g",
+      "name": "caster sugar",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter",
+      "amount": 80,
+      "unit": "g",
+      "name": "butter",
+      "prep": "diced",
+      "category": "fridge"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "flaky salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "pastry",
+      "amount": 1,
+      "unit": null,
+      "name": "round sheet of all-butter puff pastry",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "cream",
+      "amount": null,
+      "unit": null,
+      "name": "Gruyère double cream",
+      "prep": null,
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Caramel",
+      "cue": "Turn the oven on",
+      "text": "Heat the oven to 160 °C conventional / 140 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Melt the sugar",
+      "text": "Put {sugar} in a 24 cm cast-iron or ovenproof pan over medium heat. Cook without stirring, swirling the pan now and then, until melted and deep amber.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Finish the caramel",
+      "text": "Off the heat, stir in {butter} and {salt}. It will bubble up hard.",
+      "timer": null
+    },
+    {
+      "section": "Apples",
+      "cue": "Pack the apples",
+      "text": "Stand {apples} on their edges in the caramel, packed tightly in circles, and pile the rest on top. They shrink a lot.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Start the bake",
+      "text": "Bake on a middle rack until the apples have slumped.",
+      "timer": 60
+    },
+    {
+      "section": null,
+      "cue": "Press and keep baking",
+      "text": "Press the apples down with a spatula to close the gaps. Bake until deep amber, soft right through and sunk into one dense layer.",
+      "timer": 90
+    },
+    {
+      "section": null,
+      "cue": "Chill overnight",
+      "text": "Cool, cover and refrigerate overnight, so the apples set.",
+      "timer": null
+    },
+    {
+      "section": "Next day",
+      "cue": "Turn the oven on",
+      "text": "Heat the oven to 200 °C conventional / 180 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cover with pastry",
+      "text": "Lay {pastry} over the pan and trim it 2 cm wider than the apples. Tuck the edge down inside the pan and prick all over with a fork.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bake the pastry",
+      "text": "Bake until the pastry is puffed and deep golden.",
+      "timer": 30
+    },
+    {
+      "section": null,
+      "cue": "Let it settle",
+      "text": "Rest in the pan, so the caramel stops bubbling.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Turn it out",
+      "text": "Shake the pan until the tart slides freely, warming it over medium heat if it sticks. Put a large plate on top and flip in one quick motion.",
+      "timer": null
+    },
+    {
+      "section": "Serving",
+      "cue": "Serve",
+      "text": "Put back any apple left in the pan. Serve warm, with {cream} on the table.",
+      "timer": null
+    }
+  ]
+}
