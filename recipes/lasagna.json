@@ -19,9 +19,7 @@
     "total": 85
   },
   "ahead": "Make the ragù the day before.",
-  "notes": [
-    "The ragù can simmer up to 2 h before the milk goes in."
-  ],
+  "notes": [],
   "source": null,
   "ingredients": [
     {
@@ -253,8 +251,8 @@
     {
       "section": null,
       "cue": "Build the sauce",
-      "text": "Add {tomatoes}, {bay} and {parmesan-rind} and bring to a gentle simmer. Simmer with the lid ajar, stirring occasionally and adding a little water if it catches, until thick.",
-      "timer": 60
+      "text": "Add {tomatoes}, {bay} and {parmesan-rind} and bring to a gentle simmer. Simmer with the lid ajar, stirring occasionally and adding a little water if it catches, until thick and deep in flavour.",
+      "timer": 120
     },
     {
       "section": null,
