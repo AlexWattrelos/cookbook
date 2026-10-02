@@ -18,8 +18,9 @@
   },
   "ahead": "Bake the apples in their caramel the day before.",
   "notes": [
-    "The baked apples keep 3 days in the fridge before the pastry goes on.",
-    "Best the day it is baked; the pastry softens after a few hours."
+    "The dough: shortcrust is the default. Use puff pastry instead if you want something fluffier, but it is riskier: it goes soft under the caramel within the hour.",
+    "The baked apples keep 3 days in the fridge before the dough goes on.",
+    "Best the day it is baked; the dough softens after a few hours."
   ],
   "source": null,
   "ingredients": [
@@ -56,10 +57,10 @@
       "category": "staple"
     },
     {
-      "id": "pastry",
+      "id": "dough",
       "amount": 1,
       "unit": null,
-      "name": "round sheet of all-butter puff pastry",
+      "name": "round sheet of all-butter shortcrust pastry",
       "prep": null,
       "category": "fridge"
     },
@@ -123,14 +124,14 @@
     },
     {
       "section": null,
-      "cue": "Cover with pastry",
-      "text": "Lay {pastry} over the pan and trim it 2 cm wider than the apples. Tuck the edge down inside the pan, then prick all over with a fork.",
+      "cue": "Cover with the dough",
+      "text": "Lay {dough} over the pan and trim it 2 cm wider than the apples. Tuck the edge down inside the pan, then prick all over with a fork.",
       "timer": null
     },
     {
       "section": null,
-      "cue": "Bake the pastry",
-      "text": "Bake until the pastry is puffed and deep golden.",
+      "cue": "Bake the dough",
+      "text": "Bake until the dough is deep golden.",
       "timer": 30
     },
     {
