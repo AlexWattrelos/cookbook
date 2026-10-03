@@ -15,8 +15,8 @@
   "servings": 12,
   "yield": "one 23×33 cm tray and a small one",
   "time": {
-    "active": 35,
-    "total": 85
+    "active": 40,
+    "total": 90
   },
   "ahead": "Make the ragù the day before.",
   "notes": [],
@@ -275,7 +275,7 @@
     {
       "section": "Next day",
       "cue": "Turn the oven on",
-      "text": "Next day, heat the oven to 200 °C conventional / 180 °C fan.",
+      "text": "Next day, heat the oven to 180 °C fan.",
       "timer": null
     },
     {
@@ -341,8 +341,14 @@
     {
       "section": "Baking",
       "cue": "Into the oven",
-      "text": "Bake on a middle rack until bubbling at the edges and golden on top.",
+      "text": "Bake the large dish on the second rack from the top and the small dish two racks lower, until bubbling at the edges.",
       "timer": 25
+    },
+    {
+      "section": null,
+      "cue": "Grill the top",
+      "text": "Take out the small dish. Switch the oven to grill on high and grill the large dish until golden in patches. Stay at the oven: it goes from golden to burnt in about a minute.",
+      "timer": 4
     },
     {
       "section": null,
