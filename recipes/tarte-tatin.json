@@ -41,6 +41,14 @@
       "category": "pantry"
     },
     {
+      "id": "water",
+      "amount": 4,
+      "unit": "tbsp",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
       "id": "butter",
       "amount": 80,
       "unit": "g",
@@ -82,8 +90,14 @@
     },
     {
       "section": null,
-      "cue": "Melt the sugar",
-      "text": "Put {sugar} in a 24 cm cast-iron or ovenproof pan over medium heat. Cook without stirring, swirling the pan now and then, until melted and deep amber.",
+      "cue": "Dissolve the sugar",
+      "text": "Put {water} and {sugar} in a 24 cm cast-iron or ovenproof pan over medium heat. Stir until the sugar has dissolved and the syrup is clear.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook to amber",
+      "text": "Boil without stirring from here on, or it turns grainy. Swirl the pan now and then, until deep amber.",
       "timer": null
     },
     {
