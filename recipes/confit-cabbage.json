@@ -88,7 +88,7 @@
     {
       "section": null,
       "cue": "Heat the oven",
-      "text": "Preheat the oven to 160 °C conventional / 140 °C fan.",
+      "text": "Preheat the oven to 140 °C fan.",
       "timer": null
     },
     {
@@ -118,7 +118,7 @@
     {
       "section": null,
       "cue": "Crisp the edges",
-      "text": "Turn the oven up to 220 °C conventional / 200 °C fan. Uncover, baste with the butter from the dish and roast until the edges are crisp and the butter has browned.",
+      "text": "Turn the oven up to 200 °C fan. Uncover, baste with the butter from the dish and roast until the edges are crisp and the butter has browned.",
       "timer": 10
     },
     {

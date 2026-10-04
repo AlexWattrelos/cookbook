@@ -107,5 +107,5 @@ Keys from config.json, in supermarket order; the app owns labels and order. prod
 - Name the vessel and heat only when they change the result ("a large pot", "over high heat", "a small blender", "a hot grill").
 - A warning tied to one step goes in that step's text ("Do not open the oven while it bakes."); whole-recipe facts go in `notes`.
 - Plating: "Arrange on a warm platter: meat, vegetables, marrow bones, garlic bread." {id} only for items that first appear at the table.
-- Oven: "200 °C conventional / 180 °C fan"; fan = conventional − 20. If the dish needs one mode, give only that one: "200 °C conventional, no fan". Preheating is its own step, no timer.
+- Oven: one setting, never two, and every oven temperature names its mode, in steps and notes alike. Fan by default: "180 °C fan" (a source's conventional temperature − 20). Conventional only when the dish needs it: "200 °C conventional, no fan". Preheating is its own step, no timer.
 - An extra worth doing is one ordinary step, in the cook's order and usually last, whose text starts with "Optional:", its ingredients listed normally so they scale and get bought. At most one per recipe.

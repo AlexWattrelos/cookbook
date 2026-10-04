@@ -20,8 +20,8 @@
   },
   "ahead": null,
   "notes": [
-    "Keeps warm in an 80 °C oven for up to 45 min.",
-    "Freezes 1 month fully baked; recrisp 6 min at 180 °C from frozen."
+    "Keeps warm in the oven at 80 °C conventional for up to 45 min.",
+    "Freezes 1 month fully baked; recrisp 6 min at 180 °C conventional from frozen."
   ],
   "source": null,
   "ingredients": [
@@ -176,7 +176,7 @@
     {
       "section": null,
       "cue": "Lower the heat",
-      "text": "Turn the oven down to 185 °C, still without opening the door.",
+      "text": "Turn the oven down to 185 °C conventional, still without opening the door.",
       "timer": 10
     },
     {

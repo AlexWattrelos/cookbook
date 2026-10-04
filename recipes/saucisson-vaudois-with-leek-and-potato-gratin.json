@@ -106,7 +106,7 @@
     {
       "section": "Gratin",
       "cue": "Heat the oven",
-      "text": "Preheat the oven to 180 °C conventional / 160 °C fan.",
+      "text": "Preheat the oven to 160 °C fan.",
       "timer": null
     },
     {
@@ -148,7 +148,7 @@
     {
       "section": "Finishing",
       "cue": "Uncover and brown",
-      "text": "After 45 min of baking, remove the foil and turn the oven up to 200 °C conventional / 180 °C fan. Bake until golden and bubbling and a knife slides easily through the potatoes.",
+      "text": "After 45 min of baking, remove the foil and turn the oven up to 180 °C fan. Bake until golden and bubbling and a knife slides easily through the potatoes.",
       "timer": 20
     },
     {

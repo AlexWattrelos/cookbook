@@ -139,7 +139,7 @@
     {
       "section": null,
       "cue": "Heat the oven",
-      "text": "Preheat the oven to 120 °C conventional / 100 °C fan.",
+      "text": "Preheat the oven to 100 °C fan.",
       "timer": null
     },
     {
@@ -199,7 +199,7 @@
     {
       "section": null,
       "cue": "Brown the crust",
-      "text": "Optional: uncover, raise the oven to 180 °C conventional / 160 °C fan and roast, basting once or twice, until nicely browned.",
+      "text": "Optional: uncover, raise the oven to 160 °C fan and roast, basting once or twice, until nicely browned.",
       "timer": 15
     },
     {

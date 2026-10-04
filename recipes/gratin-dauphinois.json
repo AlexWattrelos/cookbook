@@ -18,7 +18,7 @@
   },
   "ahead": null,
   "notes": [
-    "Keeps 2 days in the fridge. Reheat covered with foil, 20 min at 180 °C conventional / 160 °C fan."
+    "Keeps 2 days in the fridge. Reheat covered with foil, 20 min at 160 °C fan."
   ],
   "source": null,
   "ingredients": [
@@ -83,7 +83,7 @@
     {
       "section": null,
       "cue": "Heat the oven",
-      "text": "Preheat the oven to 180 °C conventional / 160 °C fan.",
+      "text": "Preheat the oven to 160 °C fan.",
       "timer": null
     },
     {
