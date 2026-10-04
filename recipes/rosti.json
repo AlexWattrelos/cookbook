@@ -1,7 +1,7 @@
 {
   "id": "rosti",
   "title": "Rösti",
-  "image": null,
+  "image": "images/rosti.jpg",
   "course": "side",
   "status": "empty",
   "starred": false,

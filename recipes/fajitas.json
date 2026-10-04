@@ -1,7 +1,7 @@
 {
   "id": "fajitas",
   "title": "Fajitas",
-  "image": null,
+  "image": "images/fajitas.jpg",
   "course": "main",
   "status": "empty",
   "starred": true,

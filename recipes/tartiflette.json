@@ -1,7 +1,7 @@
 {
   "id": "tartiflette",
   "title": "Tartiflette",
-  "image": null,
+  "image": "images/tartiflette.jpg",
   "course": "main",
   "status": "empty",
   "starred": false,

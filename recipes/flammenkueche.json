@@ -1,7 +1,7 @@
 {
   "id": "flammenkueche",
   "title": "Flammenkueche",
-  "image": null,
+  "image": "images/flammenkueche.jpg",
   "course": "main",
   "status": "empty",
   "starred": true,

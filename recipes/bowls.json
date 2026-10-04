@@ -1,7 +1,7 @@
 {
   "id": "bowls",
   "title": "Bowls",
-  "image": null,
+  "image": "images/bowls.jpg",
   "course": "main",
   "status": "empty",
   "starred": false,

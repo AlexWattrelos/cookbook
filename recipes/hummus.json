@@ -1,7 +1,7 @@
 {
   "id": "hummus",
   "title": "Hummus",
-  "image": null,
+  "image": "images/hummus.jpg",
   "course": "starter",
   "status": "empty",
   "starred": false,

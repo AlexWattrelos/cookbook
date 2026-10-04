@@ -18,7 +18,7 @@ Every push to `main` deploys `dist/` to GitHub Pages. Installable on iPhone as a
 - `app/styles.css` — tokens and all styles. `app/pwa.js`, `sw.js`, `manifest.webmanifest`, `icons/` — PWA.
 - `mockup/pot-au-feu.html` — the approved reference for the recipe page; `app/` is its port. Do not restyle.
 - `import/` — Alex's old recipes as text, indexed in `import/INDEX.md`; feed them to `/recipe` one by one.
-- `images/` — photos, supplied by Alex only (credits in `images/CREDITS.md`).
+- `images/` — photos: Wikimedia Commons placeholders until Alex supplies his own (credits in `images/CREDITS.md`).
 - `tests/*.test.mjs` — `node --test` for `format.js`, the validator and the build.
 
 ## Commands

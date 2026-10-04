@@ -1,7 +1,7 @@
 {
   "id": "tarte-tatin",
   "title": "Tarte Tatin",
-  "image": null,
+  "image": "images/tarte-tatin.jpg",
   "course": "dessert",
   "status": "draft",
   "starred": false,
