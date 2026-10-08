@@ -33,11 +33,19 @@
       "category": "meat-fish"
     },
     {
-      "id": "butter",
+      "id": "butter-roast",
       "amount": 30,
       "unit": "g",
       "name": "butter",
       "prep": "softened",
+      "category": "fridge"
+    },
+    {
+      "id": "butter-crisp",
+      "amount": 30,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
       "category": "fridge"
     },
     {
@@ -75,7 +83,7 @@
     {
       "section": null,
       "cue": "Butter the bird",
-      "text": "Spread the wing pieces in a roasting pan as a bed for {chicken}. Brush the bird all over with {butter} and season with salt and pepper.",
+      "text": "Spread the wing pieces in a roasting pan as a bed for {chicken}. Brush the bird all over with {butter-roast} and season with salt and pepper.",
       "timer": null
     },
     {
@@ -119,6 +127,18 @@
       "cue": "Thicken the jus",
       "text": "Optional: dissolve {cornstarch} in {cold-water}. Stir into the hot jus until it thickens slightly.",
       "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Reheat the oven",
+      "text": "Optional: lift the chicken out and heat the oven to 220 °C fan. Meanwhile, brown {butter-crisp} in a small pan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Crisp the skin",
+      "text": "Optional: brush the brown butter over the bird and roast until the skin is crisp again.",
+      "timer": 5
     },
     {
       "section": null,
