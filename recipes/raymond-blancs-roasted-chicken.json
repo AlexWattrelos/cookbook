@@ -1,0 +1,105 @@
+{
+  "id": "raymond-blancs-roasted-chicken",
+  "title": "Raymond Blanc's roasted chicken",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "starred": false,
+  "tags": [
+    "chicken",
+    "french",
+    "easy",
+    "guests"
+  ],
+  "servings": 4,
+  "yield": "one 1.3 kg chicken",
+  "time": {
+    "active": 15,
+    "total": 75
+  },
+  "ahead": "Take the chicken and the butter out of the fridge 1 h ahead.",
+  "notes": [],
+  "source": "https://raymondblanc.com/recipes/roast-chicken/",
+  "ingredients": [
+    {
+      "id": "chicken",
+      "amount": 1,
+      "unit": null,
+      "name": "chicken of about 1.3 kg",
+      "prep": "wings chopped into 1 cm pieces",
+      "category": "meat-fish"
+    },
+    {
+      "id": "butter",
+      "amount": 30,
+      "unit": "g",
+      "name": "butter",
+      "prep": "softened",
+      "category": "fridge"
+    },
+    {
+      "id": "water",
+      "amount": 200,
+      "unit": "ml",
+      "name": "water",
+      "prep": null,
+      "category": "staple"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Heat the oven",
+      "text": "Preheat the oven to 210 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Butter the bird",
+      "text": "Spread the wing pieces in a roasting pan as a bed for {chicken}. Brush the bird all over with {butter} and season with salt and pepper.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Colour the skin",
+      "text": "Roast in the hot oven to colour the bird.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Lower the heat",
+      "text": "Baste with the hot fat and juices. Lower the oven to 130 °C fan and roast, basting now and then, until golden brown all over and the juices run clear when you pierce the thigh.",
+      "timer": 20
+    },
+    {
+      "section": null,
+      "cue": "Rest the chicken",
+      "text": "Move the chicken to a serving dish. Turn the oven off and put the dish back in, door ajar, to rest.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Deglaze the pan",
+      "text": "Meanwhile, pour the excess fat out of the roasting pan. Set it over high heat, add {water} and scrape up the caramelised bits.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Simmer the jus",
+      "text": "Pour the liquid and the wing pieces into a small pan. Simmer, skimming off the fat as it rises.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Strain and season",
+      "text": "Strain the jus and adjust the seasoning.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Carve and serve",
+      "text": "Carve the chicken. Serve with the jus alongside.",
+      "timer": null
+    }
+  ]
+}
