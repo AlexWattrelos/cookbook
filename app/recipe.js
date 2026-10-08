@@ -1,6 +1,6 @@
 // Recipe page: renders the recipe named by ?id= and drives servings, checklists and timers.
 import { loadData } from "./data.js";
-import { clock, formatMinutes, ingredientText, scale } from "./format.js";
+import { clock, formatMinutes, ingredientText, linkify, scale } from "./format.js";
 
 const SEPARATOR = " · ";
 
@@ -61,7 +61,7 @@ function renderIntro() {
   const time = Object.entries(recipe.time).filter(([, minutes]) => minutes !== null)
     .map(([kind, minutes]) => `${sections[kind]} ${formatMinutes(config, minutes)}`);
   if (recipe.ahead) time.push(`${sections.ahead}: ${recipe.ahead}`);
-  const notes = recipe.notes.length ? `<ul class="notes">${recipe.notes.map(note => `<li>${escapeHtml(note)}</li>`).join("")}</ul>` : "";
+  const notes = recipe.notes.length ? `<ul class="notes">${recipe.notes.map(note => `<li>${linkify(escapeHtml(note))}</li>`).join("")}</ul>` : "";
   return `<p class="meta">${escapeHtml(tags)}</p><p class="meta">${escapeHtml(time.join(SEPARATOR))}</p>${notes}`;
 }
 

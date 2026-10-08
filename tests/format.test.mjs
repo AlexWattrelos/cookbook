@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { clock, formatAmount, formatMinutes, ingredientText, plural, scale } from "../app/format.js";
+import { clock, formatAmount, formatMinutes, ingredientText, linkify, plural, scale } from "../app/format.js";
 
 const config = JSON.parse(readFileSync(new URL("../config.json", import.meta.url), "utf8"));
 const amount = (value, unit = null) => formatAmount(config, value, unit);
@@ -74,4 +74,11 @@ test("count items stay singular up to one", () => {
   assert.equal(ingredientText(config, 0.5, null, "onion"), "½ onion");
   assert.equal(ingredientText(config, 1, null, "onion"), "1 onion");
   assert.equal(ingredientText(config, 1.5, null, "onion"), "1½ onions");
+});
+
+test("linkify turns URLs in escaped text into links named by their site", () => {
+  assert.equal(
+    linkify("More ideas: https://www.youtube.com/watch?v=mp4Il5rC7AQ&amp;t=1134s"),
+    'More ideas: <a href="https://www.youtube.com/watch?v=mp4Il5rC7AQ&amp;t=1134s" target="_blank" rel="noopener">youtube.com</a>');
+  assert.equal(linkify("Keeps 2 days in the fridge."), "Keeps 2 days in the fridge.");
 });

@@ -1,4 +1,4 @@
-// Pure formatting of amounts, names and durations. Every rule comes from config.json.
+// Pure formatting of amounts, names, durations and links. Every rule comes from config.json.
 
 export const scale = (amount, servings, baseServings) => amount * servings / baseServings;
 
@@ -54,3 +54,7 @@ export function clock(seconds) {
   const hours = Math.floor(seconds / 3600), minutes = Math.floor(seconds % 3600 / 60), rest = seconds % 60;
   return (hours ? `${hours}:${pad(minutes)}` : minutes) + `:${pad(rest)}`;
 }
+
+// Takes already-escaped HTML; a link shows its site name, not the whole URL, so it fits on a phone.
+export const linkify = html => html.replace(/https?:\/\/[^\s<]+/g, url =>
+  `<a href="${url}" target="_blank" rel="noopener">${new URL(url).hostname.replace(/^www\./, "")}</a>`);
