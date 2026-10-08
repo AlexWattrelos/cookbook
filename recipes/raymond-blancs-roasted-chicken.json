@@ -18,7 +18,10 @@
     "total": 75
   },
   "ahead": "Take the chicken and the butter out of the fridge 1 h ahead.",
-  "notes": [],
+  "notes": [
+    "If the meat is not tender enough, try brining the chicken next time, as in the Roasted chicken recipe.",
+    "More ideas: Fallow's video comparing Michelin roast chickens, https://www.youtube.com/watch?v=mp4Il5rC7AQ&t=1134s"
+  ],
   "source": "https://raymondblanc.com/recipes/roast-chicken/",
   "ingredients": [
     {
@@ -42,6 +45,22 @@
       "amount": 200,
       "unit": "ml",
       "name": "water",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "cornstarch",
+      "amount": 0.25,
+      "unit": "tsp",
+      "name": "cornstarch",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "cold-water",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "cold water",
       "prep": null,
       "category": "staple"
     }
@@ -93,6 +112,12 @@
       "section": null,
       "cue": "Strain and season",
       "text": "Strain the jus and adjust the seasoning.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Thicken the jus",
+      "text": "Optional: dissolve {cornstarch} in {cold-water}. Stir into the hot jus until it thickens slightly.",
       "timer": null
     },
     {
