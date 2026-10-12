@@ -1,0 +1,40 @@
+{
+  "id": "roasted-figs-with-honey-and-vanilla-mascarpone",
+  "title": "Roasted figs with honey and vanilla mascarpone",
+  "image": null,
+  "course": "dessert",
+  "status": "draft",
+  "starred": false,
+  "tags": [
+    "vegetarian",
+    "easy",
+    "summer"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 5,
+    "total": 20
+  },
+  "ahead": null,
+  "notes": [
+    "Swap the mascarpone for Greek yogurt or vanilla ice cream. Pistachios work instead of walnuts."
+  ],
+  "source": null,
+  "ingredients": [
+    { "id": "figs", "amount": 8, "unit": null, "name": "ripe fig", "prep": null, "category": "produce" },
+    { "id": "butter", "amount": 20, "unit": "g", "name": "butter", "prep": null, "category": "fridge" },
+    { "id": "honey", "amount": 3, "unit": "tbsp", "name": "honey", "prep": null, "category": "canned" },
+    { "id": "mascarpone", "amount": 250, "unit": "g", "name": "mascarpone", "prep": null, "category": "fridge" },
+    { "id": "vanilla", "amount": 0.25, "unit": "tsp", "name": "ground vanilla", "prep": null, "category": "pantry" },
+    { "id": "walnuts", "amount": 30, "unit": "g", "name": "walnuts", "prep": "roughly chopped", "category": "pantry" }
+  ],
+  "steps": [
+    { "section": null, "cue": "Heat the oven", "text": "Heat the oven to 200 °C fan.", "timer": null },
+    { "section": null, "cue": "Open the figs", "text": "Cut a deep cross halfway down into the top of {figs}. Squeeze the base so they open like a flower, then set them in a small baking dish.", "timer": null },
+    { "section": null, "cue": "Add butter and honey", "text": "Put a small piece of {butter} into each fig. Drizzle {honey} over and into them.", "timer": null },
+    { "section": null, "cue": "Roast", "text": "Roast until soft and the juices are bubbling.", "timer": 12 },
+    { "section": null, "cue": "Flavour the mascarpone", "text": "Meanwhile, stir {mascarpone} with {vanilla} until smooth.", "timer": null },
+    { "section": null, "cue": "Serve", "text": "Spread the mascarpone on plates and set the hot figs on top. Spoon over the pan juices and scatter {walnuts}.", "timer": null }
+  ]
+}
