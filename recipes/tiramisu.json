@@ -80,9 +80,9 @@
     },
     {
       "id": "savoiardi",
-      "amount": 200,
+      "amount": 300,
       "unit": "g",
-      "name": "small savoiardi ladyfingers",
+      "name": "savoiardi ladyfingers",
       "prep": null,
       "category": "pantry"
     }
