@@ -21,26 +21,26 @@
   "notes": [],
   "source": null,
   "ingredients": [
-    {"id": "pasta", "amount": 600, "unit": "g", "name": "coquillettes", "prep": null, "category": "grains"},
-    {"id": "lardons", "amount": 360, "unit": "g", "name": "lardons", "prep": null, "category": "meat-fish"},
-    {"id": "milk", "amount": 800, "unit": "ml", "name": "milk", "prep": null, "category": "fridge"},
-    {"id": "butter-sauce", "amount": 40, "unit": "g", "name": "butter", "prep": null, "category": "fridge"},
-    {"id": "flour", "amount": 40, "unit": "g", "name": "flour", "prep": null, "category": "pantry"},
-    {"id": "nutmeg", "amount": 1, "unit": "pinch", "name": "ground nutmeg", "prep": null, "category": "pantry"},
-    {"id": "creme-fraiche", "amount": 150, "unit": "g", "name": "crème fraîche", "prep": null, "category": "fridge"},
-    {"id": "gruyere-mix", "amount": 150, "unit": "g", "name": "gruyère", "prep": "grated", "category": "fridge"},
-    {"id": "gruyere-top", "amount": 80, "unit": "g", "name": "gruyère", "prep": "grated", "category": "fridge"},
-    {"id": "butter-dish", "amount": 10, "unit": "g", "name": "butter", "prep": null, "category": "fridge"}
+    { "id": "pasta", "amount": 600, "unit": "g", "name": "coquillettes", "prep": null, "category": "grains" },
+    { "id": "lardons", "amount": 360, "unit": "g", "name": "lardons", "prep": null, "category": "meat-fish" },
+    { "id": "milk", "amount": 800, "unit": "ml", "name": "milk", "prep": null, "category": "fridge" },
+    { "id": "butter-sauce", "amount": 40, "unit": "g", "name": "butter", "prep": null, "category": "fridge" },
+    { "id": "flour", "amount": 40, "unit": "g", "name": "flour", "prep": null, "category": "pantry" },
+    { "id": "nutmeg", "amount": 1, "unit": "pinch", "name": "ground nutmeg", "prep": null, "category": "pantry" },
+    { "id": "creme-fraiche", "amount": 150, "unit": "g", "name": "crème fraîche", "prep": null, "category": "fridge" },
+    { "id": "gruyere-mix", "amount": 150, "unit": "g", "name": "gruyère", "prep": "grated", "category": "fridge" },
+    { "id": "gruyere-top", "amount": 80, "unit": "g", "name": "gruyère", "prep": "grated", "category": "fridge" },
+    { "id": "butter-dish", "amount": 10, "unit": "g", "name": "butter", "prep": null, "category": "fridge" }
   ],
   "steps": [
-    {"section": null, "cue": "Heat the oven", "text": "Preheat the oven to 200 °C fan.", "timer": null},
-    {"section": null, "cue": "Cook the pasta", "text": "Cook {pasta} in a large pot of lightly salted boiling water, 2 min less than the packet says. The lardons and cheese bring the rest of the salt.", "timer": null},
-    {"section": null, "cue": "Brown the lardons", "text": "Meanwhile, brown {lardons} in a dry pan until golden. Keep their fat.", "timer": null},
-    {"section": null, "cue": "Make the béchamel", "text": "Meanwhile, put {milk}, {butter-sauce}, {flour} and {nutmeg} in the TM7 bowl. TM7: 10 min / 90 °C / speed 4", "timer": null},
-    {"section": null, "cue": "Finish the sauce", "text": "Add {creme-fraiche} and {gruyere-mix}, then season with pepper. TM7: 20 sec / speed 3", "timer": null},
-    {"section": null, "cue": "Assemble", "text": "Grease a baking dish with {butter-dish}. Drain the pasta and mix it in the dish with the lardons, their fat and the béchamel.", "timer": null},
-    {"section": null, "cue": "Top with cheese", "text": "Scatter {gruyere-top} over the top.", "timer": null},
-    {"section": null, "cue": "Bake", "text": "Bake until golden on top.", "timer": 15},
-    {"section": null, "cue": "Rest", "text": "Let it rest out of the oven until the sauce thickens.", "timer": 5}
+    { "section": null, "cue": "Heat the oven", "text": "Preheat the oven to 200 °C fan.", "timer": null },
+    { "section": null, "cue": "Cook the pasta", "text": "Cook {pasta} in a large pot of lightly salted boiling water, 2 min less than the packet says. The lardons and cheese bring the rest of the salt.", "timer": null },
+    { "section": null, "cue": "Brown the lardons", "text": "Meanwhile, brown {lardons} in a dry pan until golden. Keep their fat.", "timer": null },
+    { "section": null, "cue": "Make the béchamel", "text": "Meanwhile, put {milk}, {butter-sauce}, {flour} and {nutmeg} in the TM7 bowl. TM7: 10 min / 90 °C / speed 4", "timer": null },
+    { "section": null, "cue": "Finish the sauce", "text": "Add {creme-fraiche} and {gruyere-mix}, then season with pepper. TM7: 20 sec / speed 3", "timer": null },
+    { "section": null, "cue": "Assemble", "text": "Grease a baking dish with {butter-dish}. Drain the pasta and mix it in the dish with the lardons, their fat and the béchamel.", "timer": null },
+    { "section": null, "cue": "Top with cheese", "text": "Scatter {gruyere-top} over the top.", "timer": null },
+    { "section": null, "cue": "Bake", "text": "Bake until golden on top.", "timer": 15 },
+    { "section": null, "cue": "Rest", "text": "Let it rest out of the oven until the sauce thickens.", "timer": 5 }
   ]
 }
