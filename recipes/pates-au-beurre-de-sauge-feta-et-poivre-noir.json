@@ -1,0 +1,116 @@
+{
+  "id": "pates-au-beurre-de-sauge-feta-et-poivre-noir",
+  "title": "Pâtes au beurre de sauge, feta & poivre noir",
+  "image": null,
+  "course": "main",
+  "status": "draft",
+  "starred": false,
+  "tags": [
+    "pasta",
+    "vegetarian",
+    "easy"
+  ],
+  "servings": 4,
+  "yield": null,
+  "time": {
+    "active": 15,
+    "total": 20
+  },
+  "ahead": null,
+  "notes": [],
+  "source": null,
+  "ingredients": [
+    {
+      "id": "pasta",
+      "amount": 400,
+      "unit": "g",
+      "name": "conchiglie",
+      "prep": null,
+      "category": "grains"
+    },
+    {
+      "id": "pine-nuts",
+      "amount": 50,
+      "unit": "g",
+      "name": "pine nuts",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "butter",
+      "amount": 150,
+      "unit": "g",
+      "name": "butter",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "sage",
+      "amount": 15,
+      "unit": "g",
+      "name": "sage",
+      "prep": "leaves picked",
+      "category": "produce"
+    },
+    {
+      "id": "feta",
+      "amount": 200,
+      "unit": "g",
+      "name": "feta",
+      "prep": "crumbled",
+      "category": "fridge"
+    },
+    {
+      "id": "aleppo",
+      "amount": 4,
+      "unit": "pinch",
+      "name": "Aleppo pepper flakes",
+      "prep": null,
+      "category": "pantry"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Cook the pasta",
+      "text": "Cook {pasta} in a large pot of boiling salted water, following the packet.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Toast the pine nuts",
+      "text": "Meanwhile, toast {pine-nuts} in a dry frying pan until golden. Set aside.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Infuse the butter",
+      "text": "A few minutes before the pasta is done, put {butter} and {sage} in the same pan over low heat. Melt very gently, stirring the leaves so they infuse, without letting the butter sizzle.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Coat the pasta",
+      "text": "Lift the pasta into the pan with a slotted spoon. Raise the heat and toss to coat in the butter.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Season",
+      "text": "Season very generously with coarsely ground black pepper and lightly with flaky salt, as the feta is already salty. Stir in the pine nuts.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Melt the feta",
+      "text": "Add {feta} and stir until it melts and coats the pasta.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Serve at once, sprinkled with {aleppo} and more pepper.",
+      "timer": null
+    }
+  ]
+}
