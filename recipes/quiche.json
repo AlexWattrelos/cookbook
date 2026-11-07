@@ -3,20 +3,178 @@
   "title": "Quiche",
   "image": "images/quiche.jpg",
   "course": "main",
-  "status": "empty",
+  "status": "draft",
   "starred": true,
   "tags": [
+    "pork",
+    "cheese",
     "french"
   ],
-  "servings": null,
-  "yield": null,
+  "servings": 6,
+  "yield": "one 26 cm quiche, 6 slices",
   "time": {
-    "active": null,
-    "total": null
+    "active": 25,
+    "total": 90
   },
   "ahead": null,
-  "notes": [],
+  "notes": [
+    "The pastry: buy all-butter shortcrust (pâte brisée) first. If you only find all-butter puff pastry (pâte feuilletée), use it rather than a shortcrust made without butter; it is flakier but softens sooner.",
+    "No onions in this version, on purpose. Add them later if they are missing.",
+    "Best warm on the day it is baked; the crust softens in the fridge."
+  ],
   "source": null,
-  "ingredients": [],
-  "steps": []
+  "ingredients": [
+    {
+      "id": "dough",
+      "amount": 1,
+      "unit": null,
+      "name": "round sheet of all-butter shortcrust pastry",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "lardons",
+      "amount": 200,
+      "unit": "g",
+      "name": "smoked lardons",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": "separated",
+      "category": "eggs"
+    },
+    {
+      "id": "milk",
+      "amount": 100,
+      "unit": "ml",
+      "name": "milk",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "flour",
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "flour",
+      "prep": null,
+      "category": "pantry"
+    },
+    {
+      "id": "mustard",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "Dijon mustard",
+      "prep": null,
+      "category": "canned"
+    },
+    {
+      "id": "cream",
+      "amount": 200,
+      "unit": "g",
+      "name": "crème fraîche",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 1,
+      "unit": "pinch",
+      "name": "nutmeg",
+      "prep": "freshly grated",
+      "category": "pantry"
+    },
+    {
+      "id": "cheese",
+      "amount": 180,
+      "unit": "g",
+      "name": "Gruyère",
+      "prep": "coarsely grated",
+      "category": "fridge"
+    }
+  ],
+  "steps": [
+    {
+      "section": "Crust and lardons",
+      "cue": "Turn the oven on",
+      "text": "Put a baking tray on a low rack and heat the oven to 180 °C fan.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Line the tin",
+      "text": "Line a 26 cm tart tin with {dough}, keeping its baking paper underneath. Prick the base all over with a fork.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Chill the crust",
+      "text": "Chill, so the pastry holds its shape in the oven.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Brown the lardons",
+      "text": "Meanwhile, put {lardons} in a cold dry pan over medium heat and cook until well browned. Drain on paper towels.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Weigh down the crust",
+      "text": "Cover the pastry with baking paper and baking beans. Put the tin on the hot tray and bake until the edges have set.",
+      "timer": 15
+    },
+    {
+      "section": null,
+      "cue": "Dry the crust",
+      "text": "Lift out the paper and beans. Bake until the base looks dry and golden.",
+      "timer": 10
+    },
+    {
+      "section": "Filling",
+      "cue": "Whip the whites",
+      "text": "Whip the whites of {eggs} until stiff. Use a clean, dry bowl, or they will not rise. TM7: 4 min / speed 3.5, butterfly",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Blend the base",
+      "text": "Scrape the whites into a large bowl and remove the butterfly. Blend the yolks with {milk}, {flour}, {mustard}, {cream} and {nutmeg}. TM7: 10 sec / speed 4",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Add lardons and cheese",
+      "text": "Stir the lardons, some black pepper and {cheese} into the base. Add no salt: the lardons and cheese bring enough.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Fold in the whites",
+      "text": "Stir a quarter of the whites into the base to loosen it. Pour it over the remaining whites and fold gently, until no white streaks remain.",
+      "timer": null
+    },
+    {
+      "section": "Baking",
+      "cue": "Fill and bake",
+      "text": "Pour the filling into the crust and put the tin back on the hot tray. Bake until puffed, deep golden and set to the centre, with no wobble when you shake the tin.",
+      "timer": 30
+    },
+    {
+      "section": null,
+      "cue": "Let it settle",
+      "text": "Rest in the tin, so it slices cleanly.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Lift out of the tin, slice and serve warm.",
+      "timer": null
+    }
+  ]
 }
