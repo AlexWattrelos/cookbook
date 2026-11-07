@@ -3,22 +3,123 @@
   "title": "Rösti",
   "image": "images/rosti.jpg",
   "course": "side",
-  "status": "empty",
+  "status": "draft",
   "starred": false,
   "tags": [
     "potato",
-    "vegetarian",
     "swiss"
   ],
-  "servings": null,
-  "yield": null,
+  "servings": 4,
+  "yield": "one 24 cm rösti",
   "time": {
-    "active": null,
-    "total": null
+    "active": 10,
+    "total": 30
   },
-  "ahead": null,
-  "notes": [],
+  "ahead": "The day before, boil the potatoes in their skins until a knife meets slight resistance, about 20 min. Drain and refrigerate overnight.",
+  "notes": [
+    "To make it a full meal, do the optional step: crisp bacon and a fried egg on top of each wedge, never mixed into the potato. Use bacon rather than lardons, which are not good enough in Swiss shops.",
+    "Skip the optional step and leave the bacon and eggs off your shopping for a plain side.",
+    "Best straight from the pan; the crust softens as it waits."
+  ],
   "source": null,
-  "ingredients": [],
-  "steps": []
+  "ingredients": [
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsp",
+      "name": "salt",
+      "prep": null,
+      "category": "staple"
+    },
+    {
+      "id": "potatoes",
+      "amount": 800,
+      "unit": "g",
+      "name": "mostly firm potatoes",
+      "prep": "peeled and coarsely grated",
+      "category": "produce"
+    },
+    {
+      "id": "clarified-butter",
+      "amount": 40,
+      "unit": "g",
+      "name": "clarified butter, beurre à rôtir",
+      "prep": null,
+      "category": "fridge"
+    },
+    {
+      "id": "butter",
+      "amount": 15,
+      "unit": "g",
+      "name": "butter",
+      "prep": "in small pieces",
+      "category": "fridge"
+    },
+    {
+      "id": "bacon",
+      "amount": 160,
+      "unit": "g",
+      "name": "sliced bacon",
+      "prep": null,
+      "category": "meat-fish"
+    },
+    {
+      "id": "eggs",
+      "amount": 4,
+      "unit": null,
+      "name": "egg",
+      "prep": null,
+      "category": "eggs"
+    }
+  ],
+  "steps": [
+    {
+      "section": null,
+      "cue": "Season the potatoes",
+      "text": "Toss {salt}, some black pepper and {potatoes} gently in a large bowl, just before cooking.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Heat the fat",
+      "text": "Melt half of {clarified-butter} in a 24 cm non-stick pan over medium heat.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Shape the cake",
+      "text": "Tip in the potatoes and spread them into an even layer about 2 cm thick. Press down lightly with a spatula.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the first side",
+      "text": "Cook without stirring until deep golden underneath.",
+      "timer": 12
+    },
+    {
+      "section": null,
+      "cue": "Flip with a plate",
+      "text": "Turn the rösti out onto a large flat plate. Melt the rest of the clarified butter in the pan, then slide the rösti back in, uncooked side down.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Cook the second side",
+      "text": "Drop {butter} around the edge. Cook until deep golden and crisp.",
+      "timer": 10
+    },
+    {
+      "section": null,
+      "cue": "Fry bacon and eggs",
+      "text": "Optional: meanwhile, fry {bacon} in a second pan until crisp and lift it out. Fry {eggs} in its fat until the whites have set.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Serve",
+      "text": "Slide onto a warm plate and cut into 4 wedges. Put the bacon and a fried egg on top of each wedge if you made them.",
+      "timer": null
+    }
+  ]
 }
