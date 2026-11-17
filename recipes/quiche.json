@@ -18,7 +18,7 @@
   },
   "ahead": null,
   "notes": [
-    "Firm and eggy on purpose: 5 eggs for 300 ml of dairy. More milk or cream makes it wobbly and milky.",
+    "Firm and eggy on purpose: 5 eggs for 250 g of dairy. More milk or cream makes it wobbly and milky.",
     "The pastry: buy all-butter shortcrust (pâte brisée) first. If you only find all-butter puff pastry (pâte feuilletée), use it rather than a shortcrust made without butter; it is flakier but softens sooner.",
     "No onions in this version, on purpose. Add them later if they are missing.",
     "Best warm on the day it is baked; the crust softens in the fridge."
@@ -51,7 +51,7 @@
     },
     {
       "id": "milk",
-      "amount": 100,
+      "amount": 50,
       "unit": "ml",
       "name": "milk",
       "prep": null,
@@ -83,7 +83,7 @@
     },
     {
       "id": "cheese",
-      "amount": 200,
+      "amount": 180,
       "unit": "g",
       "name": "Gruyère",
       "prep": "coarsely grated",
