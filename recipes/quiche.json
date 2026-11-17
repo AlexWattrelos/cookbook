@@ -14,10 +14,11 @@
   "yield": "one 26 cm quiche, 6 slices",
   "time": {
     "active": 25,
-    "total": 90
+    "total": 100
   },
   "ahead": null,
   "notes": [
+    "Firm and eggy on purpose: 5 eggs for 300 ml of dairy. More milk or cream makes it wobbly and milky.",
     "The pastry: buy all-butter shortcrust (pâte brisée) first. If you only find all-butter puff pastry (pâte feuilletée), use it rather than a shortcrust made without butter; it is flakier but softens sooner.",
     "No onions in this version, on purpose. Add them later if they are missing.",
     "Best warm on the day it is baked; the crust softens in the fridge."
@@ -42,10 +43,10 @@
     },
     {
       "id": "eggs",
-      "amount": 4,
+      "amount": 5,
       "unit": null,
       "name": "egg",
-      "prep": "separated",
+      "prep": null,
       "category": "eggs"
     },
     {
@@ -57,12 +58,12 @@
       "category": "fridge"
     },
     {
-      "id": "flour",
-      "amount": 1,
-      "unit": "tbsp",
-      "name": "flour",
+      "id": "cream",
+      "amount": 200,
+      "unit": "g",
+      "name": "crème fraîche",
       "prep": null,
-      "category": "pantry"
+      "category": "fridge"
     },
     {
       "id": "mustard",
@@ -71,14 +72,6 @@
       "name": "Dijon mustard",
       "prep": null,
       "category": "canned"
-    },
-    {
-      "id": "cream",
-      "amount": 200,
-      "unit": "g",
-      "name": "crème fraîche",
-      "prep": null,
-      "category": "fridge"
     },
     {
       "id": "nutmeg",
@@ -90,7 +83,7 @@
     },
     {
       "id": "cheese",
-      "amount": 180,
+      "amount": 200,
       "unit": "g",
       "name": "Gruyère",
       "prep": "coarsely grated",
@@ -101,7 +94,7 @@
     {
       "section": "Crust and lardons",
       "cue": "Turn the oven on",
-      "text": "Put a baking tray on a low rack and heat the oven to 180 °C fan.",
+      "text": "Put a baking tray on a low rack and heat the oven to 170 °C fan.",
       "timer": null
     },
     {
@@ -126,7 +119,7 @@
       "section": null,
       "cue": "Weigh down the crust",
       "text": "Cover the pastry with baking paper and baking beans. Put the tin on the hot tray and bake until the edges have set.",
-      "timer": 15
+      "timer": 20
     },
     {
       "section": null,
@@ -136,39 +129,27 @@
     },
     {
       "section": "Filling",
-      "cue": "Whip the whites",
-      "text": "Whip the whites of {eggs} until stiff. Use a clean, dry bowl, or they will not rise. TM7: 4 min / speed 3.5, butterfly",
-      "timer": null
-    },
-    {
-      "section": null,
-      "cue": "Blend the base",
-      "text": "Scrape the whites into a large bowl and remove the butterfly. Blend the yolks with {milk}, {flour}, {mustard}, {cream} and {nutmeg}. TM7: 10 sec / speed 4",
-      "timer": null
-    },
-    {
-      "section": null,
-      "cue": "Add lardons and cheese",
-      "text": "Stir the lardons, some black pepper and {cheese} into the base. Add no salt: the lardons and cheese bring enough.",
-      "timer": null
-    },
-    {
-      "section": null,
-      "cue": "Fold in the whites",
-      "text": "Stir a quarter of the whites into the base to loosen it. Pour it over the remaining whites and fold gently, until no white streaks remain.",
+      "cue": "Whisk the custard",
+      "text": "In a bowl, whisk until smooth: {eggs}, {milk}, {cream}, {mustard} and {nutmeg}. Add black pepper but no salt: the lardons and cheese bring enough.",
       "timer": null
     },
     {
       "section": "Baking",
-      "cue": "Fill and bake",
-      "text": "Pour the filling into the crust and put the tin back on the hot tray. Bake until puffed, deep golden and set to the centre, with no wobble when you shake the tin.",
-      "timer": 30
+      "cue": "Fill the crust",
+      "text": "Scatter the lardons over the crust, then half of {cheese}. Pour in the custard and top with the rest of the cheese.",
+      "timer": null
+    },
+    {
+      "section": null,
+      "cue": "Bake",
+      "text": "Put the tin back on the hot tray. Bake until golden and set to the centre, 80 °C in the middle on a probe thermometer.",
+      "timer": 35
     },
     {
       "section": null,
       "cue": "Let it settle",
-      "text": "Rest in the tin, so it slices cleanly.",
-      "timer": 10
+      "text": "Rest in the tin, so it finishes setting and slices cleanly.",
+      "timer": 15
     },
     {
       "section": null,
